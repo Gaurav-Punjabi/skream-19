@@ -1,0 +1,200 @@
+:root {
+    --bg-color: #001124;
+    --primary-color: #db6020;
+    --secondary-color: #ff7b00;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: var(--bg-color);
+}
+
+/************************************************************************************************
+                                    GENERAL STYLING SECTION
+************************************************************************************************/
+.section {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.section.sidebar-open {
+    animation-name: push-right;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+}
+
+.section.sidebar-close {
+    animation-name: push-left;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+.hamburger {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    left: 15px;
+    top: 15px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+}
+
+
+/*----------------------------------------SOCIAL-LINKS-----------------------------------------*/
+.social-links {
+    z-index: 500;
+    position: fixed;
+    top: 30px;
+    right: 50px;
+}
+.social-link {
+    color: var(--secondary-color);
+    font-size: 24px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+
+/*-------------------------------------KEYFRAMES-----------------------------------------------*/
+@keyframes push-right {
+    from {position: relative; left: 0%;}
+    to {position: relative; left: 50%}
+}
+@keyframes push-left {
+    from {position: relative; left: 50%%;}
+    to {position: relative; left: 0%;}
+}
+
+/************************************************************************************************
+                                    SIDEBAR STYLING SECTION
+************************************************************************************************/
+.sidebar-wrapper {
+    width: 50%;
+    height: 100%;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: -50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.sidebar-wrapper.open {
+    animation-name: open;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+}
+.sidebar-wrapper.close {
+    animation-name: close;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+}
+
+
+.sidebar-wrapper .sidebar-option {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    color: var(--secondary-color);
+    font-family: 'UniSansBold';
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.sidebar-wrapper .sidebar-option.selected {
+    color: white;
+}
+
+/*-------------------------------------KEYFRAMES-----------------------------------------------*/
+@keyframes open {
+    from {left: -50%;}
+    to {left: 0}
+}
+@keyframes close {
+    from {left: 0%;}
+    to {left: -50%;}
+}
+
+
+
+/************************************************************************************************
+                                    HOME PAGE STYLING
+************************************************************************************************/
+.home {
+    height: 100%;
+    display: flex;
+    flex-direction: row;    
+}
+/*-------------------------------------FIXED SECTION-----------------------------------------------*/
+.home-fixed {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.home-fixed-wrapper {
+    display: flex;
+    margin-left: 20%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.logo {
+    width: 70%;
+    margin-bottom: 130px;
+}
+.divider {
+    width: 130px;
+    height: 3px;
+    background: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.home-heading {
+    text-transform: uppercase;
+    font-family: 'UniSansBold';
+    line-height: 1em;
+    font-size: 55px;
+    color: var(--secondary-color);
+    margin: 0;
+    margin-bottom: 20px;
+}
+.skream-date {
+    font-family: 'UniSansThin';
+    letter-spacing: 5px;
+    font-weight: 300;
+    font-size: 36px;
+    color: var(--secondary-color);
+    margin: 0;
+    margin-bottom: 30px;
+}
+.compete-button {
+    border: 1px solid white;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    font-family: 'UniSansLight';
+    color: white;
+    font-size: 22px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+/*-------------------------------------INFO SECTION-----------------------------------------------*/
+.home-info {
+    flex: 1;
+    background: url('assets/images/football.png') no-repeat center center;
+}
