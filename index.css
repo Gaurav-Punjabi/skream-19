@@ -11,6 +11,7 @@ body {
     height: 100%;
     margin: 0;
     background: var(--bg-color);
+    overflow-x: hidden;
 }
 /************************************************************************************************
                                     GENERAL STYLING SECTION
@@ -157,7 +158,7 @@ body {
     z-index: 500;
     position: fixed;
     top: 40px;
-    right: 30px;
+    right: 5%;
 }
 
 .social-link {
@@ -177,14 +178,14 @@ body {
 
     to {
         position: relative;
-        left: 50%
+        left: 52%;      
     }
 }
 
 @keyframes push-left {
     from {
         position: relative;
-        left: 50%%;
+        left: 50%;
     }
 
     to {
@@ -231,7 +232,7 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    font-size: 42px;
+    font-size: 3.8rem;
     color: var(--secondary-color);
     font-family: 'UniSansBold';
     text-transform: uppercase;
@@ -269,6 +270,32 @@ body {
     }
 }
 
+/************************************************************************************************
+                                      COUNTERS PAGE STYLING
+************************************************************************************************/
+.counters {
+    height: 100%;
+    width: 4%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 500;
+}
+.counters.dark .counter {
+    color: var(--bg-color);
+}
+.counter {
+    color: white;
+    font-family: UniSansLight;
+    letter-spacing: 1px;
+    font-size: 12px;
+    margin: 30px 0;
+    transform: rotate(270deg);
+}
 
 
 /************************************************************************************************
@@ -292,7 +319,7 @@ body {
 .home-fixed-wrapper {
     display: flex;
     margin-left: 20%;
-    padding-top: 100px;
+    padding-top: 8%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -353,8 +380,55 @@ body {
     flex: 1;
     background: url('assets/images/2.png') no-repeat center center;
 }
+.home-info .card { 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.home-info .card .card-content {
+    margin-left: 9%;
+    margin-right: 9%;
+}
+.home-info .card .card-content .heading {
+    font-family: UniSansRegular;
+    font-size: 5rem;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.home-info .card .card-content .heading span {
+    font-family: UniSansBold;
+}
+.home-info .card .card-content .content {
+    color: #fff;
+    font-size: 18px;
+    font-family: UniSansRegular;
+    letter-spacing: 1px;
+}
 
-
+.home-info .pagination-container {
+    width: 50%;
+    height: 10%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.home-info .pagination-container .indicator {
+    width: 15px;
+    height: 15px;
+    margin-left: 20px;
+    border-radius: 50%;
+    background: #2C5A8F;
+}
+.home-info .pagination-container .indicator.active {
+    background: var(--secondary-color);   
+}
 
 /************************************************************************************************
                                     EVENTS PAGE STYLING
@@ -407,6 +481,13 @@ body {
     font-family: 'UniSansRegular';
     margin-top: 5px;
     margin-bottom: 30px;
+}
+.event .content .headings li {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.event .content li {
+    text-transform: uppercase;
 }
 .event .content span {
     font-family: 'UniSansBold';
@@ -526,7 +607,12 @@ body {
     justify-content: center;
     align-content: flex-start;
 }
-
+.section.sidebar-open .events-info {
+    left: 120%;
+}
+.section.sidebar-close .events-info {
+    left: 55%;
+}
 
 .events-info .event-heading {
     color: var(--secondary-color);
@@ -554,7 +640,7 @@ body {
 
 }
 .events-info .heading-container.select-a-event {
-    background-image: url('./assets/images/football.png');
+    background-image: url('./assets/images/2.png');
 }
 .events-info .heading-container.cricket {
     background-image: url('./assets/images/Cricket.png');
@@ -612,7 +698,6 @@ body {
 .rules .fixed-section {
     width: 70%;
     height: 100%;
-    overflow: scroll;
 }
 .rules .fixed-section .rules-wrapper {
     width: 100%;
@@ -706,7 +791,6 @@ body {
 .accomodation .fixed-section {
     width: 70%;
     height: 100%;
-    overflow: scroll;
 }
 .accomodation .fixed-section .accomodation-wrapper {
     width: 100%;
@@ -777,7 +861,6 @@ body {
 .registration .fixed-section {
     width: 70%;
     height: 100%;
-    overflow: scroll;
 }
 .registration .fixed-section .registration-wrapper {
     width: 100%;

@@ -50,7 +50,7 @@
                 <img class="logo small" src="../../assets/images/logo/skream-logo.svg" alt="Skream Logo">
                 <div class="custom-select" style="width:250px;">
                     <select>
-                        <option>Select a event</option>
+                        <option>select-a-event</option>
                         <option>badminton</option>
                         <option>football</option>
                         <option>rink-football</option>
@@ -67,6 +67,33 @@
                     </select>
                 </div>
 
+                <!-- DEFAULT SECTION -->
+                <div class="event select-a-event">  
+                    <div class="content">   
+                        <br>
+                        <span>Skream</span> is home to 14 sports in addition to other informal events. 
+                        <br>    
+                        Participants from about <span>100 institutes</span> over the country participate in  : 
+                        <ul class="headings">    
+                            <br>    
+                            <li>football </li>
+                            <li>cricket </li>
+                            <li>badminton </li>
+                            <li>rink football </li>
+                            <li>Throwball </li>
+                            <li>carrom </li>
+                            <li>box cricket </li>
+                            <li>squash </li>
+                            <li>lawn tennis </li>
+                            <li>Basketball </li>
+                            <li>table tennis </li>
+                            <li>athletics </li>
+                            <li>volleyball </li>
+                            <li>chess</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--END OF DEFAULE SECTION -->
 
                 <!-- BADMINTON-->
                 <div class="event hidden badminton">
@@ -139,10 +166,12 @@
                     <div id="girls" class="hidden">
                         <h6 class="content-heading">Rules</h6>
                         <div class="content">
+                            <ul>    
                             <li>Single event and Doubles event</li>
                             <li>Both player should be from same college</li>
                             <li>Direct knockout format</li>
                             <li>Gum sole shoes are mandatory</li>
+                            </ul>
                         </div>
 
                         <h6 class="content-heading">Prize</h6>
@@ -720,8 +749,9 @@
 
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
-                            <li>Dhruv Bid: 9930119556</li>
-                            <li>Dhvanit Bhimani: 9870774815</li>
+                            Dhruv Bid: 9930119556
+                                <br>    
+                            Dhvanit Bhimani: 9870774815
                         </p>
                     </div>
                     <!-- END OF BOYS SECTION -->
@@ -1018,7 +1048,8 @@
                         <div class="content">
                             The tournament will follow the latest rules laid down by the Athletics Federation of India.
                         </div>
-
+                                
+                        <!-- PRIZE SECTION -->
                         <h6 class="content-heading">Prize</h6>
                         <div class="prize-money team no-margin">
                             <div class="header">
@@ -1066,8 +1097,10 @@
                                 <div class="column"> &#x20b9; 400</div>
                             </div>
                         </div>
+                        <!-- END OF PRIZE SECTION -->
                         
                         
+                        <!-- ENTRY FEE SECTION -->
                         <h6 class="content-heading">Entry Fee</h6>
                         <div class="entry-fee no-margin">
                             <div class="header">
@@ -1107,53 +1140,121 @@
                                 <div class="column">&#x20b9; 100</div>
                             </div>
                         </div>
+                        <!-- END OF FEE SECTION -->
 
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
+                            Agam Shah:  88888 85580
+                            <br>
+                            Kaitav Parikh: 9619300969
                         </p>
+                        <br>    
                     </div>
                     <!-- END OF BOYS SECTION -->
 
                     <!-- GIRLS-->
                     <div id="girls" class="hidden">
-                        <h6 class="content-heading">Rules</h6>
-                        <div class="content">
+                        <h6 class="content-heading">Events</h6>
+                        <div class="content">   
+                            <ul>    
+                                <li>100M</li>
+                                <li>200M</li>
+                                <li>400M</li>
+                                <li>Relay</li>
+                                <li>Shotput</li>
+                            </ul>
                         </div>
 
+                        <h6 class="content-heading">Rules</h6>
+                        <div class="content">
+                            The tournament will follow the latest rules laid down by the Athletics Federation of India
+                        </div>
+
+                        <!-- PRIZE SECTION -->
                         <h6 class="content-heading">Prize</h6>
-                        <div class="prize-money team">
+                        <div class="prize-money team no-margin">
                             <div class="header">
                                 <div class="column"></div>
                                 <div class="column">1<sup>st</sup> Place</div>
                                 <div class="column">2<sup>nd</sup> Place</div>
                             </div>
                             <div class="winning-place">
-                                <div class="column label">singles </div>
-                                <div class="column"> &#x20b9; </div>
-                                <div class="column"> &#x20b9; </div>
+                                <div class="column label">100M </div>
+                                <div class="column"> &#x20b9; 1,200</div>
+                                <div class="column"> &#x20b9; 500</div>
                             </div>
                             <div class="winning-place">
-                                <div class="column label">team </div>
-                                <div class="column"> &#x20b9; </div>
-                                <div class="column"> &#x20b9; </div>
+                                <div class="column label">200M </div>
+                                <div class="column"> &#x20b9; 1,200</div>
+                                <div class="column"> &#x20b9; 500</div>
                             </div>
                         </div>
-
+                        <div class="prize-money team no-margin col-2">
+                            <div class="winning-place">
+                                <div class="column label">400M </div>
+                                <div class="column"> &#x20b9; 1,200</div>
+                                <div class="column"> &#x20b9; 500</div>
+                            </div>
+                            <div class="winning-place">
+                                <div class="column label">800M </div>
+                                <div class="column"> &#x20b9; 1,500</div>
+                                <div class="column"> &#x20b9; 700</div>
+                            </div>
+                        </div>
+                        <div class="prize-money team">
+                            <div class="winning-place">
+                                <div class="column label">Relay </div>
+                                <div class="column"> &#x20b9; 2,500</div>
+                                <div class="column"> &#x20b9; 1000</div>
+                            </div>
+                            <div class="winning-place">
+                                <div class="column label">Shotput </div>
+                                <div class="column"> &#x20b9; 1,000</div>
+                                <div class="column"> &#x20b9; 400</div>
+                            </div>
+                        </div>
+                        <!-- END OF PRIZE SECTION -->
+                        
+                        <!-- ENTRY FEE SECTION -->
                         <h6 class="content-heading">Entry Fee</h6>
-                        <div class="entry-fee">
+                        <div class="entry-fee no-margin">
                             <div class="header">
-                                <div class="column">SINGLES</div>
-                                <div class="column">TEAM</div>
+                                <div class="column">100M</div>
+                                <div class="column">200M</div>
                             </div>
                             <div class="fee">
-                                <div class="column">&#x20b9; </div>
-                                <div class="column">&#x20b9; </div>
+                                <div class="column">&#x20b9; 100</div>
+                                <div class="column">&#x20b9; 100</div>
                             </div>
                         </div>
+                        <div class="entry-fee no-margin">
+                            <div class="header">
+                                <div class="column">400M</div>
+                                <div class="column">800M</div>
+                            </div>
+                            <div class="fee">
+                                <div class="column">&#x20b9; 100</div>
+                                <div class="column">&#x20b9; 100</div>
+                            </div>
+                        </div>
+                        <div class="entry-fee">
+                            <div class="header">
+                                <div class="column">RELAY</div>
+                                <div class="column">SHOTPUT</div>
+                            </div>
+                            <div class="fee">
+                                <div class="column">&#x20b9; 600</div>
+                                <div class="column">&#x20b9; 100</div>
+                            </div>
+                        </div>
+                        <!-- END OF ENTRY FEE SECTION -->
 
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
+                            Shruti Gosain: 9757283521
+                            Jay Shah: 9769593915
                         </p>
+                        <br>
                     </div>
                     <!-- END OF GIRLS SECTION -->
                 </div>
@@ -1170,6 +1271,11 @@
                         <h6 class="content-heading">Rules</h6>
                         <div class="content">
                             <ul>
+                                <li>No. of players per team : 5+7</li>
+                                <li>Direct knockout format</li>
+                                <li>Quarter length :9 minutes running</li>
+                                <li>Colours and kits are compulsory</li>
+                                <li>All matches will be played according to FIBA rules</li>
                             </ul>
                         </div>
 
@@ -1181,32 +1287,29 @@
                                 <div class="column">2<sup>nd</sup> Place</div>
                             </div>
                             <div class="winning-place">
-                                <div class="column label">singles </div>
-                                <div class="column"> &#x20b9; </div>
-                                <div class="column"> &#x20b9; </div>
-                            </div>
-                            <div class="winning-place">
                                 <div class="column label">team </div>
-                                <div class="column"> &#x20b9; </div>
-                                <div class="column"> &#x20b9; </div>
+                                <div class="column"> &#x20b9; 15,000</div>
+                                <div class="column"> &#x20b9; 7,000</div>
                             </div>
                         </div>
 
                         <h6 class="content-heading">Entry Fee</h6>
                         <div class="entry-fee">
                             <div class="header">
-                                <div class="column">SINGLES</div>
                                 <div class="column">TEAM</div>
                             </div>
                             <div class="fee">
-                                <div class="column">&#x20b9; </div>
-                                <div class="column">&#x20b9; </div>
+                                <div class="column">&#x20b9; 1,500</div>
                             </div>
                         </div>
 
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
+                            Deep Shah: 9870404085
+                            <br>
+                            Kunal Jain: 9920338372
                         </p>
+                        <br>    
                     </div>
                     <!-- END OF BOYS SECTION -->
 
@@ -1214,6 +1317,13 @@
                     <div id="girls" class="hidden">
                         <h6 class="content-heading">Rules</h6>
                         <div class="content">
+                            <ul>    
+                                <li>No. of players per team : 5+7</li>
+                                <li>Direct knockout format</li>
+                                <li>Quarter length :9 minutes running</li>
+                                <li>Colours and kits are compulsory</li>
+                                <li>All matches will be played according to FIBA rules</li>
+                            </ul>
                         </div>
 
                         <h6 class="content-heading">Prize</h6>
@@ -1224,32 +1334,29 @@
                                 <div class="column">2<sup>nd</sup> Place</div>
                             </div>
                             <div class="winning-place">
-                                <div class="column label">singles </div>
-                                <div class="column"> &#x20b9; </div>
-                                <div class="column"> &#x20b9; </div>
-                            </div>
-                            <div class="winning-place">
                                 <div class="column label">team </div>
-                                <div class="column"> &#x20b9; </div>
-                                <div class="column"> &#x20b9; </div>
+                                <div class="column"> &#x20b9; 6,000</div>
+                                <div class="column"> &#x20b9; 2,700</div>
                             </div>
                         </div>
 
                         <h6 class="content-heading">Entry Fee</h6>
                         <div class="entry-fee">
                             <div class="header">
-                                <div class="column">SINGLES</div>
                                 <div class="column">TEAM</div>
                             </div>
                             <div class="fee">
-                                <div class="column">&#x20b9; </div>
-                                <div class="column">&#x20b9; </div>
+                                <div class="column">&#x20b9; 800</div>
                             </div>
                         </div>
 
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
+                            Labdhi Jain: 9930390635
+                            <br>    
+                            Aditi Joisher: 8291415239       
                         </p>
+                        <br>    
                     </div>
                     <!-- END OF GIRLS SECTION -->
                 </div>
@@ -1268,6 +1375,11 @@
                         <h6 class="content-heading">Rules</h6>
                         <div class="content">
                             <ul>
+                                <li>No. of players per team : 6+6</li>
+                                <li>Best of 3 sets</li>
+                                <li>All the rules and standards to be followed, apart from above mentioned, are according to FIVB</li>
+                                <li>Libero kit should be of a different colour</li>
+                                <li>Direct knockout format</li>
                             </ul>
                         </div>
 
@@ -1279,32 +1391,31 @@
                                 <div class="column">2<sup>nd</sup> Place</div>
                             </div>
                             <div class="winning-place">
-                                <div class="column label">singles </div>
-                                <div class="column"> &#x20b9; </div>
-                                <div class="column"> &#x20b9; </div>
-                            </div>
-                            <div class="winning-place">
                                 <div class="column label">team </div>
-                                <div class="column"> &#x20b9; </div>
-                                <div class="column"> &#x20b9; </div>
+                                <div class="column"> &#x20b9; 13,000</div>
+                                <div class="column"> &#x20b9; 6,000</div>
                             </div>
                         </div>
 
                         <h6 class="content-heading">Entry Fee</h6>
                         <div class="entry-fee">
                             <div class="header">
-                                <div class="column">SINGLES</div>
                                 <div class="column">TEAM</div>
                             </div>
                             <div class="fee">
-                                <div class="column">&#x20b9; </div>
-                                <div class="column">&#x20b9; </div>
+                                <div class="column">&#x20b9; 1,200</div>
                             </div>
                         </div>
 
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
+                            Krunal Dattani: 8425935778
+                            <br>    
+                            Paresh Shelke: 8689948183
+                            <br>    
+                            Soham Mehta : 8433617151
                         </p>
+                        <br> 
                     </div>
                     <!-- END OF BOYS SECTION -->
 
@@ -1312,6 +1423,13 @@
                     <div id="girls" class="hidden">
                         <h6 class="content-heading">Rules</h6>
                         <div class="content">
+                            <ul>    
+                                <li>No. of players per team : 6+6.</li>
+                                <li>Best of 3 sets.</li>
+                                <li>All the rules and standards to be followed, apart from above mentioned, are according to FIVB.</li>
+                                <li>Libero kit should be of a different colour.</li>
+                                <li>Direct knockout format.</li>
+                            </ul>
                         </div>
 
                         <h6 class="content-heading">Prize</h6>
@@ -1322,31 +1440,28 @@
                                 <div class="column">2<sup>nd</sup> Place</div>
                             </div>
                             <div class="winning-place">
-                                <div class="column label">singles </div>
-                                <div class="column"> &#x20b9; </div>
-                                <div class="column"> &#x20b9; </div>
-                            </div>
-                            <div class="winning-place">
                                 <div class="column label">team </div>
-                                <div class="column"> &#x20b9; </div>
-                                <div class="column"> &#x20b9; </div>
+                                <div class="column"> &#x20b9; 5,000</div>
+                                <div class="column"> &#x20b9; 2,500</div>
                             </div>
                         </div>
 
                         <h6 class="content-heading">Entry Fee</h6>
                         <div class="entry-fee">
                             <div class="header">
-                                <div class="column">SINGLES</div>
                                 <div class="column">TEAM</div>
                             </div>
                             <div class="fee">
-                                <div class="column">&#x20b9; </div>
-                                <div class="column">&#x20b9; </div>
+                                <div class="column">&#x20b9; 700</div>
                             </div>
                         </div>
 
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
+                            Akanksha Shridharani: 8452029290
+                            <br>    
+                            Kajal Shethia: 7021724900
+                            <br>    
                         </p>
                     </div>
                     <!-- END OF GIRLS SECTION -->
@@ -1356,14 +1471,16 @@
                 
                 <!-- THROWBALL-->
                 <div class="event hidden throwball">
-                    <h3 class="gender selected boys-option">boys</h3>
-                    <h3 class="gender girls-option">girls</h3>
+                    <h3 class="gender boys-option selected">girls</h3>
 
-                    <!-- BOYS-->
+                    <!-- GIRLS-->
                     <div id="boys" class="hidden">
                         <h6 class="content-heading">Rules</h6>
                         <div class="content">
                             <ul>
+                                <li>No. of players per team : 6+4</li>
+                                <li>Tournament will be conducted in league format</li>
+                                <li>Match will be best of three games</li>
                             </ul>
                         </div>
 
@@ -1375,79 +1492,31 @@
                                 <div class="column">2<sup>nd</sup> Place</div>
                             </div>
                             <div class="winning-place">
-                                <div class="column label">singles </div>
-                                <div class="column"> &#x20b9; </div>
-                                <div class="column"> &#x20b9; </div>
-                            </div>
-                            <div class="winning-place">
                                 <div class="column label">team </div>
-                                <div class="column"> &#x20b9; </div>
-                                <div class="column"> &#x20b9; </div>
+                                <div class="column"> &#x20b9; 3,500</div>
+                                <div class="column"> &#x20b9; 1,500</div>
                             </div>
                         </div>
 
                         <h6 class="content-heading">Entry Fee</h6>
                         <div class="entry-fee">
                             <div class="header">
-                                <div class="column">SINGLES</div>
                                 <div class="column">TEAM</div>
                             </div>
                             <div class="fee">
-                                <div class="column">&#x20b9; </div>
-                                <div class="column">&#x20b9; </div>
+                                <div class="column">&#x20b9; 400</div>
                             </div>
                         </div>
 
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
-                        </p>
-                    </div>
-                    <!-- END OF BOYS SECTION -->
-
-                    <!-- GIRLS-->
-                    <div id="girls" class="hidden">
-                        <h6 class="content-heading">Rules</h6>
-                        <div class="content">
-                        </div>
-
-                        <h6 class="content-heading">Prize</h6>
-                        <div class="prize-money team">
-                            <div class="header">
-                                <div class="column"></div>
-                                <div class="column">1<sup>st</sup> Place</div>
-                                <div class="column">2<sup>nd</sup> Place</div>
-                            </div>
-                            <div class="winning-place">
-                                <div class="column label">singles </div>
-                                <div class="column"> &#x20b9; </div>
-                                <div class="column"> &#x20b9; </div>
-                            </div>
-                            <div class="winning-place">
-                                <div class="column label">team </div>
-                                <div class="column"> &#x20b9; </div>
-                                <div class="column"> &#x20b9; </div>
-                            </div>
-                        </div>
-
-                        <h6 class="content-heading">Entry Fee</h6>
-                        <div class="entry-fee">
-                            <div class="header">
-                                <div class="column">SINGLES</div>
-                                <div class="column">TEAM</div>
-                            </div>
-                            <div class="fee">
-                                <div class="column">&#x20b9; </div>
-                                <div class="column">&#x20b9; </div>
-                            </div>
-                        </div>
-
-                        <h6 class="content-heading">Event Heads</h6>
-                        <p class="content">
+                            Debdatta Kundu:  8169206478
+                            <br>    
+                            Shreya Kulkarni:  8454918491
+                            <br>    
                         </p>
                     </div>
                     <!-- END OF GIRLS SECTION -->
-                </div>
-                <!-- END OF THROWBALL -->
 
             </div>
         </div>

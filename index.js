@@ -1,7 +1,7 @@
-$(function(){
+$(function() {
     var sidebarOpen = false;
-    $('#hamburger').click(function(){
-        if(sidebarOpen) {
+    $('#hamburger').click(function() {
+        if (sidebarOpen) {
             $('.sidebar-wrapper').removeClass('open');
             $('.sidebar-wrapper').addClass('close');
             $('.section').removeClass('sidebar-open');
@@ -14,4 +14,22 @@ $(function(){
         }
         sidebarOpen = !sidebarOpen;
     });
+
+
+    //**********************************************************
+    //                    COUNTERS
+    //**********************************************************
+    var start = 100;
+    var speed = 50;
+    $(document).ready(function() {
+        go();
+        setInterval(function() {
+            go();
+        }, speed);
+    });
+
+    function go() {
+        $(".counter").html(start.toFixed(0));
+        start = (start + 1) % 500 + 100;
+    }
 });
