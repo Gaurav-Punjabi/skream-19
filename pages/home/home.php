@@ -38,7 +38,7 @@
         require_once('../includes/components/social-links.php');
     ?>
 
-    <section class="home section">
+    <section id="home" class="home section">
         <!-- HAMBURGER -->
         <?php
                 require_once('../includes/components/hamburger.php');
@@ -58,24 +58,34 @@
 
         <!-- RIGHT SECTION -->
         <div class="home-info">
+
             <div id="default-home-section"></div>
-            <div id="about-section">
-                <div class="about-section-wrapper animated faster fadeInRight">
-                    <div class="about-divider"></div>
-                    <h3 class="about-heading">About <br><span>Scream</span></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, quasi aut cum sed voluptatibus odit, architecto impedit, doloremque quossit amet, consectetur adipisicing elit. Aliquam dicta iusto sequi aperiam qui, quo. Fuga, ipsum sunt. Odio totam laboriosam veritatis cupiditate quod delectus vel sed quaerat! Nihil, ad?</p>
+            <div class="card" id="about-section">
+                <div class="card-content animated faster fadeInRight">
+                    <div class="divider long"></div>
+                    <h3 class="heading">About <br><span>Scream</span></h3>
+                    <br>    <br>    
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, quasi aut cum sed voluptatibus odit, architecto impedit, doloremque quossit amet, consectetur adipisicing elit. Aliquam dicta iusto sequi aperiam qui, quo. Fuga, ipsum sunt. Odio totam laboriosam veritatis cupiditate quod delectus vel sed quaerat! Nihil, ad?</p>
                 </div>
             </div>
-            <div id="about-kjsce">
-                <div class="about-section-wrapper animated faster fadeInRight">
-                    <div class="about-divider"></div>
-                    <h3 class="about-heading">About <br><span>KJSCE</span></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus corporis tempora consectetur porro ut dolores voluptas perspiciatis harum, earum possimus nobis laboriosam totam, pariatur quibusdam iusto. Eligendi, ut tempora optio.</p>
+            <div class="card" id="about-kjsce">
+                <div class="card-content animated faster fadeInRight">
+                    <div class="divider long"></div>
+                    <h3 class="heading">About <br><span>KJSCE</span></h3>
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus corporis tempora consectetur porro ut dolores voluptas perspiciatis harum, earum possimus nobis laboriosam totam, pariatur quibusdam iusto. Eligendi, ut tempora optio.</p>
                 </div>
             </div>
-            <div class="home-pagination">
-                
+            <div class="pagination-container">
+                <div id="page-0" class="indicator active"></div>
+                <div id="page-1" class="indicator"></div>
+                <div id="page-2" class="indicator"></div>
             </div>
+
+            <!-- ADDING THE INFINITE COUNTERS -->
+            <?php
+                require_once('../includes/components/light-counters.php');
+            ?>
+            <!-- END OF INFINITE COUNTERS -->
         </div>
         <!--END OF RIGHT SECTION -->
     </section>

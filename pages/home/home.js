@@ -1,32 +1,85 @@
-$(function(){
+$(function() {
     var isScrolling = false;
     var subpages = ['#default-home-section', '#about-section', '#about-kjsce'];
-    for(var i=1;i<subpages.length;i++) {
+    for (var i = 1; i < subpages.length; i++) {
         $(subpages[i]).hide();
     }
     var currentIndex = 0;
-    $('.home').bind('mousewheel', function(e){
-        e.preventDefault();
-        alert("Evenr Gennerated");
-        if(!isScrolling) {
-            isScrolling = true;
-            setTimeout(function(){
-                isScrolling = false;
-            }, 1500);
-            if(e.originalEvent.wheelDelta /120 > 0) {
-                if(currentIndex > 0) {
-                    currentIndex--;
-                    $(subpages[currentIndex+1]).toggle();
-                    $(subpages[currentIndex]).toggle();
-                }
+
+    var elem = document.getElementById('home'),
+        marker = true,
+        delta,
+        direction,
+        interval = 50,
+        counter1 = 0,
+        counter2;
+
+    if (elem.addEventListener) {
+        if ('onwheel' in document) elem.addEventListener('wheel', wheel);
+        else if ('onmousewheel' in document) elem.addEventListener('mousewheel', wheel);
+        else elem.addEventListener('MozMousePixelScroll', wheel);
+    } else elem.attachEvent('onmousewheel', wheel);
+
+    function wheel(e) {
+        counter1 += 1;
+        e = e || window.event;
+        delta = e.deltaY || e.detail || e.wheelDelta;
+        if (delta > 0) { direction = 'up'; } else { direction = 'down'; }
+        if (marker) wheelStart();
+        return false;
+    }
+
+    function wheelStart() {
+        marker = false;
+        wheelAct();
+    }
+
+    function wheelAct() {
+        counter2 = counter1;
+        setTimeout(function() {
+            if (counter2 == counter1) {
+                wheelEnd();
+            } else {
+                wheelAct();
             }
-            else{
-                if(currentIndex < subpages.length - 1) {
-                    currentIndex++;
-                    $(subpages[currentIndex-1]).toggle();
-                    $(subpages[currentIndex]).toggle();
-                }
-            }
+        }, interval);
+    }
+
+    function wheelEnd() {
+        marker = true,
+            counter1 = 0,
+            counter2 = 0;
+        if (direction == 'up')
+            previousPage();
+        else
+            nextPage();
+    }
+
+
+    function nextPage() {
+        if (currentIndex > 0) {
+            deactivateIndicator();
+            currentIndex--;
+            activateIndicator();
+            $(subpages[currentIndex + 1]).toggle();
+            $(subpages[currentIndex]).toggle();
         }
-    });
+    }
+
+    function previousPage() {
+        if (currentIndex < subpages.length - 1) {
+            deactivateIndicator();
+            currentIndex++;
+            activateIndicator();
+            $(subpages[currentIndex - 1]).toggle();
+            $(subpages[currentIndex]).toggle();
+        }
+    }
+
+    function deactivateIndicator() {
+        $('#page-' + currentIndex).removeClass('active');
+    }
+    function activateIndicator() {
+        $('#page-' + currentIndex).addClass('active');   
+    }
 });
