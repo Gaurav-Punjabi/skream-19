@@ -286,7 +286,8 @@ body {
     z-index: 500;
 }
 .counters.dark .counter {
-    color: var(--bg-color);
+    font-family: UniSansRegular;
+    color: #333;
 }
 .counter {
     color: white;

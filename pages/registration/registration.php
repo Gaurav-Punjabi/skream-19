@@ -122,6 +122,12 @@
             <h6 class="heading">registration</h6>
         </div>
         <!--END OF RIGHT SECTION -->
+
+        <!-- ADDING THE INIFINTE COUNTER -->
+        <?php
+            require_once('../includes/components/dark-counters.php');
+        ?>
+        <!-- END OF INIFINTE COUNTERS -->
     </section>
     <a class="compete-button-bottom" href="javascript:;" class="btn">Compete Now</a>
     <!-- JQUERY -->

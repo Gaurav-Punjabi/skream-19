@@ -1593,12 +1593,14 @@
                 <div class="divider long animated faster slidInUp"></div>
                 <h6 class="event-heading animated faster slidInUp">Throwball</h6>
             </div>
-
-            <!--  
-                   div.box-cricket.heading-container.hidden>div.divider.long.animated.faster.slidInUp+h6.event-heading.animated.faster.slidInUp{Box Cricket}
-            -->
         </div>
         <!--END OF RIGHT SECTION -->
+
+        <!-- ADDING THE INFINITE COUNTERS -->
+            <?php
+                require_once('../includes/components/light-counters.php');
+            ?>
+            <!-- END OF INFINITE COUNTERS -->
     </section>
 
     <!-- JQUERY -->
