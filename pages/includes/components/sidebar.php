@@ -1,13 +1,14 @@
+
 <div class="sidebar-wrapper">
     <nav>
-        <li class="sidebar-option <?php echo ($page == HOME_PAGE ? 'selected' : '') ?>">home</li>
-        <li class="sidebar-option">events</li>
-        <li class="sidebar-option">rules</li>
-        <li class="sidebar-option">accommodation</li>
-        <li class="sidebar-option">registration</li>
-        <li class="sidebar-option">parvaah</li>
-        <li class="sidebar-option">sponsors</li>
-        <li class="sidebar-option">about us</li>
-        <li class="sidebar-option">contact</li>
+        <?php
+            $options = ['home', 'events', 'rules', 'accomodation', 'registration', 'parvaah', 'sponsors', 'contact'];
+            $links = ['../home/home.php', '../events/events.php', '../rules/rules.php', '../accomodation/accomodation.php', '../registration/registration.php', '../parvah/parvah.php', '../sponsors/sponsors.php', '../contact/contact.php'];
+            for($i=0;$i<sizeof($options);$i++) {
+        ?>
+        <a href="<?php echo $links[$i] ?>" class="animated fadeInUp"><li class="sidebar-option animated"> <?php echo $options[$i]; ?> </li></a>
+        <?php
+            }
+        ?>
     </nav>
 </div>
