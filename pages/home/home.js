@@ -1,6 +1,6 @@
 $(function() {
     var isScrolling = false;
-    var subpages = ['#default-home-section', '#about-section', '#about-kjsce'];
+    var subpages = ['#about-section', '#about-section-2','#about-kjsce'];
     for (var i = 1; i < subpages.length; i++) {
         $(subpages[i]).hide();
     }

@@ -59,20 +59,31 @@
         <!-- RIGHT SECTION -->
         <div class="home-info">
 
-            <div id="default-home-section"></div>
             <div class="card" id="about-section">
                 <div class="card-content animated faster fadeInRight">
                     <div class="divider long"></div>
+                    <h3 class="heading"><span>Scream</span></h3>
+                    <p class="content">
+                        Skream is the annual national level sports festival of K.J. Somaiya College of Engineering and has completed 5 editions so far. It was started in 2014 with the aim of cultivating a culture of sportsmanship, competitiveness, and discipline amongst the students of various colleges. Skream hosts students from over 100 institutes spread across the country and boasts an array of indoor as well as outdoor games such as Football, Cricket, Badminton, Chess, Throwball, Basketball, Lawn Tennis, Squash etc. 
+                    </p>
+                </div>
+            </div>
+            <div class="card" id="about-section-2">
+                <div class="card-content animated faster fadeInRight">
+                    <div class="divider long"></div>
                     <h3 class="heading">About <br><span>Scream</span></h3>
-                    <br>    <br>    
-                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, quasi aut cum sed voluptatibus odit, architecto impedit, doloremque quossit amet, consectetur adipisicing elit. Aliquam dicta iusto sequi aperiam qui, quo. Fuga, ipsum sunt. Odio totam laboriosam veritatis cupiditate quod delectus vel sed quaerat! Nihil, ad?</p>
+                    <p class="content">
+                        Skream has been graced by prominent sports personalities such as Mr. Balwinder Singh Sandhu, Mr. Rustom Patel, Ms. Manasi Joshi, Mr. Wasim Jaffer, Mr. Devindar Walmiki, and the list goes on. Skream along with Parvaah, the social initiative of KJSCE, has hosted paralympic teams such as the Wheelchair Basketball Federation of India, Indian Blind Football Federation etc. It follows the contingency system, and this has been a major reason for the ever-increasing participation of contingent teams. Skream is one of the best sports festivals in India and continues to grow bigger with every passing year.
+                    </p>
                 </div>
             </div>
             <div class="card" id="about-kjsce">
                 <div class="card-content animated faster fadeInRight">
                     <div class="divider long"></div>
                     <h3 class="heading">About <br><span>KJSCE</span></h3>
-                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus corporis tempora consectetur porro ut dolores voluptas perspiciatis harum, earum possimus nobis laboriosam totam, pariatur quibusdam iusto. Eligendi, ut tempora optio.</p>
+                    <p class="content">
+                        K.J. Somaiya College of Engineering is located in the Somaiya Vidyanagari campus, Vidyavihar. Catering to about 40,000 students every day, this campus offers diverse fields of education such as Engineering, Management, Commerce, Arts, and Sciences along with actively promoting sports. Somaiya Vidyavihar boasts a 65-acre campus with sprawling grounds for various sports. Being granted Autonomous status from the academic year 2014-15, K.J. Somaiya College of Engineering also enjoys the status of being graded ‘A’ by the NAAC (National Assessment and Accreditation Council) in 2017
+                    </p>
                 </div>
             </div>
             <div class="pagination-container">

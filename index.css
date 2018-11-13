@@ -394,7 +394,7 @@ body {
 }
 .home-info .card .card-content .heading {
     font-family: UniSansRegular;
-    font-size: 5rem;
+    font-size: 4.6rem;
     color: var(--secondary-color);
     text-transform: uppercase;
     letter-spacing: 1px;
