@@ -18,7 +18,9 @@
     <!--ANIMATE CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
     <!-- GLOBAL STYLES -->
-    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" media="screen and (min-device-width: 1025px) and (max-device-width: 1920px)" href="../../index.css">
+    <!-- MOBILE CSS -->
+    <link rel="stylesheet" media="screen and (max-device-width: 480px)" href="../../mobile.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn t work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -64,7 +66,7 @@
                     <div class="divider long"></div>
                     <h3 class="heading"><span>Scream</span></h3>
                     <p class="content">
-                        Skream is the annual national level sports festival of K.J. Somaiya College of Engineering and has completed 5 editions so far. It was started in 2014 with the aim of cultivating a culture of sportsmanship, competitiveness, and discipline amongst the students of various colleges. Skream hosts students from over 100 institutes spread across the country and boasts an array of indoor as well as outdoor games such as Football, Cricket, Badminton, Chess, Throwball, Basketball, Lawn Tennis, Squash etc. 
+                        Skream is the annual national level sports festival of K.J. Somaiya College of Engineering and has completed 5 editions so far. It was started in 2014 with the aim of cultivating a culture of sportsmanship, competitiveness, and discipline amongst the students of various colleges. Skream hosts students from over 100 institutes spread across the country and boasts an array of indoor as well as outdoor games such as Football, Cricket, Badminton, Chess, Throwball, Basketball, Lawn Tennis, Squash etc.
                     </p>
                 </div>
             </div>
@@ -90,6 +92,15 @@
                 <div id="page-0" class="indicator active"></div>
                 <div id="page-1" class="indicator"></div>
                 <div id="page-2" class="indicator"></div>
+            </div>
+
+
+            <div class="social-links-mobile">
+                <a href="<?php echo FACEBOOK_LINK ?>"><i class="social-link fa fa-facebook"></i></a>
+                <a href="<?php echo TWITTER_LINK ?>"><i class="social-link fa fa-twitter"></i></a>
+                <a href="<?php echo SNAPCHAT_LINK ?>"><i class="social-link fa fa-snapchat-ghost"></i></a>
+                <a href="<?php echo INSTAGRAM_LINK ?>"><i class="social-link fa fa-instagram"></i></a>
+                <a href="<?php echo YOUTUBE_LINK ?>"><i class="social-link fa fa-youtube-play"></i></a>
             </div>
 
             <!-- ADDING THE INFINITE COUNTERS -->

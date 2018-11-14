@@ -18,7 +18,9 @@
     <!--ANIMATE CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
     <!-- GLOBAL STYLES -->
-    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" media="screen and (min-device-width: 1025px) and (max-device-width: 1920px)" href="../../index.css">
+    <!-- MOBILE CSS -->
+    <link rel="stylesheet" media="screen and (max-device-width: 480px)" href="../../mobile.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn t work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -44,11 +46,84 @@
                 require_once('../includes/components/hamburger.php');
             ?>
 
+       <!-- RIGHT SECTION -->
+        <div class="events-info mobile">
+            <div class="heading-container select-a-event">
+                <div class="divider long animated faster slideInUp"></div>
+                <h6 class="event-heading animated faster slideInUp">Events</h6>
+            </div>
+
+            <div class="football heading-container hidden">
+                <div class="divider long animated faster slideInUp"></div>
+                <h6 class="event-heading animated faster slideInUp">Football</h6>
+            </div>
+
+            <div class="badminton heading-container hidden">
+                <div class="divider long animated faster slideInUp"></div>
+                <h6 class="event-heading animated faster slideInUp">Badminton</h6>
+            </div>
+
+            <div class="cricket heading-container hidden">
+                <div class="divider long animated faster slideInUp"></div>
+                <h6 class="event-heading animated faster slideInUp">Cricket</h6>
+            </div>
+
+            <div class="rink-football heading-container hidden">
+                <div class="divider long animated faster slideInUp"></div>
+                <h6 class="event-heading animated faster slideInUp">Rink Football</h6>
+            </div>
+
+            <div class="box-cricket heading-container hidden">
+                <div class="divider long animated faster slidInUp"></div>
+                <h6 class="event-heading animated faster slidInUp">Box Cricket</h6>
+            </div>
+
+            <div class="squash heading-container hidden">
+                <div class="divider long animated faster slidInUp"></div>
+                <h6 class="event-heading animated faster slidInUp">squash</h6>
+            </div>
+
+            <div class="lawn-tennis heading-container hidden">
+                <div class="divider long animated faster slidInUp"></div>
+                <h6 class="event-heading animated faster slidInUp">Lawn Tennis</h6>
+            </div>
+
+            <div class="table-tennis heading-container hidden">
+                <div class="divider long animated faster slidInUp"></div>
+                <h6 class="event-heading animated faster slidInUp">Table Tennis</h6>
+            </div>
+
+            <div class="carrom heading-container hidden">
+                <div class="divider long animated faster slidInUp"></div>
+                <h6 class="event-heading animated faster slidInUp">Carrom</h6>
+            </div>
+
+            <div class="athletics heading-container hidden">
+                <div class="divider long animated faster slidInUp"></div>
+                <h6 class="event-heading animated faster slidInUp">Athletics</h6>
+            </div>
+            
+            <div class="basketball heading-container hidden">
+                <div class="divider long animated faster slidInUp"></div>
+                <h6 class="event-heading animated faster slidInUp">Basketball</h6>
+            </div>
+            
+            <div class="volleyball heading-container hidden">
+                <div class="divider long animated faster slidInUp"></div>
+                <h6 class="event-heading animated faster slidInUp">Volleyball</h6>
+            </div>
+            
+            <div class="throwball heading-container hidden">
+                <div class="divider long animated faster slidInUp"></div>
+                <h6 class="event-heading animated faster slidInUp">Throwball</h6>
+            </div>
+        </div>
+       
         <!-- LEFT SECTION -->
         <div class="fixed-section">
             <div class="event-wrapper animated fadeInUp">
                 <img class="logo small" src="../../assets/images/logo/skream-logo.svg" alt="Skream Logo">
-                <div class="custom-select" style="width:250px;">
+                <div class="custom-select" id="select-event">
                     <select>
                         <option>select-a-event</option>
                         <option>badminton</option>
@@ -1523,7 +1598,7 @@
         <!-- END OF LEFT SECTION -->
 
         <!-- RIGHT SECTION -->
-        <div class="events-info">
+        <div class="events-info desktop">
             <div class="heading-container select-a-event">
                 <div class="divider long animated faster slideInUp"></div>
                 <h6 class="event-heading animated faster slideInUp">Events</h6>

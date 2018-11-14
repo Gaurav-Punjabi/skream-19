@@ -11,7 +11,6 @@ body {
     height: 100%;
     margin: 0;
     background: var(--bg-color);
-    overflow-x: hidden;
 }
 /************************************************************************************************
                                     GENERAL STYLING SECTION
@@ -19,34 +18,13 @@ body {
 .hidden {
     display: none;
 }
-.section {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-.section.sidebar-open {
-    animation-name: push-right;
-    animation-duration: 200ms;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    animation-direction: normal;
-}
-
-.section.sidebar-close {
-    animation-name: push-left;
-    animation-duration: 200ms;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
-    animation-direction: normal;
-}
 
 .hamburger {
     position: fixed;
-    width: 80px;
-    height: 80px;
-    left: 15px;
-    top: 15px;
+    width: 50px;
+    height: 50px;
+    left: 10px;
+    top: 10px;
     background: url('assets/images/hamburger.png') no-repeat center center;
     background-size: cover;
     z-index: 999;
@@ -62,8 +40,8 @@ body {
 
 .divider.long {
     color: var(--secondary-color);
-    width: 150px;
-    height: 8px;
+    width: 100px;
+    height: 5px;
     margin-bottom: 20px;
 }
 
@@ -72,7 +50,7 @@ body {
 .custom-select {
     position: relative;
     font-family: 'UniSansBold';
-    font-size: 22px;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -91,11 +69,11 @@ body {
 .select-selected:after {
     position: absolute;
     content: "";
-    top: 18px;
+    top: 15px;
     right: 20px;
     width: 0;
     height: 0;
-    border: 8px solid transparent;
+    border: 6px solid transparent;
     border-color: var(--bg-color) transparent transparent transparent;
 }
 }
@@ -103,7 +81,7 @@ body {
 /*point the arrow upwards when the select box is open (active):*/
 .select-selected.select-arrow-active:after {
     border-color: transparent transparent #fff transparent;
-    top: 124px;
+    top: 40px;
 }
 
 /*style the items (options), including the selected item:*/
@@ -155,19 +133,24 @@ body {
 
 /*----------------------------------------SOCIAL-LINKS-----------------------------------------*/
 .social-links {
-    z-index: 500;
-    position: fixed;
-    top: 40px;
-    right: 5%;
+    display: none;
+}
+.social-links-mobile {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .social-link {
     color: var(--secondary-color);
-    font-size: 24px;
+    font-size: 2rem;
     margin-left: 50px;
     cursor: pointer;
 }
-
+.social-links-mobile .social-link {
+    margin-left: 0;
+}
 
 /*-------------------------------------KEYFRAMES-----------------------------------------------*/
 @keyframes push-right {
@@ -198,13 +181,11 @@ body {
                                     SIDEBAR STYLING SECTION
 ************************************************************************************************/
 .sidebar-wrapper {
-    width: 50%;
+    width: 100%;
     height: 100%;
     background-color: var(--primary-color);
-    position: fixed;
-    top: 0;
-    left: -50%;
     display: flex;
+    z-index: 999;
     flex-direction: column;
     justify-content: center;
     align-content: center;
@@ -212,19 +193,19 @@ body {
 }
 
 .sidebar-wrapper.open {
-    animation-name: open;
-    animation-duration: 200ms;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    animation-direction: normal;
+    display: flex;
 }
 
 .sidebar-wrapper.close {
-    animation-name: close;
-    animation-duration: 200ms;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    animation-direction: normal;
+    display: none;
+}
+
+.section.sidebar-open {
+    display: none;
+}
+
+.section.sidebar-close {
+    display: flex;
 }
 
 
@@ -249,113 +230,72 @@ body {
     color: white;
 }
 
-/*-------------------------------------KEYFRAMES-----------------------------------------------*/
-@keyframes open {
-    from {
-        left: -50%;
-    }
-
-    to {
-        left: 0
-    }
-}
-
-@keyframes close {
-    from {
-        left: 0%;
-    }
-
-    to {
-        left: -50%;
-    }
-}
-
 /************************************************************************************************
                                       COUNTERS PAGE STYLING
 ************************************************************************************************/
 .counters {
-    height: 100%;
-    width: 4%;
-    position: fixed;
-    right: 0;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    z-index: 500;
+    display: none;
 }
-.counters.dark .counter {
-    font-family: UniSansRegular;
-    color: #333;
-}
-.counter {
-    color: white;
-    font-family: UniSansLight;
-    letter-spacing: 1px;
-    font-size: 12px;
-    margin: 30px 0;
-    transform: rotate(270deg);
-}
-
 
 /************************************************************************************************
                                     HOME PAGE STYLING
 ************************************************************************************************/
 .home {
     height: 100%;
-    display: flex;
-    flex-direction: row;
 }
 
 /*-------------------------------------FIXED SECTION-----------------------------------------------*/
 .fixed-section {
-    flex: 1;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .home-fixed-wrapper {
     display: flex;
-    margin-left: 20%;
-    padding-top: 8%;
+    margin-top: 45%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-left: 15%;
 }
 
 .logo {
-    width: 70%;
-    margin-bottom: 130px;
+    width: 80%;
+    margin-bottom: 15%;
 }
 
 .divider {
-    width: 130px;
-    height: 3px;
+    width: 50px;
+    height: 5px;
     background: var(--secondary-color);
-    margin-bottom: 10px;
+    margin-bottom: 1%;
 }
 
 .home-heading {
     text-transform: uppercase;
     font-family: 'UniSansBold';
     line-height: 1em;
-    font-size: 55px;
+    font-size: 40px;
+    align-self: flex-start;
+    margin-left: 50%;
+    display: inline-block;
     color: var(--secondary-color);
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 3%;
 }
 
 .skream-date {
     font-family: 'UniSansThin';
     letter-spacing: 5px;
     font-weight: 300;
-    font-size: 36px;
+    font-size: 24px;
     color: var(--secondary-color);
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 10%;
 }
 
 .compete-button {
@@ -364,7 +304,7 @@ body {
     padding: 5px 20px;
     font-family: 'UniSansLight';
     color: white;
-    font-size: 22px;
+    font-size: 20px;
     border-radius: 30px;
     text-decoration: none;
     outline: none;
@@ -378,8 +318,8 @@ body {
 
 /*-------------------------------------INFO SECTION-----------------------------------------------*/
 .home-info {
+    height: 100%;
     flex: 1;
-    background: url('assets/images/2.png') no-repeat center center;
 }
 .home-info .card { 
     height: 100%;
@@ -394,10 +334,11 @@ body {
 }
 .home-info .card .card-content .heading {
     font-family: UniSansRegular;
-    font-size: 4.6rem;
+    font-size: 4rem;
     color: var(--secondary-color);
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-bottom: 10%;
 }
 .home-info .card .card-content .heading span {
     font-family: UniSansBold;
@@ -410,15 +351,7 @@ body {
 }
 
 .home-info .pagination-container {
-    width: 50%;
-    height: 10%;
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: none;
 }
 .home-info .pagination-container .indicator {
     width: 15px;
@@ -430,37 +363,55 @@ body {
 .home-info .pagination-container .indicator.active {
     background: var(--secondary-color);   
 }
+#about-section {
+    background: url('assets/images/2.png') no-repeat center center;
+}
+#about-section-2 {
+    background: url('assets/images/Box%20Cricket.png') no-repeat center center;
+}
+#about-kjsce {
+    background: url('assets/images/athletics.png') no-repeat center center;
+}
 
 /************************************************************************************************
                                     EVENTS PAGE STYLING
 ************************************************************************************************/
 .events {
     height: 100%;
+    overflow: scroll;
 }
 
 .events .fixed-section {
-    width: 55%;
+    width: 100%;
     flex-direction: column;
     height: 100%;
+    overflow: scroll;
     justify-content: flex-start;
+    padding-top: 10%;
     align-items: flex-start;
+}
+.events .fixed-section .logo.small {
+    display: none;
 }
 .event-wrapper {
     display: flex;
-    margin-left: 120px;
-    margin-right: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
+.events .fixed-section .event-wrapper #select-event{
+    width: 200px;
+    z-index: 300;
+}
 
 .event .gender {
-    font-size: 32px;
+    font-size: 20px;
     font-family: 'UniSansBold';
     text-transform: uppercase;
-    margin-right: 80px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-right: 50px;
+    margin-bottom: 50px;
     cursor: pointer;
     color: var(--accent-color);
     display: inline-block;
@@ -477,35 +428,37 @@ body {
 }
 .event .content {
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 1px;
+    text-overflow: clip;
     font-family: 'UniSansRegular';
-    margin-top: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
+
 .event .content .headings li {
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 1px;
 }
 .event .content li {
     text-transform: uppercase;
+    font-size: 8px;
 }
 .event .content span {
     font-family: 'UniSansBold';
 }
 
 .prize-money {
-    width: 350px;
+    width: 250px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .prize-money.team {
-    height: 80px;
+    height: 40px;
 }
 .prize-money.col-2 {
-    height: 60px;
+    height: 30px;
 }
 
 .prize-money.no-margin {
@@ -518,10 +471,10 @@ body {
 .prize-money.team .header .column {
     flex: 1;
     letter-spacing: 1px;
-    font-size: 15px;
+    font-size: 12px;
     font-family: 'UniSansRegular';
     color: #fff;
-    padding-left: 13px;
+    padding-left: 5px;
     margin: 1px;
 }
 .prize-money.team .winning-place {
@@ -530,9 +483,10 @@ body {
 }
 .prize-money.team .winning-place .column {
     flex: 1;
-    font-size: 20px;
+    font-size: 12px;
     color: #fff;
     margin-top: 2px;
+    padding-top: 3px;
     margin-right: 2px;
     padding-left: 13px;
     font-family: 'UniSansBold';
@@ -543,7 +497,7 @@ body {
     flex: 1;
     background: #0F2947;
     color: #597CA4;
-    font-size: 16px;
+    font-size: 12px;
     text-transform: uppercase;
     padding-top: 5px;
     text-align: center;
@@ -555,7 +509,7 @@ body {
     width: 200px;
     height: 60px;
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     flex-direction: column;
 }
 .entry-fee.no-margin {
@@ -596,44 +550,37 @@ body {
     background: #2C5A8F;
 }
 /*-------------------------------------RIGHT SECTION-----------------------------------------------*/
-.events-info {
-    flex: 1;
-    height: 100%;
-    display: flex;
-    position: fixed;
-    width: 45%;
-    left: 55%;
-    top: 0;
+.events-info.desktop {
+    display: none;
+}
+.events-info.mobile {
+    height: 30%;
+    width: 100%;
+    margin-top: 70px;
     flex-direction: row;
     justify-content: center;
     align-content: flex-start;
 }
-.section.sidebar-open .events-info {
-    left: 120%;
-}
-.section.sidebar-close .events-info {
-    left: 55%;
-}
 
 .events-info .event-heading {
     color: var(--secondary-color);
-    font-size: 60px;
+    font-size: 3rem;
     text-transform: uppercase;
     font-family: 'UniSansBold';
-    margin-left: -10%;
-    letter-spacing: 15px;
+    letter-spacing: 0.9rem;
 }
-
-.events-info .divider.long {
-    margin-left: -10%;
+.events-info .divider {
+    margin-bottom: 10px;
 }
-
 
 .events-info .heading-container {
     flex: 1;
     display: flex;
+    height: 100%;
+    padding-left: 20px;
+    padding-bottom: 20px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-content: flex-start;
     background-size: cover;
     background-repeat: no-repeat;
