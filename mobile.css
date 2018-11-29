@@ -998,3 +998,17 @@ body {
 .parvaah-info .pagination-container .indicator.active {
     background: var(--secondary-color);   
 }
+
+
+/************************************************************************************************
+                                        SPONSORS PAGE STYLING
+************************************************************************************************/
+.usesvh {
+    text-align: center;
+}
+.usesvh .logo.small {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+

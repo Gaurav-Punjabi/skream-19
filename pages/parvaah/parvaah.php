@@ -39,64 +39,19 @@
     ?>
 
     <section id="parvaah" class="parvaah section">
-        <!-- HAMBURGER -->
+        <div class="parvah-info-container col-md-12">
+            <div class="logo-container">
+                <img src="../../assets/images/logo/parvah-1.svg" alt="Parvah Logo">
+                <img src="../../assets/images/logo/parvah-2.svg" alt="Parvah Logo">
+            </div>
+            <p class="content">
+                The social initiative of K.J. Somaiya College of engineering, named Parvaah, works each year with a purpose of providing to the underprivileged and oppressed. This time around, Parvaah is on a mission to establish a “Zero Waste Community,” wherein constant efforts are being made for reducing, reusing and recycling the waste generated and contributing back to the society.
+            </p>
+        </div>
+        <!-- ADDING THE INFINITE COUNTERS -->
         <?php
-                require_once('../includes/components/hamburger.php');
+            require_once('../includes/components/light-counters.php');
         ?>
-
-        <!-- LEFT SECTION -->
-        <div class="parvaah-fixed">
-            <img class="logo" src="../../assets/images/parvahlogo.png" alt="Skream Logo">
-            <p class="content">Parvaah is the social initiative of K. J. Somaiya College of Engineering and was born out of the need to give back to the society. Over the years, Parvaah has taken up various social issues such as women’s safety, child welfare, and LGBT rights. This year, Parvaah has taken up the cause of health and sanitation, and its major goal is to make Mumbai a clean and hygienic city. Many famous and distinguished personalities such as Ranbir Kapoor, Maharashtra Chief Minister Devendra Fadnavis, Sushant Singh Rajput, Comedian Kapil Sharma have signed the undertaking and have pledged to support Parvaah in its endeavours. Parvaah has inspired the younger generation to work for the collective good of the society and strives to make the world a better place to live.</p>
-        </div>
-        <!-- END OF LEFT SECTION -->
-
-        <!-- RIGHT SECTION -->
-        <div class="parvaah-info">
-
-            <div class="card" id="beach-cleanup">
-                <div class="card-content animated faster fadeInRight">
-                    <img src="../../assets/images/parvaah/beachclean.png" alt="Beach Clean Up Image">
-                    <h3 class="heading"><span>Beach Cleanup</span></h3>
-                    <p class="content">
-                        Under the initiative of health and sanitation, and in accordance with the government’s Swacch Bharat Abhiyan, Parvaah has undertaken the task of beautifying Versova beach. Along with long-time crusader Mr. Afroz Shah who is acknowledged as a United Nations’ Champion of the Earth, Parvaah has organized weekend cleanup drives at Versova beach. It’s an attempt to restore the pride of the beach and make it pristine again. If one wants to bring about a change, then it must come from within oneself, and this is a wonderful opportunity to restore the pride of the city and send a message to the society regarding importance of cleanliness.
-                    </p>
-                </div>
-            </div>
-            
-            
-            <div class="card" id="marathon">
-                <div class="card-content animated faster fadeInRight">
-                    <img src="../../assets/images/parvaah/marathon.png" alt="Beach Clean Up Image">
-                    <h3 class="heading"><span>Marathon</span></h3>
-                    <p class="content">
-                        Parvaah plans to organize a marathon in association with a cancer research institute to raise awareness about the deadly disease. It’s an attempt to educate people about cancer and the ways to fight against it. There will also be a fund-raiser event for the cancer victims, which will be a small step towards helping the patients get cured.
-                    </p>
-                </div>
-            </div>
-            
-            <div class="card" id="e-waste">
-                <div class="card-content animated faster fadeInRight">
-                    <img src="../../assets/images/parvaah/ewaste.png" alt="Beach Clean Up Image">
-                    <h3 class="heading"><span>Awareness about electronic waste</span></h3>
-                    <p class="content">
-                        In an attempt to raise awareness about the importance of e-waste management, Parvaah has decided to install e-waste bins in the college premises. This will go a long way in the proper disposal of hazardous e-waste, which forms the major constituent of junk in our college.
-                    </p>
-                </div>
-            </div>
-            <div class="pagination-container">
-                <div id="page-0" class="indicator active"></div>
-                <div id="page-1" class="indicator"></div>
-                <div id="page-2" class="indicator"></div>
-            </div>
-
-            <!-- ADDING THE INFINITE COUNTERS -->
-            <?php
-                require_once('../includes/components/light-counters.php');
-            ?>
-            <!-- END OF INFINITE COUNTERS -->
-        </div>
-        <!--END OF RIGHT SECTION -->
     </section>
 
     <!-- JQUERY -->

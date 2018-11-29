@@ -5,6 +5,11 @@
     --accent-color: #2C5A8F;
 }
 
+a {
+    color: transparent;
+    text-decoration: none;
+}
+
 html,
 body {
     width: 100%;
@@ -13,16 +18,22 @@ body {
     background: var(--bg-color);
     overflow-x: hidden;
 }
+
 /************************************************************************************************
                                     GENERAL STYLING SECTION
 ************************************************************************************************/
 .hidden {
     display: none;
 }
+
 .section {
     position: relative;
     top: 0;
     left: 0;
+}
+
+a:focus, a:hover {
+    color: transparent;
 }
 
 .section.sidebar-open {
@@ -144,21 +155,28 @@ body {
     padding: 5px 20px;
     font-family: 'UniSansLight';
     color: var(--bg-color);
-    font-size: 22px;
+    font-size: 26px;
     border-radius: 30px;
     text-decoration: none;
     outline: none;
     position: fixed;
-    bottom: 30px;
-    right: 40px;
+    bottom: 50px;
+    right: 80px;
 }
-
+.compete-button-bottom:hover {
+    color: var(--bg-color);
+    text-decoration: none;
+}
 /*----------------------------------------SOCIAL-LINKS-----------------------------------------*/
 .social-links {
     z-index: 500;
     position: fixed;
     top: 40px;
     right: 5%;
+}
+
+.social-links-mobile {
+    display: none;
 }
 
 .social-link {
@@ -178,7 +196,7 @@ body {
 
     to {
         position: relative;
-        left: 52%;      
+        left: 52%;
     }
 }
 
@@ -232,7 +250,7 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    font-size: 3.8rem;
+    font-size: 2.8em;
     color: var(--secondary-color);
     font-family: 'UniSansBold';
     text-transform: uppercase;
@@ -241,6 +259,10 @@ body {
     outline: none;
     cursor: pointer;
 }
+.sidebar-wrapper .sidebar-option.last {
+    margin-bottom: 0;
+}
+
 .sidebar-wrapper .sidebar-option:hover {
     color: white;
 }
@@ -285,10 +307,12 @@ body {
     align-items: center;
     z-index: 500;
 }
+
 .counters.dark .counter {
     font-family: UniSansRegular;
     color: #333;
 }
+
 .counter {
     color: white;
     font-family: UniSansLight;
@@ -381,17 +405,20 @@ body {
     flex: 1;
     background: url('assets/images/2.png') no-repeat center center;
 }
-.home-info .card { 
+
+.home-info .card {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
+
 .home-info .card .card-content {
     margin-left: 9%;
     margin-right: 9%;
 }
+
 .home-info .card .card-content .heading {
     font-family: UniSansRegular;
     font-size: 4.6rem;
@@ -399,12 +426,14 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
 .home-info .card .card-content .heading span {
     font-family: UniSansBold;
 }
+
 .home-info .card .card-content .content {
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     font-family: UniSansRegular;
     letter-spacing: 1px;
 }
@@ -420,6 +449,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .home-info .pagination-container .indicator {
     width: 15px;
     height: 15px;
@@ -427,8 +457,9 @@ body {
     border-radius: 50%;
     background: #2C5A8F;
 }
+
 .home-info .pagination-container .indicator.active {
-    background: var(--secondary-color);   
+    background: var(--secondary-color);
 }
 
 /************************************************************************************************
@@ -436,6 +467,7 @@ body {
 ************************************************************************************************/
 .events {
     height: 100%;
+    overflow: auto;
 }
 
 .events .fixed-section {
@@ -445,7 +477,9 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
 }
+
 .event-wrapper {
+    min-height: min-content;
     display: flex;
     margin-left: 120px;
     margin-right: 100px;
@@ -465,9 +499,16 @@ body {
     color: var(--accent-color);
     display: inline-block;
 }
+
+.events .fixed-section .event-wrapper #select-event{
+    width: 300px;
+    z-index: 300;
+}
+
 .event .gender.selected {
     color: var(--secondary-color);
 }
+
 .event .content-heading {
     color: var(--secondary-color);
     font-size: 16px;
@@ -475,6 +516,7 @@ body {
     font-family: 'UniSansSemiBold';
     margin: 0;
 }
+
 .event .content {
     color: #fff;
     font-size: 16px;
@@ -483,13 +525,16 @@ body {
     margin-top: 5px;
     margin-bottom: 30px;
 }
+
 .event .content .headings li {
     font-size: 18px;
     letter-spacing: 1px;
 }
+
 .event .content li {
     text-transform: uppercase;
 }
+
 .event .content span {
     font-family: 'UniSansBold';
 }
@@ -504,6 +549,7 @@ body {
 .prize-money.team {
     height: 80px;
 }
+
 .prize-money.col-2 {
     height: 60px;
 }
@@ -511,10 +557,12 @@ body {
 .prize-money.no-margin {
     margin-bottom: 0;
 }
-.prize-money.team .header{
+
+.prize-money.team .header {
     display: flex;
     flex-direction: row;
-} 
+}
+
 .prize-money.team .header .column {
     flex: 1;
     letter-spacing: 1px;
@@ -524,10 +572,12 @@ body {
     padding-left: 13px;
     margin: 1px;
 }
+
 .prize-money.team .winning-place {
     display: flex;
     flex-direction: row;
 }
+
 .prize-money.team .winning-place .column {
     flex: 1;
     font-size: 20px;
@@ -539,6 +589,7 @@ body {
     text-transform: uppercase;
     background: #2C5A8F;
 }
+
 .prize-money.team .winning-place .column.label {
     flex: 1;
     background: #0F2947;
@@ -558,14 +609,17 @@ body {
     margin-bottom: 25px;
     flex-direction: column;
 }
+
 .entry-fee.no-margin {
     margin-bottom: 0;
 }
+
 .entry-fee .header {
     flex: 1;
     display: flex;
     flex-direction: row;
 }
+
 .entry-fee .header .column {
     flex: 1;
     display: flex;
@@ -582,6 +636,7 @@ body {
     display: flex;
     flex-direction: row;
 }
+
 .entry-fee .fee .column {
     flex: 1;
     display: flex;
@@ -595,6 +650,7 @@ body {
     text-transform: uppercase;
     background: #2C5A8F;
 }
+
 /*-------------------------------------RIGHT SECTION-----------------------------------------------*/
 .events-info {
     flex: 1;
@@ -608,9 +664,15 @@ body {
     justify-content: center;
     align-content: flex-start;
 }
+
+.events-info.mobile {
+    display: none;
+}
+
 .section.sidebar-open .events-info {
     left: 120%;
 }
+
 .section.sidebar-close .events-info {
     left: 55%;
 }
@@ -640,12 +702,15 @@ body {
     background-position: center center;
 
 }
+
 .events-info .heading-container.select-a-event {
     background-image: url('./assets/images/2.png');
 }
+
 .events-info .heading-container.cricket {
     background-image: url('./assets/images/Cricket.png');
 }
+
 .events-info .heading-container.football {
     background-image: url('./assets/images/football.png');
 }
@@ -653,33 +718,43 @@ body {
 .events-info .heading-container.badminton {
     background-image: url('./assets/images/badminton.png');
 }
+
 .events-info .heading-container.box-cricket {
     background-image: url('./assets/images/Box%20Cricket.png');
 }
+
 .events-info .heading-container.rink-football {
     background-image: url('./assets/images/Rink%20Football.png');
 }
+
 .events-info .heading-container.squash {
     background-image: url('./assets/images/Squash.png');
 }
+
 .events-info .heading-container.lawn-tennis {
     background-image: url('./assets/images/Tennis.png');
 }
+
 .events-info .heading-container.table-tennis {
     background-image: url('./assets/images/Table%20Tennis.png');
 }
+
 .events-info .heading-container.carrom {
     background-image: url('./assets/images/Carrom.png');
 }
+
 .events-info .heading-container.athletics {
     background-image: url('./assets/images/athletics.png');
 }
+
 .events-info .heading-container.basketball {
     background-image: url('./assets/images/Basketball.png');
 }
+
 .events-info .heading-container.volleyball {
     background-image: url('./assets/images/Volleyball.png');
 }
+
 .events-info .heading-container.throwball {
     background-image: url('./assets/images/Throwball.png');
 }
@@ -691,6 +766,7 @@ body {
     height: 100%;
     width: 100%;
 }
+
 .rules .rules-wrapper .logo.small {
     margin-left: 0;
     width: 20%;
@@ -700,6 +776,7 @@ body {
     width: 70%;
     height: 100%;
 }
+
 .rules .fixed-section .rules-wrapper {
     width: 100%;
     height: 100%;
@@ -709,7 +786,7 @@ body {
 }
 
 
-.rules-wrapper .heading{
+.rules-wrapper .heading {
     font-size: 24px;
     letter-spacing: 1px;
     font-family: UniSansBold;
@@ -717,12 +794,12 @@ body {
     color: var(--secondary-color);
 }
 
-.rules-wrapper .heading.small{
+.rules-wrapper .heading.small {
     font-size: 18px;
     font-family: UniSansSemiBold;
 }
 
-.rules-wrapper .note{
+.rules-wrapper .note {
     font-size: 15px;
     letter-spacing: 1px;
     font-family: UniSansSemiBold;
@@ -745,7 +822,9 @@ body {
     font-family: UniSansBold;
 }
 
-
+.rules-wrapper .main-heading {
+    display: none;
+}
 
 /*-------------------------------------RIGHT SECTION-----------------------------------------------*/
 .rules-info {
@@ -760,9 +839,11 @@ body {
     justify-content: center;
     align-items: flex-start;
 }
+
 .rules-info .divider.long {
     margin-left: -20%;
 }
+
 .rules-info .heading {
     font-size: 70px;
     margin-left: -25%;
@@ -771,7 +852,8 @@ body {
     font-family: 'UniSansBold';
     letter-spacing: 15px;
 }
-.section.sidebar-open .rules-info{
+
+.section.sidebar-open .rules-info {
     left: 120%;
 }
 
@@ -784,6 +866,7 @@ body {
     height: 100%;
     width: 100%;
 }
+
 .accomodation .accomodation-wrapper .logo.small {
     margin-left: 0;
     width: 20%;
@@ -793,6 +876,7 @@ body {
     width: 70%;
     height: 100%;
 }
+
 .accomodation .fixed-section .accomodation-wrapper {
     width: 100%;
     height: 100%;
@@ -814,7 +898,9 @@ body {
     font-family: UniSansBold;
 }
 
-
+.accomodation-wrapper .main-heading {
+    display: none;
+}
 
 /*-------------------------------------RIGHT SECTION-----------------------------------------------*/
 .accomodation-info {
@@ -829,9 +915,11 @@ body {
     justify-content: center;
     align-items: flex-start;
 }
+
 .accomodation-info .divider.long {
     margin-left: -40%;
 }
+
 .accomodation-info .heading {
     font-size: 40px;
     margin-left: -40%;
@@ -840,7 +928,8 @@ body {
     font-family: 'UniSansBold';
     letter-spacing: 15px;
 }
-.section.sidebar-open .accomodation-info{
+
+.section.sidebar-open .accomodation-info {
     left: 150%;
 }
 
@@ -854,6 +943,7 @@ body {
     height: 100%;
     width: 100%;
 }
+
 .registration .registration-wrapper .logo.small {
     margin-left: 0;
     width: 20%;
@@ -863,6 +953,7 @@ body {
     width: 70%;
     height: 100%;
 }
+
 .registration .fixed-section .registration-wrapper {
     width: 100%;
     height: 100%;
@@ -872,7 +963,7 @@ body {
 }
 
 
-.registration-wrapper .heading{
+.registration-wrapper .heading {
     font-size: 24px;
     letter-spacing: 1px;
     font-family: UniSansBold;
@@ -880,12 +971,12 @@ body {
     color: var(--secondary-color);
 }
 
-.registration-wrapper .heading.small{
+.registration-wrapper .heading.small {
     font-size: 18px;
     font-family: UniSansSemiBold;
 }
 
-.registration-wrapper .note{
+.registration-wrapper .note {
     font-size: 15px;
     letter-spacing: 1px;
     font-family: UniSansSemiBold;
@@ -908,6 +999,9 @@ body {
     font-family: UniSansBold;
 }
 
+.registration-wrapper .main-heading {
+    display: none;
+}
 
 
 /*-------------------------------------RIGHT SECTION-----------------------------------------------*/
@@ -923,9 +1017,11 @@ body {
     justify-content: center;
     align-items: flex-start;
 }
+
 .registration-info .divider.long {
     margin-left: -30%;
 }
+
 .registration-info .heading {
     font-size: 40px;
     margin-left: -30%;
@@ -934,7 +1030,8 @@ body {
     font-family: 'UniSansBold';
     letter-spacing: 15px;
 }
-.section.sidebar-open .registration-info{
+
+.section.sidebar-open .registration-info {
     left: 150%;
 }
 
@@ -955,64 +1052,58 @@ body {
 }
 
 /*-------------------------------------FIXED SECTION-----------------------------------------------*/
-.parvaah-fixed {
-    flex: 1;
+.parvah-info-container {
     display: flex;
+    height: 100%;
     flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.logo-container {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px; 
 }
-
-.parvaah-fixed-wrapper {
-    padding-top: 50px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+.logo-container img {
+    margin: 0 60px;
 }
-
-.parvaah .logo {
-    width: 50%;
-    margin-bottom: 50px;
-}
-
-.divider {
-    width: 130px;
-    height: 3px;
-    background: var(--secondary-color);
-    margin-bottom: 10px;
-}
-.parvaah-fixed .content {
-    margin-left: 9%;
-    text-align: center;
-    margin-right: 9%;
-    color: #fff;
-    font-size: 16px;
-    font-family: UniSansRegular;
+.content {
+    font-size: UniSansRegular;
+    font-style: 18px;
     letter-spacing: 1px;
+    text-align: center;
 }
+.parvah-info-container .content {
 
+}
 
 /*-------------------------------------INFO SECTION-----------------------------------------------*/
 .parvaah-info {
     flex: 1;
     background: url('assets/images/2.png') no-repeat center center;
 }
-.parvaah-info .card { 
+
+.parvaah-info .card {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .parvaah-info img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
 }
+
 .parvaah-info .card .card-content {
     margin-left: 9%;
     margin-right: 9%;
 }
+
 .parvaah-info .card .card-content .heading {
     font-family: UniSansRegular;
     font-size: 4.6rem;
@@ -1020,9 +1111,11 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
 .parvaah-info .card .card-content .heading span {
     font-family: UniSansBold;
 }
+
 .parvaah-info .card .card-content .content {
     color: #fff;
     font-size: 16px;
@@ -1041,6 +1134,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .parvaah-info .pagination-container .indicator {
     width: 15px;
     height: 15px;
@@ -1048,6 +1142,108 @@ body {
     border-radius: 50%;
     background: #2C5A8F;
 }
+
 .parvaah-info .pagination-container .indicator.active {
-    background: var(--secondary-color);   
+    background: var(--secondary-color);
+}
+
+
+
+/************************************************************************************************
+                                        CONTACT PAGE STYLING
+************************************************************************************************/
+.contact.section {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+/*-------------------------------------FIXED SECTION-----------------------------------------------*/
+.info-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 3%;
+}
+.student-council {
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+.contact .heading {
+    text-transform: uppercase;
+    font-family: 'UniSansBold';
+    line-height: 1.2em;
+    font-size: 3em;
+    color: var(--secondary-color);
+    margin: 0;
+    margin-bottom: 20px;
+}
+.contact .content {
+    font-size: 20px;
+    color: white;
+    font-family: UniSansRegular;
+    letter-spacing: 1px;
+    line-height: 1.6em;
+}
+.contact .sub-heading {
+    text-transform: uppercase;
+    font-family: 'UniSansBold';
+    line-height: 1.2em;
+    font-size: 1.4em;
+    color: var(--secondary-color);
+    margin: 0;
+    margin-bottom: 20px;
+}
+.contact .content strong {
+    color: var(--secondary-color);
+}
+.contact .content span {
+    font-family: UniSansSemiBold;
+}
+.contact .info-section .logo {
+    width: 50%;
+    margin-bottom: 80px;
+}
+
+/*-------------------------------------MAP SECTION SECTION-----------------------------------------------*/
+.map-section {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+.section.sidebar-open  .map-section {
+    right: -50%;
+}
+.section.sidebar-close .map-section {
+    right: 0%;
+}
+#googleMap {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/************************************************************************************************
+                                        SPONSORS PAGE STYLING
+************************************************************************************************/
+.usesvh {
+    text-align: center;
+}
+.usesvh .logo.small {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.sponsors.section.sidebar-open {
+    width: 48%;
+    margin-left: 0px;
 }
