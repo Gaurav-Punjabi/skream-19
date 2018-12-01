@@ -48,7 +48,7 @@
 
        <!-- RIGHT SECTION -->
         <div class="events-info mobile">
-            <div class="heading-container select-a-event">
+            <div class="heading-container sport">
                 <div class="divider long animated faster slideInUp"></div>
                 <h6 class="event-heading animated faster slideInUp">Events</h6>
             </div>
@@ -125,7 +125,7 @@
                 <img class="logo small" src="../../assets/images/logo/skream-logo.svg" alt="Skream Logo">
                 <div class="custom-select" id="select-event">
                     <select>
-                        <option>select-a-event</option>
+                        <option>sport</option>
                         <option>badminton</option>
                         <option>football</option>
                         <option>rink-football</option>
@@ -143,7 +143,7 @@
                 </div>
 
                 <!-- DEFAULT SECTION -->
-                <div class="event select-a-event">  
+                <div class="event sport">  
                     <div class="content">   
                         <br>
                         <span>Skream</span> is home to 14 sports in addition to other informal events. 
@@ -221,8 +221,8 @@
                                 <div class="column">TEAM</div>
                             </div>
                             <div class="fee">
-                                <div class="column">&#x20b9; 400</div>
-                                <div class="column">&#x20b9; 800</div>
+                                <div class="column">&#x20b9; 350</div>
+                                <div class="column">&#x20b9; 750</div>
                             </div>
                         </div>
 
@@ -317,8 +317,8 @@
                             </div>
                             <div class="winning-place">
                                 <div class="column label">team </div>
-                                <div class="column"> &#x20b9; 2,500</div>
-                                <div class="column"> &#x20b9; 2,500</div>
+                                <div class="column"> &#x20b9; 32,000</div>
+                                <div class="column"> &#x20b9; 13,000</div>
                             </div>
                         </div>
 
@@ -363,7 +363,7 @@
                             <div class="winning-place">
                                 <div class="column label">team </div>
                                 <div class="column"> &#x20b9; 6,000</div>
-                                <div class="column"> &#x20b9; 2,000</div>
+                                <div class="column"> &#x20b9; 2,500</div>
                             </div>
                         </div>
 
@@ -379,7 +379,7 @@
 
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
-                            Ruchi Manjalkar: 9326915258
+                            Rhyme Manjalkar: 9004826569
                             <br>
                             Parth Dedhia: 9930035100
                         </p>
@@ -618,7 +618,7 @@
                                 <div class="column">SINGLES</div>
                             </div>
                             <div class="fee">
-                                <div class="column">&#x20b9; 1,800/-</div>
+                                <div class="column">&#x20b9; 450/-</div>
                             </div>
                         </div>
 
@@ -627,6 +627,10 @@
                             Parth Shah: 9370368430
                             <br>
                             Daniel George: 9833428378
+                            <br>
+                            Kruthika Gangaraju: 8424998412
+                            <br>
+                            Shreya Ughade: 9757297544
                         </p>
                     </div>
                     <!-- END OF BOYS SECTION -->
@@ -665,13 +669,6 @@
                                 <div class="column">&#x20b9; 200/-</div>
                             </div>
                         </div>
-
-                        <h6 class="content-heading">Event Heads</h6>
-                        <p class="content">
-                            Kruthika Gangaraju: 8424998412
-                            <br>
-                            Shreya Ughade: 9757297544
-                        </p>
                     </div>
                     <!-- END OF GIRLS SECTION -->
                 </div>
@@ -762,9 +759,7 @@
 
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
-                            Tanisha Ashar: 8976284930
-                            <br>
-                            Karan Pandya: 9930833040
+                            Anushka Darade: 9594408667
                         </p>
                     </div>
                     <!-- END OF GIRLS SECTION -->
@@ -866,9 +861,7 @@
 
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
-                            Tanisha Ashar: 8976284930
-                            <br>
-                            Karan Pandya: 9930833040
+                            Madhura Shegaonkar :9029042700
                         </p>
                     </div>
                     <!-- END OF GIRLS SECTION -->
@@ -1270,11 +1263,6 @@
                                 <div class="column"> &#x20b9; 1,200</div>
                                 <div class="column"> &#x20b9; 500</div>
                             </div>
-                            <div class="winning-place">
-                                <div class="column label">800M </div>
-                                <div class="column"> &#x20b9; 1,500</div>
-                                <div class="column"> &#x20b9; 700</div>
-                            </div>
                         </div>
                         <div class="prize-money team">
                             <div class="winning-place">
@@ -1305,20 +1293,18 @@
                         <div class="entry-fee no-margin">
                             <div class="header">
                                 <div class="column">400M</div>
-                                <div class="column">800M</div>
+                                <div class="column">RELAY</div>
                             </div>
                             <div class="fee">
                                 <div class="column">&#x20b9; 100</div>
-                                <div class="column">&#x20b9; 100</div>
+                                <div class="column">&#x20b9; 600</div>
                             </div>
                         </div>
                         <div class="entry-fee">
                             <div class="header">
-                                <div class="column">RELAY</div>
-                                <div class="column">SHOTPUT</div>
+                                <div class="column">SHOTPUT</div>                                
                             </div>
                             <div class="fee">
-                                <div class="column">&#x20b9; 600</div>
                                 <div class="column">&#x20b9; 100</div>
                             </div>
                         </div>
@@ -1327,6 +1313,7 @@
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
                             Shruti Gosain: 9757283521
+                            <br>
                             Jay Shah: 9769593915
                         </p>
                         <br>
@@ -1553,7 +1540,7 @@
                         <h6 class="content-heading">Rules</h6>
                         <div class="content">
                             <ul>
-                                <li>No. of players per team : 6+4</li>
+                                <li>No. of players per team : 7+4</li>
                                 <li>Tournament will be conducted in league format</li>
                                 <li>Match will be best of three games</li>
                             </ul>
@@ -1599,7 +1586,7 @@
 
         <!-- RIGHT SECTION -->
         <div class="events-info desktop">
-            <div class="heading-container select-a-event">
+            <div class="heading-container sport">
                 <div class="divider long animated faster slideInUp"></div>
                 <h6 class="event-heading animated faster slideInUp">Events</h6>
             </div>

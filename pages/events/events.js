@@ -74,7 +74,7 @@ then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
 
 
-var currentEvent = 'select-a-event';
+var currentEvent = 'sport';
 var currentGender = 'boys';
 
 $('.boys-option').click(function(){

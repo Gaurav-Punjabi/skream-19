@@ -53,25 +53,40 @@
                 <br>
                 <div class="content">
                     <p>List of documents to be submitted for registration : </p>
-                    <ul>
-                        <li>Registation form</li>
-                        <li>Team List</li>
-                        <li>Bonafide Certificate signed by the Principal/Sports incharge</li>
-                    </ul>
+                    <ol>
+                        <li> Team List. </li>
+                        <li> Bonafide Certificate signed by the Principal/Sports in-charge. </li>
+                        <li> Registration Form. </li>
+                        <li> Government ID. </li>
+                    </ol>
                 </div>
                 <br>
                 <div class="content">
                     Submission of the required documents can be done online or offline :
                     <ol>
                         <li>
-                            <strong>Online</strong> :Scanned copies of all the required documents should be sent via E-Mail at kjsceskream@somaiya.edu. The original copies of the aforementioned documents must be brought along with the player/team for the competition and have to be submitted at the registration desk.
+                            <strong>Online</strong> :
+                            <ol>
+                                <li>
+                                    Scanned copies of all the required documents should be sent via e-mail at kjsceskream@somaiya.edu.
+                                </li>
+                                <li>
+                                    The original copies of the aforementioned documents must be brought along with the player/team for the competition and have to be submitted at the registration desk.
+                                </li>
+                            </ol>
                         </li>
                         <li>
-                            <strong>Offline</strong>: All the required documents can be personally given to the Skream Team at the college. Also, outstation colleges can submit via post at:
-                            KJSCE Students' Council,
-                            A018,Ground Floor,
-                            K.J. Somaiya College Of Engineering,
-                            Vidyavihar, Mumbai- 400 077.
+                            <strong>Offline</strong> :
+                            <ol>
+                                <li>
+                                    All the required documents can be personally given to the Skream Team at the college. 
+                                    Outstation colleges can submit via post at
+                                    KJSCE Students' Council,
+                                    A018, Ground Floor,
+                                    K.J. Somaiya College Of Engineering,
+                                    Vidyavihar, Mumbai- 400 077.
+                                </li>
+                            </ol>
                         </li>
                     </ol>
                 </div>
@@ -129,7 +144,7 @@
         ?>
         <!-- END OF INIFINTE COUNTERS -->
     </section>
-    <a class="compete-button-bottom" href="javascript:;" class="btn">Compete Now</a>
+    <a class="compete-button-bottom" href="http://bit.ly/SkreamRegistration" target="_blank" class="btn">Compete Now</a>
     <!-- JQUERY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BOOSTRAP 3 -->

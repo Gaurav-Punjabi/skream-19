@@ -53,7 +53,7 @@
                 <div class="divider"></div>
                 <h3 class="home-heading">Seize the<br>play</h3>
                 <h6 class="skream-date">07.01.19 - 11.01.19</h6>
-                <a class="compete-button" href="javascript:;" class="btn">Compete Now</a>
+                <a class="compete-button" href="http://bit.ly/SkreamRegistration"  target="_blank" class="btn">Compete Now</a>
             </div>
         </div>
         <!-- END OF LEFT SECTION -->

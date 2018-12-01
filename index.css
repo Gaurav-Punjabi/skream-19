@@ -250,7 +250,7 @@ a:focus, a:hover {
     list-style: none;
     margin: 0;
     padding: 0;
-    font-size: 2.8em;
+    font-size: 3.2em;
     color: var(--secondary-color);
     font-family: 'UniSansBold';
     text-transform: uppercase;
@@ -703,7 +703,7 @@ a:focus, a:hover {
 
 }
 
-.events-info .heading-container.select-a-event {
+.events-info .heading-container.sport {
     background-image: url('./assets/images/2.png');
 }
 
@@ -1028,6 +1028,7 @@ a:focus, a:hover {
     color: var(--secondary-color);
     text-transform: uppercase;
     font-family: 'UniSansBold';
+    text-transform: uppercase;
     letter-spacing: 15px;
 }
 
@@ -1047,8 +1048,6 @@ a:focus, a:hover {
 ************************************************************************************************/
 .parvaah {
     height: 100%;
-    display: flex;
-    flex-direction: row;
 }
 
 /*-------------------------------------FIXED SECTION-----------------------------------------------*/
@@ -1069,84 +1068,110 @@ a:focus, a:hover {
 .logo-container img {
     margin: 0 60px;
 }
-.content {
-    font-size: UniSansRegular;
-    font-style: 18px;
-    letter-spacing: 1px;
-    text-align: center;
-}
-.parvah-info-container .content {
-
-}
 
 /*-------------------------------------INFO SECTION-----------------------------------------------*/
-.parvaah-info {
-    flex: 1;
-    background: url('assets/images/2.png') no-repeat center center;
-}
-
-.parvaah-info .card {
+.parvaah-info-container {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 15%;
 }
 
-.parvaah-info img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+.parvah-info-container .logo.parvaah {
+    width: 25%;
 }
-
-.parvaah-info .card .card-content {
-    margin-left: 9%;
-    margin-right: 9%;
-}
-
-.parvaah-info .card .card-content .heading {
-    font-family: UniSansRegular;
-    font-size: 4.6rem;
-    color: var(--secondary-color);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.parvaah-info .card .card-content .heading span {
-    font-family: UniSansBold;
-}
-
-.parvaah-info .card .card-content .content {
-    color: #fff;
-    font-size: 16px;
-    font-family: UniSansRegular;
-    letter-spacing: 1px;
-}
-
-.parvaah-info .pagination-container {
-    width: 50%;
-    height: 10%;
+.parvaah-info-container .logo-container {
     display: flex;
-    position: fixed;
-    bottom: 0;
-    right: 0;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.content {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: UniSansRegular;
+    color: white;
+}
+.content.right {
+    text-align: left;
+}
+.content.left {
+    text-align: right;
+}
+.parvaah-info-container .content {
+    text-align: center;
+}
+
+.volunteer-button {
+    border: 1px solid white;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    font-family: 'UniSansLight';
+    color: white;
+    font-size: 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    outline: none;
+    margin-top: 50px;
+}
+
+.volunteer-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-decoration: none;
+}
+
+.parvaah-event {
+    padding: 0 10%;
+    box-sizing: border-box;
+    margin-bottom: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.parvaah-event .event-image {
+    margin-right: 10%;
+    width: 25%; 
+}
+.parvaah-event .event-image.right {
+    margin-right: 0%;
+    margin-left: 10%;
+}
+.parvaah-event .parvaah-event-info {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-.parvaah-info .pagination-container .indicator {
-    width: 15px;
-    height: 15px;
-    margin-left: 20px;
-    border-radius: 50%;
-    background: #2C5A8F;
+.parvaah-event .parvaah-event-info .heading {
+    font-size: 28px;
+    text-align: left;
+    color: var(--secondary-color);
+    font-family: UniSansBold;
+    align-self: stretch;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
 }
 
-.parvaah-info .pagination-container .indicator.active {
-    background: var(--secondary-color);
+.parvaah-event .parvaah-event-info .heading.left {
+    text-align: right;
+}
+.parvaah-event .parvaah-event-info .heading.right {
+    text-align: left;
 }
 
+.parvaah.section.sidebar-open {
+    width: 50%;
+}
+.parvaah.section.sidebar-close {
+    width: 100%;
+}
 
 
 /************************************************************************************************
