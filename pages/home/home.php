@@ -30,10 +30,58 @@
 </head>
 
 <body>
-    <!-- SIDEBAR -->
-    <?php
-        require_once('../includes/components/sidebar.php');
-    ?>
+    <div class="sidebar-wrapper close">
+        <nav>
+            <!-- HOME -->
+            <a href="../home/home.php" class="animated fadeInUp">
+                <li class="sidebar-option animated">">
+                    home
+                </li>
+            </a>
+            
+            <!-- EVENTS -->
+            <a href="../events/events.php" class="animated fadeInUp">
+                <li class="sidebar-option animated">">
+                    events
+                </li>
+            </a>
+            
+            <!-- RULES -->
+            <a href="../rules/rules.php" class="animated fadeInUp">
+                <li class="sidebar-option animated">">
+                    events
+                </li>
+            </a>
+            
+            <!-- ACCOMODATION -->
+            <a href="../accomodation/accomodation.php" class="animated fadeInUp">
+                <li class="sidebar-option animated">">
+                    accomodations
+                </li>
+            </a>
+            
+            <!-- REGISTRATION  -->
+            <a href="../registration/registration.php" class="animated fadeInUp">
+                <li class="sidebar-option animated">">
+                    registration
+                </li>
+            </a>
+            
+            <!-- PARVAAH  -->
+            <a href="../parvaah/parvaah.php" class="animated fadeInUp">
+                <li class="sidebar-option animated">">
+                    parvaah
+                </li>
+            </a>
+            
+            <!-- CONTACT  -->
+            <a href="../contact/contact.php" class="animated fadeInUp">
+                <li class="sidebar-option animated">">
+                    contact
+                </li>
+            </a>
+        </nav>
+    </div>
 
     <!-- SOCIAL LINKS -->
     <?php
