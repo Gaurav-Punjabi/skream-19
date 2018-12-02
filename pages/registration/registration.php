@@ -18,7 +18,9 @@
     <!--ANIMATE CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
     <!-- GLOBAL STYLES -->
-    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" media="screen and (min-device-width: 1025px) and (max-device-width: 1920px)" href="../../index.css">
+    <!-- MOBILE CSS -->
+    <link rel="stylesheet" media="screen and (max-device-width: 1024px)" href="../../mobile.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn t work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -48,6 +50,7 @@
         <div class="fixed-section">
             <div class="registration-wrapper animated fadeInUp">
                 <img class="logo small" src="../../assets/images/logo/skream-logo.svg" alt="Skream Logo">
+                <h2 class="main-heading">Registration</h2>
                 <br><br>
                 <h5 class="heading">Registration guidelines</h5>
                 <br>
@@ -79,7 +82,7 @@
                             <strong>Offline</strong> :
                             <ol>
                                 <li>
-                                    All the required documents can be personally given to the Skream Team at the college. 
+                                    All the required documents can be personally given to the Skream Team at the college.
                                     Outstation colleges can submit via post at
                                     KJSCE Students' Council,
                                     A018, Ground Floor,
@@ -92,39 +95,42 @@
                 </div>
                 <br>
                 <p class="note">
-                    <span>NOTE : </span> Last date to submit entries and complete the procedure is <strong>25th December, 2017. </strong>
+                    <span>NOTE : </span> Last date to submit entries and complete the procedure is <strong> 27th December, 2018 </strong>
                 </p>
                 <br>
                 <div class="content">
                     <p>
                         For any queries regarding registration, contact:
                     </p>
-                    <ul>
-                        <li><strong>Rushi Shah</strong> : 7588349698</li>
-                        <li><strong>Rushi Shah</strong> : 7588349698</li>
-                    </ul>
+                    <ol>
+                        <li> <strong>Anvil Mahajan : </strong> 8652488023</li>
+                        <li> <strong>Saiyam Shah : </strong> 9821600650</li>
+                        <li> <strong>Advaith Mahesh : </strong> 8452844608</li>
+                    </ol>
                 </div>
                 <br><br>
                 <h5 class="heading">PAYMENT PROCEDURE</h5>
                 <br>
                 <div class="content">
-                    <p>Payment should be done before the deadline specified in the guidelines. The different methods for payment are:</p>
+                    <p>Payment should be done before the deadline specified in the guidelines. Different methods for payment are :-
+                    </p>
                     <ul>
-                        <li>Offline: The Participant can pay the registration amount to any concerned authority either at a place convenient to them or by coming to the college.</li>
-                        <li>Online: A payment portal is given below. Using the portal, the participant can pay the registration fees online via Credit Cards, Debit Cards, Net Banking, etc</li>
+                        <li> <strong>Offline</strong> : The Participant can pay the registration amount to any concerned authority in cash either at a place convenient to them or by coming to the college. </li>
+                        <li> <strong>Online</strong> :  A payment portal is given below. Using the portal, the participant can pay the registration fees online via Credit Cards, Debit Cards, Net Banking etc.</li>
                         <ul>
-                            <li><strong>Portal</strong> : <a href="https://www.somaiya.edu/kjsce_admission/admission/student_fees.aspx">Somaiya.edu</a></li>
-                            <li>The Participants can also pay through PayTM to the following number: <strong>8879359893</strong></li>
+                            <li><strong>Portal</strong> : <a href="http://kjscefees.com/DefaultMiscPayment.aspx">Somaiya.edu</a></li>
+                            <li>For Portal Payment procedure: : <strong><a href="https://goo.gl/VC1Z3n" target="_blank">click here</a></strong></li>
+                            <li>The Participants can also pay through PayTM. Payment should be made to the number given below :-  <strong>8652488023</strong></li>
                         </ul>
                     </ul>
-                    <p>When you make the payment, send the screenshot of the receipt with your name, college, and the event you have made the payment for, to the same number mentioned above, i.e., 8879359893 (This is for both the online methods) </p>
+                    <p><strong>When you make the payment, send the screenshot of the receipt with your name, college and the event you have made the payment for, to the same number mentioned above ie. 8652488023 (This is for both the online methods.</strong></p>
                 </div>
                 <br>
                 <div class="content">
                     <p>For any queries regarding payment, contact : </p>
                     <ul>
-                        <li><strong>Shranik Vora</strong> : 8879359893</li>
-                        <li><strong>Parin Shah</strong> : 8291255338</li>
+                        <li><strong>Rajeev </strong> : 8655494779</li>
+                        <li><strong>Samruddhi</strong> : 9011957638</li>
                     </ul>
                 </div>
             </div>

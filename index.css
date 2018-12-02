@@ -90,7 +90,9 @@ a:focus, a:hover {
 
 .custom-select select {
     display: none;
-    /*hide original SELECT element:*/
+    /*
+        hide original SELECT element:
+    */
 }
 
 .select-selected {
@@ -220,6 +222,7 @@ a:focus, a:hover {
     height: 100%;
     background-color: var(--primary-color);
     position: fixed;
+    overflow: auto;
     top: 0;
     left: -50%;
     display: flex;
@@ -403,11 +406,18 @@ a:focus, a:hover {
 /*-------------------------------------INFO SECTION-----------------------------------------------*/
 .home-info {
     flex: 1;
-    background: url('assets/images/2.png') no-repeat center center;
+    
+    display: flex;
 }
 
+#about-section-2 {
+    background: url('assets/images/2.png') no-repeat center center;
+}
+#about-kjsce {
+    background: url('assets/images/about%20kjsce.png') no-repeat center center;
+}
 .home-info .card {
-    height: 100%;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;

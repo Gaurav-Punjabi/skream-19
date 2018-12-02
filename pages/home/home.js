@@ -1,7 +1,7 @@
 $(function () {
     if (screen.width > 1024) {
         var isScrolling = false;
-        var subpages = ['#about-section', '#about-section-2', '#about-kjsce'];
+        var subpages = ['#about-section-2', '#about-kjsce'];
         for (var i = 1; i < subpages.length; i++) {
             $(subpages[i]).hide();
         }

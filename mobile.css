@@ -12,6 +12,32 @@ body {
     margin: 0;
     background: var(--bg-color);
 }
+
+@font-face {
+    font-family: UniSansBold;
+    src: url('./assets/fonts/uni-sans/bold.ttf');
+}
+
+@font-face {
+    font-family: UniSansRegular;
+    src: url('./assets/fonts/uni-sans/regular.ttf');
+}
+
+@font-face {
+    font-family: UniSansSemiBold;
+    src: url('./assets/fonts/uni-sans/semi-bold.ttf');
+}
+
+@font-face {
+    font-family: UniSansThin;
+    src: url('./assets/fonts/uni-sans/thin.ttf');
+}
+
+@font-face {
+    font-family: UniSansLight;
+    src: url('./assets/fonts/uni-sans/light.ttf');
+}
+
 /************************************************************************************************
                                     GENERAL STYLING SECTION
 ************************************************************************************************/
@@ -21,20 +47,24 @@ body {
 
 .hamburger {
     position: fixed;
-    width: 50px;
-    height: 50px;
-    left: 10px;
-    top: 10px;
+    width: 70px;
+    height: 70px;
+    left: 0px;
+    top: 0px;
     background: url('assets/images/hamburger.png') no-repeat center center;
     background-size: cover;
     z-index: 999;
     cursor: pointer;
 }
 
+.compete-button-bottom {
+    display: none;
+}
+
 .logo.small {
     width: 30%;
     margin-left: 30px;
-    margin-top: 35px;
+    /*    margin-top: 35px;*/
     margin-bottom: 20px;
 }
 
@@ -49,8 +79,8 @@ body {
 
 .custom-select {
     position: relative;
-    font-family: 'UniSansBold';
-    font-size: 14px;
+    font-family: UniSansBold;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -120,7 +150,7 @@ body {
     border: 1px solid var(--bg-color);
     text-transform: uppercase;
     padding: 5px 20px;
-    font-family: 'UniSansLight';
+    font-family: UniSansLight;
     color: var(--bg-color);
     font-size: 22px;
     border-radius: 30px;
@@ -135,6 +165,7 @@ body {
 .social-links {
     display: none;
 }
+
 .social-links-mobile {
     padding: 20px 0px;
     display: flex;
@@ -148,6 +179,7 @@ body {
     margin-left: 50px;
     cursor: pointer;
 }
+
 .social-links-mobile .social-link {
     margin-left: 0;
 }
@@ -161,7 +193,7 @@ body {
 
     to {
         position: relative;
-        left: 52%;      
+        left: 52%;
     }
 }
 
@@ -186,6 +218,7 @@ body {
     background-color: var(--primary-color);
     display: flex;
     z-index: 999;
+    
     flex-direction: column;
     justify-content: center;
     align-content: center;
@@ -209,19 +242,25 @@ body {
 }
 
 
+a:focus, a:hover {
+    color: transparent;
+}
+
+
 .sidebar-wrapper .sidebar-option {
     list-style: none;
     margin: 0;
     padding: 0;
-    font-size: 3.8rem;
+    font-size: 3.2rem;
     color: var(--secondary-color);
-    font-family: 'UniSansBold';
+    font-family: UniSansBold;
     text-transform: uppercase;
     margin-bottom: 20px;
     text-decoration: none;
     outline: none;
     cursor: pointer;
 }
+
 .sidebar-wrapper .sidebar-option:hover {
     color: white;
 }
@@ -241,14 +280,15 @@ body {
                                     HOME PAGE STYLING
 ************************************************************************************************/
 .home {
-    height: 100%;
+    flex: 1;
+    align-items: stretch;
 }
 
 /*-------------------------------------FIXED SECTION-----------------------------------------------*/
 .fixed-section {
-    height: 100%;
-    width: 100%;
+    flex: 1;
     display: flex;
+    padding: 40% 0;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -256,7 +296,6 @@ body {
 
 .home-fixed-wrapper {
     display: flex;
-    margin-top: 45%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -277,7 +316,7 @@ body {
 
 .home-heading {
     text-transform: uppercase;
-    font-family: 'UniSansBold';
+    font-family: UniSansBold;
     line-height: 1em;
     font-size: 40px;
     align-self: flex-start;
@@ -289,7 +328,7 @@ body {
 }
 
 .skream-date {
-    font-family: 'UniSansThin';
+    font-family: UniSansThin;
     letter-spacing: 5px;
     font-weight: 300;
     font-size: 24px;
@@ -302,7 +341,7 @@ body {
     border: 1px solid white;
     text-transform: uppercase;
     padding: 5px 20px;
-    font-family: 'UniSansLight';
+    font-family: UniSansLight;
     color: white;
     font-size: 20px;
     border-radius: 30px;
@@ -318,20 +357,23 @@ body {
 
 /*-------------------------------------INFO SECTION-----------------------------------------------*/
 .home-info {
-    height: 100%;
+    align-items: stretch;
     flex: 1;
 }
-.home-info .card { 
-    height: 100%;
+
+.home-info .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    box-sizing: border-box;
+    padding: 30% 0;
 }
+
 .home-info .card .card-content {
-    margin-left: 9%;
-    margin-right: 9%;
+    margin: 9%;
 }
+
 .home-info .card .card-content .heading {
     font-family: UniSansRegular;
     font-size: 4rem;
@@ -340,12 +382,14 @@ body {
     letter-spacing: 1px;
     margin-bottom: 10%;
 }
+
 .home-info .card .card-content .heading span {
     font-family: UniSansBold;
 }
+
 .home-info .card .card-content .content {
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     font-family: UniSansRegular;
     letter-spacing: 1px;
 }
@@ -353,6 +397,7 @@ body {
 .home-info .pagination-container {
     display: none;
 }
+
 .home-info .pagination-container .indicator {
     width: 15px;
     height: 15px;
@@ -360,19 +405,32 @@ body {
     border-radius: 50%;
     background: #2C5A8F;
 }
+
 .home-info .pagination-container .indicator.active {
-    background: var(--secondary-color);   
+    background: var(--secondary-color);
 }
+
 #about-section {
     background: url('assets/images/2.png') no-repeat center center;
 }
+
 #about-section-2 {
     background: url('assets/images/Box%20Cricket.png') no-repeat center center;
 }
+
 #about-kjsce {
     background: url('assets/images/athletics.png') no-repeat center center;
 }
 
+
+@media (max-width: 320px) {
+    .home-fixed-wrapper {
+        margin-left: 10%;
+    }
+    .home-info .card .card-content .heading {
+        font-size: 3.5rem;
+    }
+}
 /************************************************************************************************
                                     EVENTS PAGE STYLING
 ************************************************************************************************/
@@ -388,10 +446,13 @@ body {
     justify-content: flex-start;
     padding-top: 10%;
     align-items: flex-start;
+    /*    overflow: auto;*/
 }
+
 .events .fixed-section .logo.small {
     display: none;
 }
+
 .event-wrapper {
     display: flex;
     margin-left: 30px;
@@ -399,104 +460,118 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    min-height: min-content;
 }
-.events .fixed-section .event-wrapper #select-event{
-    width: 200px;
+
+.events .fixed-section .event-wrapper #select-event {
+    width: 250px;
     z-index: 300;
 }
 
 .event .gender {
-    font-size: 20px;
-    font-family: 'UniSansBold';
+    font-size: 1.8em;
+    font-family: UniSansBold;
     text-transform: uppercase;
-    margin-right: 50px;
-    margin-bottom: 50px;
+    margin-right: 90px;
+    margin-bottom: 30px;
     cursor: pointer;
     color: var(--accent-color);
     display: inline-block;
 }
+
 .event .gender.selected {
     color: var(--secondary-color);
 }
+
 .event .content-heading {
     color: var(--secondary-color);
     font-size: 16px;
     text-transform: uppercase;
-    font-family: 'UniSansSemiBold';
+    font-family: UniSansSemiBold;
     margin: 0;
 }
+
 .event .content {
     color: #fff;
     font-size: 14px;
     letter-spacing: 1px;
     text-overflow: clip;
-    font-family: 'UniSansRegular';
-    margin-bottom: 50px;
+    font-family: UniSansRegular;
+    margin-bottom: 30px;
+    margin-right: 10px;
 }
 
 .event .content .headings li {
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 1px;
 }
+
 .event .content li {
     text-transform: uppercase;
-    font-size: 8px;
-}
-.event .content span {
-    font-family: 'UniSansBold';
+    font-size: 14px;
 }
 
+.event .content span {
+    font-family: UniSansBold;
+}
+
+
 .prize-money {
-    width: 250px;
+    width: 300px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .prize-money.team {
-    height: 40px;
+    height: 80px;
 }
+
 .prize-money.col-2 {
-    height: 30px;
+    height: 60px;
 }
 
 .prize-money.no-margin {
     margin-bottom: 0;
 }
-.prize-money.team .header{
+
+.prize-money.team .header {
     display: flex;
     flex-direction: row;
-} 
+}
+
 .prize-money.team .header .column {
     flex: 1;
     letter-spacing: 1px;
-    font-size: 12px;
+    font-size: 15px;
     font-family: 'UniSansRegular';
     color: #fff;
-    padding-left: 5px;
+    padding-left: 13px;
     margin: 1px;
 }
+
 .prize-money.team .winning-place {
     display: flex;
     flex-direction: row;
 }
+
 .prize-money.team .winning-place .column {
     flex: 1;
-    font-size: 12px;
+    font-size: 20px;
     color: #fff;
     margin-top: 2px;
-    padding-top: 3px;
     margin-right: 2px;
     padding-left: 13px;
     font-family: 'UniSansBold';
     text-transform: uppercase;
     background: #2C5A8F;
 }
+
 .prize-money.team .winning-place .column.label {
     flex: 1;
     background: #0F2947;
     color: #597CA4;
-    font-size: 12px;
+    font-size: 16px;
     text-transform: uppercase;
     padding-top: 5px;
     text-align: center;
@@ -508,17 +583,20 @@ body {
     width: 200px;
     height: 60px;
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     flex-direction: column;
 }
+
 .entry-fee.no-margin {
     margin-bottom: 0;
 }
+
 .entry-fee .header {
     flex: 1;
     display: flex;
     flex-direction: row;
 }
+
 .entry-fee .header .column {
     flex: 1;
     display: flex;
@@ -535,6 +613,7 @@ body {
     display: flex;
     flex-direction: row;
 }
+
 .entry-fee .fee .column {
     flex: 1;
     display: flex;
@@ -548,10 +627,49 @@ body {
     text-transform: uppercase;
     background: #2C5A8F;
 }
+
+@media (max-width: 320px) {
+    .event .content .headings li {
+        font-size: 15px;
+    }
+    .events .fixed-section .event-wrapper #select-event {
+        width: 200px;
+    }
+    .custom-select {
+        font-size: 1.6rem;
+    }
+    .event .content {
+        font-size: 12px;
+    }
+    .event .gender {
+        font-size: 1.6em;
+        margin-right: 70px;
+    }
+    .event .content .headings li  {
+        font-size: 12px;
+    }
+    .event .content li {
+        font-size: 12px;
+    }
+    .prize-money {
+        width: 280px;
+    }
+    .prize-money.team .header .column {
+        font-size: 14px;
+    }
+    .entry-fee .fee .column {
+        font-size: 18px;
+    }
+    .select-selected:after {
+        right: 10px;
+    }
+}
+
 /*-------------------------------------RIGHT SECTION-----------------------------------------------*/
 .events-info.desktop {
     display: none;
 }
+
 .events-info.mobile {
     height: 30%;
     width: 100%;
@@ -565,9 +683,10 @@ body {
     color: var(--secondary-color);
     font-size: 3rem;
     text-transform: uppercase;
-    font-family: 'UniSansBold';
+    font-family: UniSansBold;
     letter-spacing: 0.9rem;
 }
+
 .events-info .divider {
     margin-bottom: 10px;
 }
@@ -589,9 +708,11 @@ body {
 .events-info .heading-container.sport {
     background-image: url('./assets/images/2.png');
 }
+
 .events-info .heading-container.cricket {
     background-image: url('./assets/images/Cricket.png');
 }
+
 .events-info .heading-container.football {
     background-image: url('./assets/images/football.png');
 }
@@ -599,33 +720,43 @@ body {
 .events-info .heading-container.badminton {
     background-image: url('./assets/images/badminton.png');
 }
+
 .events-info .heading-container.box-cricket {
     background-image: url('./assets/images/Box%20Cricket.png');
 }
+
 .events-info .heading-container.rink-football {
     background-image: url('./assets/images/Rink%20Football.png');
 }
+
 .events-info .heading-container.squash {
     background-image: url('./assets/images/Squash.png');
 }
+
 .events-info .heading-container.lawn-tennis {
     background-image: url('./assets/images/Tennis.png');
 }
+
 .events-info .heading-container.table-tennis {
     background-image: url('./assets/images/Table%20Tennis.png');
 }
+
 .events-info .heading-container.carrom {
     background-image: url('./assets/images/Carrom.png');
 }
+
 .events-info .heading-container.athletics {
     background-image: url('./assets/images/athletics.png');
 }
+
 .events-info .heading-container.basketball {
     background-image: url('./assets/images/Basketball.png');
 }
+
 .events-info .heading-container.volleyball {
     background-image: url('./assets/images/Volleyball.png');
 }
+
 .events-info .heading-container.throwball {
     background-image: url('./assets/images/Throwball.png');
 }
@@ -637,39 +768,43 @@ body {
     height: 100%;
     width: 100%;
 }
+
 .rules .rules-wrapper .logo.small {
-    margin-left: 0;
-    width: 20%;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 20px;
 }
 
 .rules .fixed-section {
-    width: 70%;
+    width: 100%;
     height: 100%;
+    padding: 0;
 }
+
 .rules .fixed-section .rules-wrapper {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    padding-left: 100px;
-    padding-right: 120px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 
-.rules-wrapper .heading{
-    font-size: 24px;
+.rules-wrapper .heading {
+    font-size: 20px;
     letter-spacing: 1px;
     font-family: UniSansBold;
     text-transform: uppercase;
     color: var(--secondary-color);
 }
 
-.rules-wrapper .heading.small{
-    font-size: 18px;
+.rules-wrapper .heading.small {
+    font-size: 16px;
     font-family: UniSansSemiBold;
 }
 
-.rules-wrapper .note{
-    font-size: 15px;
+.rules-wrapper .note {
+    font-size: 14px;
     letter-spacing: 1px;
     font-family: UniSansSemiBold;
     text-transform: uppercase;
@@ -678,7 +813,7 @@ body {
 
 .rules-wrapper .content {
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 1px;
     font-family: UniSansRegular;
 }
@@ -691,33 +826,53 @@ body {
     font-family: UniSansBold;
 }
 
+.rules-wrapper .main-heading {
+    font-size: 35px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: UniSansBold;
+}
+@media (max-width: 320px) {
+    .rules-wrapper .main-heading  {
+        font-size: 25px;
+    }
+    .rules-wrapper .content {
+        font-size: 12px;
+    }
+    .rules-wrapper .note {
+        font-size: 11px;
+    }
+    .rules-wrapper .heading.small {
+        font-size: 14px;
+    }
+    .rules-wrapper .heading {
+        font-size: 18px;
+    }
+}
+
 
 
 /*-------------------------------------RIGHT SECTION-----------------------------------------------*/
 .rules-info {
-    position: fixed;
-    top: 0;
-    left: 70%;
-    width: 30%;
-    height: 100%;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    display: none;
 }
+
 .rules-info .divider.long {
     margin-left: -20%;
 }
+
 .rules-info .heading {
     font-size: 70px;
     margin-left: -25%;
     color: var(--secondary-color);
     text-transform: uppercase;
-    font-family: 'UniSansBold';
+    font-family: UniSansBold;
     letter-spacing: 15px;
 }
-.section.sidebar-open .rules-info{
+
+.section.sidebar-open .rules-info {
     left: 120%;
 }
 
@@ -730,27 +885,31 @@ body {
     height: 100%;
     width: 100%;
 }
+
 .accomodation .accomodation-wrapper .logo.small {
-    margin-left: 0;
-    width: 20%;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 20px;
 }
 
 .accomodation .fixed-section {
-    width: 70%;
+    width: 100%;
     height: 100%;
+    padding: 0;
 }
+
 .accomodation .fixed-section .accomodation-wrapper {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    padding-left: 140px;
-    padding-right: 190px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 
 .accomodation-wrapper .content {
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 1px;
     font-family: UniSansRegular;
 }
@@ -760,33 +919,44 @@ body {
     font-family: UniSansBold;
 }
 
+.accomodation-wrapper .main-heading {
+    font-size: 35px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: UniSansBold;
+}
+
+@media (max-width: 320px) {
+    .accomodation-wrapper .main-heading  {
+        font-size: 25px;
+    }
+    .accomodation-wrapper .content {
+        font-size: 12px;
+    }
+}
 
 
 /*-------------------------------------RIGHT SECTION-----------------------------------------------*/
 .accomodation-info {
-    position: fixed;
-    top: 0;
-    left: 70%;
-    width: 30%;
-    height: 100%;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    display: none;
 }
+
 .accomodation-info .divider.long {
     margin-left: -40%;
 }
+
 .accomodation-info .heading {
     font-size: 40px;
     margin-left: -40%;
     color: var(--secondary-color);
     text-transform: uppercase;
-    font-family: 'UniSansBold';
+    font-family: UniSansBold;
     letter-spacing: 15px;
 }
-.section.sidebar-open .accomodation-info{
+
+.section.sidebar-open .accomodation-info {
     left: 150%;
 }
 
@@ -800,39 +970,43 @@ body {
     height: 100%;
     width: 100%;
 }
+
 .registration .registration-wrapper .logo.small {
-    margin-left: 0;
-    width: 20%;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 20px;
 }
 
 .registration .fixed-section {
-    width: 70%;
+    width: 100%;
     height: 100%;
+    padding: 0;
 }
+
 .registration .fixed-section .registration-wrapper {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    padding-left: 100px;
-    padding-right: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 
-.registration-wrapper .heading{
-    font-size: 24px;
+.registration-wrapper .heading {
+    font-size: 20px;
     letter-spacing: 1px;
     font-family: UniSansBold;
     text-transform: uppercase;
     color: var(--secondary-color);
 }
 
-.registration-wrapper .heading.small{
-    font-size: 18px;
+.registration-wrapper .heading.small {
+    font-size: 16px;
     font-family: UniSansSemiBold;
 }
 
-.registration-wrapper .note{
-    font-size: 15px;
+.registration-wrapper .note {
+    font-size: 13px;
     letter-spacing: 1px;
     font-family: UniSansSemiBold;
     text-transform: uppercase;
@@ -841,7 +1015,7 @@ body {
 
 .registration-wrapper .content {
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 1px;
     font-family: UniSansRegular;
 }
@@ -854,33 +1028,55 @@ body {
     font-family: UniSansBold;
 }
 
+.registration-wrapper .main-heading {
+    font-size: 35px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: UniSansBold;
+}
+
+
+@media (max-width: 320px) {
+    .registration-wrapper .main-heading  {
+        font-size: 25px;
+    }
+    .registration-wrapper .content {
+        font-size: 12px;
+    }
+    .registration-wrapper .note {
+        font-size: 11px;
+    }
+    .registration-wrapper .heading.small {
+        font-size: 14px;
+    }
+    .registration-wrapper .heading {
+        font-size: 18px;
+    }
+}
+
 
 
 /*-------------------------------------RIGHT SECTION-----------------------------------------------*/
 .registration-info {
-    position: fixed;
-    top: 0;
-    left: 70%;
-    width: 30%;
-    height: 100%;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    display: none;
 }
+
 .registration-info .divider.long {
     margin-left: -30%;
 }
+
 .registration-info .heading {
     font-size: 40px;
     margin-left: -30%;
     color: var(--secondary-color);
     text-transform: uppercase;
-    font-family: 'UniSansBold';
+    font-family: UniSansBold;
     letter-spacing: 15px;
 }
-.section.sidebar-open .registration-info{
+
+.section.sidebar-open .registration-info {
     left: 150%;
 }
 
@@ -1013,4 +1209,85 @@ body {
     margin-top: 20px;
     margin-bottom: 30px;
 }
+
+
+
+
+
+/************************************************************************************************
+                                        CONTACT PAGE STYLING
+************************************************************************************************/
+.contact.section {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+/*-------------------------------------FIXED SECTION-----------------------------------------------*/
+.info-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 3%;
+}
+.student-council {
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+.contact .heading {
+    text-transform: uppercase;
+    font-family: 'UniSansBold';
+    line-height: 1.2em;
+    font-size: 3em;
+    color: var(--secondary-color);
+    margin: 0;
+    margin-bottom: 20px;
+}
+.contact .content {
+    font-size: 16px;
+    color: white;
+    font-family: UniSansRegular;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+}
+.contact .sub-heading {
+    text-transform: uppercase;
+    font-family: 'UniSansBold';
+    line-height: 1.2em;
+    font-size: 1.2em;
+    color: var(--secondary-color);
+    margin: 0;
+    margin-bottom: 20px;
+}
+.contact .content strong {
+    color: var(--secondary-color);
+}
+.contact .content span {
+    font-family: UniSansSemiBold;
+}
+.contact .info-section .logo {
+    width: 40%;
+    margin: 40px 0;
+}
+
+/*-------------------------------------MAP SECTION SECTION-----------------------------------------------*/
+.map-section {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+#googleMap {
+    width: 90%;
+    height: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 

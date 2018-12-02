@@ -18,7 +18,9 @@
     <!--ANIMATE CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
     <!-- GLOBAL STYLES -->
-    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" media="screen and (min-device-width: 1025px) and (max-device-width: 1920px)" href="../../index.css">
+    <!-- MOBILE CSS -->
+    <link rel="stylesheet" media="screen and (max-device-width: 1024px)" href="../../mobile.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn t work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -48,15 +50,16 @@
         <div class="fixed-section">
             <div class="accomodation-wrapper animated fadeInUp">
                 <img class="logo small" src="../../assets/images/logo/skream-logo.svg" alt="Skream Logo">
+                <h2 class="main-heading">Accomodation</h2>
                 <br><br>
-                <p class="content">All outstation teams participating in Skream 2018 will be provided accommodation by K.J. Somaiya College of Engineering on the basis of availability of rooms.</p>
+                <p class="content">All outstation teams participating in Skream 2019 will be provided accomodation by the K.J. Somaiya College of Engineering on the basis of availability of rooms.</p>
                 <br><br>
                 <p class="content">
-                    For any queries contact
+                    For further queries regarding accomodation, contact
                     <br>
-                    <strong>Aayush Shah : </strong> 9892822280
+                    <strong>Heet N Gandhi : </strong> +919664687478
                     <br>
-                    <strong>Nishad Joshi : </strong> 9619824425
+                    <strong>Rajeev Nateshkumar : </strong> +918976972527
                 </p>
             </div>
         </div>

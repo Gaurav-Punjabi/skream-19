@@ -20,7 +20,7 @@
     <!-- GLOBAL STYLES -->
     <link rel="stylesheet" media="screen and (min-device-width: 1025px) and (max-device-width: 1920px)" href="../../index.css">
     <!-- MOBILE CSS -->
-    <link rel="stylesheet" media="screen and (max-device-width: 480px)" href="../../mobile.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 1024px)" href="../../mobile.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn t work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -51,31 +51,22 @@
             <div class="home-fixed-wrapper animated fadeInUp">
                 <img class="logo" src="../../assets/images/logo/skream-logo.svg" alt="Skream Logo">
                 <div class="divider"></div>
-                <h3 class="home-heading">Seize the<br>play</h3>
+                <h3 class="home-heading">Lead the<br>game</h3>
                 <h6 class="skream-date">07.01.19 - 11.01.19</h6>
-                <a class="compete-button" href="http://bit.ly/SkreamRegistration"  target="_blank" class="btn">Compete Now</a>
+                <a class="compete-button" href="http://bit.ly/SkreamRegistration" target="_blank" class="btn">Compete Now</a>
             </div>
         </div>
         <!-- END OF LEFT SECTION -->
 
         <!-- RIGHT SECTION -->
         <div class="home-info">
-
-            <div class="card" id="about-section">
-                <div class="card-content animated faster fadeInRight">
-                    <div class="divider long"></div>
-                    <h3 class="heading"><span>Scream</span></h3>
-                    <p class="content">
-                        Skream is the annual national level sports festival of K.J. Somaiya College of Engineering and has completed 5 editions so far. It was started in 2014 with the aim of cultivating a culture of sportsmanship, competitiveness, and discipline amongst the students of various colleges. Skream hosts students from over 100 institutes spread across the country and boasts an array of indoor as well as outdoor games such as Football, Cricket, Badminton, Chess, Throwball, Basketball, Lawn Tennis, Squash etc.
-                    </p>
-                </div>
-            </div>
             <div class="card" id="about-section-2">
                 <div class="card-content animated faster fadeInRight">
                     <div class="divider long"></div>
                     <h3 class="heading">About <br><span>Scream</span></h3>
                     <p class="content">
-                        Skream has been graced by prominent sports personalities such as Mr. Balwinder Singh Sandhu, Mr. Rustom Patel, Ms. Manasi Joshi, Mr. Wasim Jaffer, Mr. Devindar Walmiki, and the list goes on. Skream along with Parvaah, the social initiative of KJSCE, has hosted paralympic teams such as the Wheelchair Basketball Federation of India, Indian Blind Football Federation etc. It follows the contingency system, and this has been a major reason for the ever-increasing participation of contingent teams. Skream is one of the best sports festivals in India and continues to grow bigger with every passing year.
+                        Skream is the national level sports festival of K.J. Somaiya College of Engineering and has completed 5 editions. It was started with the aim of cultivating and promoting sportsmanship, competitiveness, and discipline. It hosts students from over 100 institutes and boasts an array of indoor and outdoor games such as Football, Cricket, Badminton, Chess, Throwball, Basketball, Lawn Tennis, Squash etc.
+                        Skream has been graced by prominent sports personalities such as Mr. Balwinder Singh Sandhu, Mr. Wasim Jaffer, Mr. Devindar Walmiki, and many more. Along with Parvaah, the social initiative of KJSCE, has hosted paralympic teams such as the Wheelchair Basketball Federation of India, Indian Blind Football Federation etc.
                     </p>
                 </div>
             </div>
@@ -91,7 +82,6 @@
             <div class="pagination-container">
                 <div id="page-0" class="indicator active"></div>
                 <div id="page-1" class="indicator"></div>
-                <div id="page-2" class="indicator"></div>
             </div>
 
 

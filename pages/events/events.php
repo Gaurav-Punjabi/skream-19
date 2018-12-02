@@ -20,7 +20,7 @@
     <!-- GLOBAL STYLES -->
     <link rel="stylesheet" media="screen and (min-device-width: 1025px) and (max-device-width: 1920px)" href="../../index.css">
     <!-- MOBILE CSS -->
-    <link rel="stylesheet" media="screen and (max-device-width: 480px)" href="../../mobile.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 1024px)" href="../../mobile.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn t work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -46,7 +46,7 @@
                 require_once('../includes/components/hamburger.php');
             ?>
 
-       <!-- RIGHT SECTION -->
+        <!-- RIGHT SECTION -->
         <div class="events-info mobile">
             <div class="heading-container sport">
                 <div class="divider long animated faster slideInUp"></div>
@@ -102,23 +102,23 @@
                 <div class="divider long animated faster slidInUp"></div>
                 <h6 class="event-heading animated faster slidInUp">Athletics</h6>
             </div>
-            
+
             <div class="basketball heading-container hidden">
                 <div class="divider long animated faster slidInUp"></div>
                 <h6 class="event-heading animated faster slidInUp">Basketball</h6>
             </div>
-            
+
             <div class="volleyball heading-container hidden">
                 <div class="divider long animated faster slidInUp"></div>
                 <h6 class="event-heading animated faster slidInUp">Volleyball</h6>
             </div>
-            
+
             <div class="throwball heading-container hidden">
                 <div class="divider long animated faster slidInUp"></div>
                 <h6 class="event-heading animated faster slidInUp">Throwball</h6>
             </div>
         </div>
-       
+
         <!-- LEFT SECTION -->
         <div class="fixed-section">
             <div class="event-wrapper animated fadeInUp">
@@ -146,11 +146,9 @@
                 <div class="event sport">  
                     <div class="content">   
                         <br>
-                        <span>Skream</span> is home to 14 sports in addition to other informal events. 
-                        <br>    
-                        Participants from about <span>100 institutes</span> over the country participate in  : 
-                        <ul class="headings">    
-                            <br>    
+                        Participants from about <span>100 institutes</span> over the country participate in :
+                        <ul class="headings">
+                            <br>
                             <li>football </li>
                             <li>cricket </li>
                             <li>badminton </li>
@@ -171,7 +169,7 @@
                 <!--END OF DEFAULE SECTION -->
 
                 <!-- BADMINTON-->
-                <div class="event hidden badminton">
+                <div class="event  animated faster slidInUp hidden badminton">
                     <h3 class="gender selected boys-option">boys</h3>
                     <h3 class="gender girls-option">girls</h3>
 
@@ -186,7 +184,6 @@
                                 <ul>
                                     <li>Singles</li>
                                     <li>Doubles</li>
-                                    <li>Singles</li>
                                 </ul>
                                 <li>Only one player can play two matches (but not both singles)</li>
                                 <li>Direct knockout format for both singles and team event</li>
@@ -208,7 +205,7 @@
                                 <div class="column"> &#x20b9; 1,800</div>
                             </div>
                             <div class="winning-place">
-                                <div class="column label">team </div>
+                                <div class="column label">doubles </div>
                                 <div class="column"> &#x20b9; 6,500</div>
                                 <div class="column"> &#x20b9; 2,500</div>
                             </div>
@@ -218,22 +215,13 @@
                         <div class="entry-fee">
                             <div class="header">
                                 <div class="column">SINGLES</div>
-                                <div class="column">TEAM</div>
+                                <div class="column">DOUBLES</div>
                             </div>
                             <div class="fee">
                                 <div class="column">&#x20b9; 350</div>
                                 <div class="column">&#x20b9; 750</div>
                             </div>
                         </div>
-
-                        <h6 class="content-heading">Event Heads</h6>
-                        <p class="content">
-                            Nilay Juthani : 9619067615
-                            <br>
-                            Akshit Tayade : 9892991690
-                            <br>
-                            Raghvendra Shinde : 9405899997
-                        </p>
                     </div>
                     <!-- END OF BOYS SECTION -->
 
@@ -241,11 +229,11 @@
                     <div id="girls" class="hidden">
                         <h6 class="content-heading">Rules</h6>
                         <div class="content">
-                            <ul>    
-                            <li>Single event and Doubles event</li>
-                            <li>Both player should be from same college</li>
-                            <li>Direct knockout format</li>
-                            <li>Gum sole shoes are mandatory</li>
+                            <ul>
+                                <li>Single event and Doubles event</li>
+                                <li>Both player should be from same college</li>
+                                <li>Direct knockout format</li>
+                                <li>Gum sole shoes are mandatory</li>
                             </ul>
                         </div>
 
@@ -262,7 +250,7 @@
                                 <div class="column"> &#x20b9; 1,000</div>
                             </div>
                             <div class="winning-place">
-                                <div class="column label">team </div>
+                                <div class="column label">doubles </div>
                                 <div class="column"> &#x20b9; 4,500</div>
                                 <div class="column"> &#x20b9; 1,800</div>
                             </div>
@@ -272,14 +260,14 @@
                         <div class="entry-fee">
                             <div class="header">
                                 <div class="column">SINGLES</div>
-                                <div class="column">TEAM</div>
+                                <div class="column">DOUBLES</div>
                             </div>
                             <div class="fee">
                                 <div class="column">&#x20b9; 300</div>
                                 <div class="column">&#x20b9; 500</div>
                             </div>
                         </div>
-
+                        
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
                             Tanisha Ashar: 8976284930
@@ -292,12 +280,13 @@
                 <!-- END OF BADMINTON -->
 
                 <!-- FOOTBALL-->
-                <div class="event hidden football">
+                <div class="event  animated faster slidInUp hidden football">
                     <h3 class="gender selected boys-option">boys</h3>
                     <h3 class="gender girls-option">girls</h3>
 
                     <!-- BOYS-->
                     <div id="boys" class="hidden">
+
                         <h6 class="content-heading">Rules</h6>
                         <div class="content">
                             <ul>
@@ -331,7 +320,7 @@
                                 <div class="column">&#x20b9; 2,800</div>
                             </div>
                         </div>
-
+                        
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
                             Aniket Shah: 9930186221
@@ -390,11 +379,20 @@
 
 
                 <!-- RINK FOOTBALL-->
-                <div class="event hidden rink-football">
+                <div class="event  animated faster slidInUp hidden rink-football">
                     <h3 class="gender selected boys-option">boys</h3>
 
                     <!-- BOYS-->
                     <div id="boys" class="hidden">
+                        <h6 class="content-heading">Event Heads</h6>
+                        <p class="content">
+                            Aditya Shinde: 8104426081
+                            <br>
+                            Nikhil Chaplot: 9892531773
+                            <br>
+                            Rambhia Om: 9768369999
+                        </p>
+
                         <h6 class="content-heading">Rules</h6>
                         <div class="content">
                             <ul>
@@ -438,15 +436,6 @@
                                 <div class="column">&#x20b9; 700</div>
                             </div>
                         </div>
-
-                        <h6 class="content-heading">Event Heads</h6>
-                        <p class="content">
-                            Aditya Shinde: 8104426081
-                            <br>
-                            Nikhil Chaplot: 9892531773
-                            <br>
-                            Rambhia Om: 9768369999
-                        </p>
                     </div>
                     <!-- END OF BOYS SECTION -->
                 </div>
@@ -454,7 +443,7 @@
 
 
                 <!-- CRICKET-->
-                <div class="event hidden cricket">
+                <div class="event  animated faster slidInUp hidden cricket">
                     <h3 class="gender selected boys-option">boys</h3>
 
                     <!-- BOYS-->
@@ -491,7 +480,6 @@
                                 <div class="column">&#x20b9; 1,800</div>
                             </div>
                         </div>
-
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
                             Mayank Kakad: 8879856958
@@ -509,7 +497,7 @@
 
 
                 <!-- BOX CRICKET-->
-                <div class="event hidden box-cricket">
+                <div class="event  animated faster slidInUp hidden box-cricket">
                     <h3 class="gender selected boys-option">boys</h3>
 
                     <!-- BOYS-->
@@ -563,7 +551,6 @@
                                 <div class="column">&#x20b9; 800</div>
                             </div>
                         </div>
-
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
                             Rachit Jain: 7977579880
@@ -583,12 +570,13 @@
 
 
                 <!-- LAWN TENNIS-->
-                <div class="event hidden lawn-tennis">
+                <div class="event  animated faster slidInUp hidden lawn-tennis">
                     <h3 class="gender selected boys-option">boys</h3>
                     <h3 class="gender girls-option">girls</h3>
 
                     <!-- BOYS-->
                     <div id="boys" class="hidden">
+
                         <h6 class="content-heading">Rules</h6>
                         <div class="content">
                             <ul>
@@ -624,10 +612,6 @@
 
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
-                            Parth Shah: 9370368430
-                            <br>
-                            Daniel George: 9833428378
-                            <br>
                             Kruthika Gangaraju: 8424998412
                             <br>
                             Shreya Ughade: 9757297544
@@ -676,12 +660,13 @@
 
 
                 <!-- SQUASH-->
-                <div class="event hidden squash">
+                <div class="event  animated faster slidInUp hidden squash">
                     <h3 class="gender selected boys-option">boys</h3>
                     <h3 class="gender girls-option">girls</h3>
 
                     <!-- BOYS-->
                     <div id="boys" class="hidden">
+
                         <h6 class="content-heading">Rules</h6>
                         <div class="content">
                             <ul>
@@ -714,7 +699,6 @@
                                 <div class="column">&#x20b9; 400/-</div>
                             </div>
                         </div>
-
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
                             Jugal Chauhan: 9594999300
@@ -726,6 +710,7 @@
 
                     <!-- GIRLS-->
                     <div id="girls" class="hidden">
+
                         <h6 class="content-heading">Rules</h6>
                         <div class="content">
                             <li>Singles event only</li>
@@ -769,12 +754,13 @@
 
 
                 <!-- TABLE TENNIS-->
-                <div class="event hidden table-tennis">
+                <div class="event  animated faster slidInUp hidden table-tennis">
                     <h3 class="gender selected boys-option">boys</h3>
                     <h3 class="gender girls-option">girls</h3>
 
                     <!-- BOYS-->
                     <div id="boys" class="hidden">
+
                         <h6 class="content-heading">Rules</h6>
                         <div class="content">
                             <ul>
@@ -816,11 +802,10 @@
                                 <div class="column">&#x20b9; 600</div>
                             </div>
                         </div>
-
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
                             Dhruv Bid: 9930119556
-                                <br>    
+                            <br>
                             Dhvanit Bhimani: 9870774815
                         </p>
                     </div>
@@ -828,6 +813,7 @@
 
                     <!-- GIRLS-->
                     <div id="girls" class="hidden">
+
                         <h6 class="content-heading">Rules</h6>
                         <div class="content">
                             <li>Only singles event</li>
@@ -861,7 +847,9 @@
 
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
-                            Madhura Shegaonkar :9029042700
+                            Tanisha Ashar: 8976284930
+                            <br>
+                            Karan Pandya: 9930833040
                         </p>
                     </div>
                     <!-- END OF GIRLS SECTION -->
@@ -870,12 +858,13 @@
 
 
                 <!-- CARROM-->
-                <div class="event hidden carrom">
+                <div class="event  animated faster slidInUp hidden carrom">
                     <h3 class="gender selected boys-option">boys</h3>
                     <h3 class="gender girls-option">girls</h3>
 
                     <!-- BOYS-->
                     <div id="boys" class="hidden">
+
                         <h6 class="content-heading">Rules</h6>
                         <div class="content">
                             <ul>
@@ -916,7 +905,6 @@
                                 <div class="column">&#x20b9; 300</div>
                             </div>
                         </div>
-
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
                             Jeet Mehta: 9870772737
@@ -960,7 +948,7 @@
                                 <div class="column">&#x20b9; 150</div>
                             </div>
                         </div>
-
+                        
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
                             Deepika Mantri: 7588352761
@@ -974,12 +962,13 @@
 
 
                 <!-- CHESS-->
-                <div class="event hidden chess">
+                <div class="event  animated faster slidInUp hidden chess">
                     <h3 class="gender selected boys-option">boys</h3>
                     <h3 class="gender girls-option">girls</h3>
 
                     <!-- BOYS-->
                     <div id="boys" class="hidden">
+
                         <h6 class="content-heading">Rules</h6>
                         <div class="content">
                             <span>Traditional</span>
@@ -1035,7 +1024,6 @@
                                 <div class="column">&#x20b9; 150</div>
                             </div>
                         </div>
-
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
                             Jeet Mehta: 9870772737
@@ -1049,12 +1037,7 @@
 
                     <!-- GIRLS-->
                     <div id="girls" class="hidden">
-                        <h6 class="content-heading">Rules</h6>
-                        <div class="content">
-                            <li>All university rules applicable</li>
-                            <li>Singles event</li>
-                            <li>Direct knockout format</li>
-                        </div>
+                        
 
                         <h6 class="content-heading">Prize</h6>
                         <div class="prize-money team">
@@ -1079,7 +1062,6 @@
                                 <div class="column">&#x20b9; 150</div>
                             </div>
                         </div>
-
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
                             Deepika Mantri: 7588352761
@@ -1090,16 +1072,16 @@
                     <!-- END OF GIRLS SECTION -->
                 </div>
                 <!-- END OF CARROM -->
-                
-                
+
+
                 <!-- ATHLETICS-->
-                <div class="event hidden athletics">
+                <div class="event  animated faster slidInUp hidden athletics">
                     <h3 class="gender selected boys-option">boys</h3>
                     <h3 class="gender girls-option">girls</h3>
 
                     <!-- BOYS-->
                     <div id="boys" class="hidden">
-                       <h6 class="content-heading">Events</h6>
+                        <h6 class="content-heading">Events</h6>
                         <div class="content">
                             <ul>
                                 <li>100m</li>
@@ -1111,12 +1093,12 @@
                                 <li>Long Jump</li>
                             </ul>
                         </div>
-                        
+
                         <h6 class="content-heading">Rules</h6>
                         <div class="content">
                             The tournament will follow the latest rules laid down by the Athletics Federation of India.
                         </div>
-                                
+
                         <!-- PRIZE SECTION -->
                         <h6 class="content-heading">Prize</h6>
                         <div class="prize-money team no-margin">
@@ -1166,8 +1148,8 @@
                             </div>
                         </div>
                         <!-- END OF PRIZE SECTION -->
-                        
-                        
+
+
                         <!-- ENTRY FEE SECTION -->
                         <h6 class="content-heading">Entry Fee</h6>
                         <div class="entry-fee no-margin">
@@ -1209,22 +1191,22 @@
                             </div>
                         </div>
                         <!-- END OF FEE SECTION -->
-
+                        <br>
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
-                            Agam Shah:  88888 85580
+                            Agam Shah: 88888 85580
                             <br>
                             Kaitav Parikh: 9619300969
                         </p>
-                        <br>    
                     </div>
                     <!-- END OF BOYS SECTION -->
 
                     <!-- GIRLS-->
                     <div id="girls" class="hidden">
+
                         <h6 class="content-heading">Events</h6>
-                        <div class="content">   
-                            <ul>    
+                        <div class="content">
+                            <ul>
                                 <li>100M</li>
                                 <li>200M</li>
                                 <li>400M</li>
@@ -1277,7 +1259,7 @@
                             </div>
                         </div>
                         <!-- END OF PRIZE SECTION -->
-                        
+
                         <!-- ENTRY FEE SECTION -->
                         <h6 class="content-heading">Entry Fee</h6>
                         <div class="entry-fee no-margin">
@@ -1321,15 +1303,22 @@
                     <!-- END OF GIRLS SECTION -->
                 </div>
                 <!-- END OF ATHLETICS -->
-                
-                
+
+
                 <!--BASKETBALL-->
-                <div class="event hidden basketball">
+                <div class="event  animated faster slidInUp hidden basketball">
                     <h3 class="gender selected boys-option">boys</h3>
                     <h3 class="gender girls-option">girls</h3>
 
                     <!-- BOYS-->
                     <div id="boys" class="hidden">
+                        <h6 class="content-heading">Event Heads</h6>
+                        <p class="content">
+                            Deep Shah: 9870404085
+                            <br>
+                            Kunal Jain: 9920338372
+                        </p>
+
                         <h6 class="content-heading">Rules</h6>
                         <div class="content">
                             <ul>
@@ -1364,22 +1353,22 @@
                                 <div class="column">&#x20b9; 1,500</div>
                             </div>
                         </div>
-
-                        <h6 class="content-heading">Event Heads</h6>
-                        <p class="content">
-                            Deep Shah: 9870404085
-                            <br>
-                            Kunal Jain: 9920338372
-                        </p>
-                        <br>    
+                        <br>
                     </div>
                     <!-- END OF BOYS SECTION -->
 
                     <!-- GIRLS-->
                     <div id="girls" class="hidden">
+                        <h6 class="content-heading">Event Heads</h6>
+                        <p class="content">
+                            Labdhi Jain: 9930390635
+                            <br>
+                            Aditi Joisher: 8291415239
+                        </p>
+
                         <h6 class="content-heading">Rules</h6>
                         <div class="content">
-                            <ul>    
+                            <ul>
                                 <li>No. of players per team : 5+7</li>
                                 <li>Direct knockout format</li>
                                 <li>Quarter length :9 minutes running</li>
@@ -1411,29 +1400,31 @@
                                 <div class="column">&#x20b9; 800</div>
                             </div>
                         </div>
-
-                        <h6 class="content-heading">Event Heads</h6>
-                        <p class="content">
-                            Labdhi Jain: 9930390635
-                            <br>    
-                            Aditi Joisher: 8291415239       
-                        </p>
-                        <br>    
+                        <br>
                     </div>
                     <!-- END OF GIRLS SECTION -->
                 </div>
                 <!-- END OF BASKETBALL -->
-                
-                
-                
-                
+
+
+
+
                 <!-- VOLLEYBALL-->
-                <div class="event hidden volleyball">
+                <div class="event  animated faster slidInUp hidden volleyball">
                     <h3 class="gender selected boys-option">boys</h3>
                     <h3 class="gender girls-option">girls</h3>
 
                     <!-- BOYS-->
                     <div id="boys" class="hidden">
+                        <h6 class="content-heading">Event Heads</h6>
+                        <p class="content">
+                            Krunal Dattani: 8425935778
+                            <br>
+                            Paresh Shelke: 8689948183
+                            <br>
+                            Soham Mehta : 8433617151
+                        </p>
+
                         <h6 class="content-heading">Rules</h6>
                         <div class="content">
                             <ul>
@@ -1468,24 +1459,23 @@
                                 <div class="column">&#x20b9; 1,200</div>
                             </div>
                         </div>
-
-                        <h6 class="content-heading">Event Heads</h6>
-                        <p class="content">
-                            Krunal Dattani: 8425935778
-                            <br>    
-                            Paresh Shelke: 8689948183
-                            <br>    
-                            Soham Mehta : 8433617151
-                        </p>
-                        <br> 
+                        <br>
                     </div>
                     <!-- END OF BOYS SECTION -->
 
                     <!-- GIRLS-->
                     <div id="girls" class="hidden">
+                        <h6 class="content-heading">Event Heads</h6>
+                        <p class="content">
+                            Akanksha Shridharani: 8452029290
+                            <br>
+                            Kajal Shethia: 7021724900
+                            <br>
+                        </p>
+
                         <h6 class="content-heading">Rules</h6>
                         <div class="content">
-                            <ul>    
+                            <ul>
                                 <li>No. of players per team : 6+6.</li>
                                 <li>Best of 3 sets.</li>
                                 <li>All the rules and standards to be followed, apart from above mentioned, are according to FIVB.</li>
@@ -1517,26 +1507,26 @@
                                 <div class="column">&#x20b9; 700</div>
                             </div>
                         </div>
-
-                        <h6 class="content-heading">Event Heads</h6>
-                        <p class="content">
-                            Akanksha Shridharani: 8452029290
-                            <br>    
-                            Kajal Shethia: 7021724900
-                            <br>    
-                        </p>
                     </div>
                     <!-- END OF GIRLS SECTION -->
                 </div>
                 <!-- END OF VOLLEYBALL -->
-                
-                
+
+
                 <!-- THROWBALL-->
-                <div class="event hidden throwball">
+                <div class="event  animated faster slidInUp hidden throwball">
                     <h3 class="gender boys-option selected">girls</h3>
 
                     <!-- GIRLS-->
                     <div id="boys" class="hidden">
+                        <h6 class="content-heading">Event Heads</h6>
+                        <p class="content">
+                            Debdatta Kundu: 8169206478
+                            <br>
+                            Shreya Kulkarni: 8454918491
+                            <br>
+                        </p>
+
                         <h6 class="content-heading">Rules</h6>
                         <div class="content">
                             <ul>
@@ -1569,20 +1559,12 @@
                                 <div class="column">&#x20b9; 400</div>
                             </div>
                         </div>
-
-                        <h6 class="content-heading">Event Heads</h6>
-                        <p class="content">
-                            Debdatta Kundu:  8169206478
-                            <br>    
-                            Shreya Kulkarni:  8454918491
-                            <br>    
-                        </p>
                     </div>
                     <!-- END OF GIRLS SECTION -->
 
+                </div>
             </div>
-        </div>
-        <!-- END OF LEFT SECTION -->
+            <!-- END OF LEFT SECTION -->
 
         <!-- RIGHT SECTION -->
         <div class="events-info desktop">
@@ -1591,74 +1573,74 @@
                 <h6 class="event-heading animated faster slideInUp">Events</h6>
             </div>
 
-            <div class="football heading-container hidden">
-                <div class="divider long animated faster slideInUp"></div>
-                <h6 class="event-heading animated faster slideInUp">Football</h6>
-            </div>
+                <div class="football heading-container hidden">
+                    <div class="divider long animated faster slideInUp"></div>
+                    <h6 class="event-heading animated faster slideInUp">Football</h6>
+                </div>
 
-            <div class="badminton heading-container hidden">
-                <div class="divider long animated faster slideInUp"></div>
-                <h6 class="event-heading animated faster slideInUp">Badminton</h6>
-            </div>
+                <div class="badminton heading-container hidden">
+                    <div class="divider long animated faster slideInUp"></div>
+                    <h6 class="event-heading animated faster slideInUp">Badminton</h6>
+                </div>
 
-            <div class="cricket heading-container hidden">
-                <div class="divider long animated faster slideInUp"></div>
-                <h6 class="event-heading animated faster slideInUp">Cricket</h6>
-            </div>
+                <div class="cricket heading-container hidden">
+                    <div class="divider long animated faster slideInUp"></div>
+                    <h6 class="event-heading animated faster slideInUp">Cricket</h6>
+                </div>
 
-            <div class="rink-football heading-container hidden">
-                <div class="divider long animated faster slideInUp"></div>
-                <h6 class="event-heading animated faster slideInUp">Rink Football</h6>
-            </div>
+                <div class="rink-football heading-container hidden">
+                    <div class="divider long animated faster slideInUp"></div>
+                    <h6 class="event-heading animated faster slideInUp">Rink Football</h6>
+                </div>
 
-            <div class="box-cricket heading-container hidden">
-                <div class="divider long animated faster slidInUp"></div>
-                <h6 class="event-heading animated faster slidInUp">Box Cricket</h6>
-            </div>
+                <div class="box-cricket heading-container hidden">
+                    <div class="divider long animated faster slidInUp"></div>
+                    <h6 class="event-heading animated faster slidInUp">Box Cricket</h6>
+                </div>
 
-            <div class="squash heading-container hidden">
-                <div class="divider long animated faster slidInUp"></div>
-                <h6 class="event-heading animated faster slidInUp">squash</h6>
-            </div>
+                <div class="squash heading-container hidden">
+                    <div class="divider long animated faster slidInUp"></div>
+                    <h6 class="event-heading animated faster slidInUp">squash</h6>
+                </div>
 
-            <div class="lawn-tennis heading-container hidden">
-                <div class="divider long animated faster slidInUp"></div>
-                <h6 class="event-heading animated faster slidInUp">Lawn Tennis</h6>
-            </div>
+                <div class="lawn-tennis heading-container hidden">
+                    <div class="divider long animated faster slidInUp"></div>
+                    <h6 class="event-heading animated faster slidInUp">Lawn Tennis</h6>
+                </div>
 
-            <div class="table-tennis heading-container hidden">
-                <div class="divider long animated faster slidInUp"></div>
-                <h6 class="event-heading animated faster slidInUp">Table Tennis</h6>
-            </div>
+                <div class="table-tennis heading-container hidden">
+                    <div class="divider long animated faster slidInUp"></div>
+                    <h6 class="event-heading animated faster slidInUp">Table Tennis</h6>
+                </div>
 
-            <div class="carrom heading-container hidden">
-                <div class="divider long animated faster slidInUp"></div>
-                <h6 class="event-heading animated faster slidInUp">Carrom</h6>
-            </div>
+                <div class="carrom heading-container hidden">
+                    <div class="divider long animated faster slidInUp"></div>
+                    <h6 class="event-heading animated faster slidInUp">Carrom</h6>
+                </div>
 
-            <div class="athletics heading-container hidden">
-                <div class="divider long animated faster slidInUp"></div>
-                <h6 class="event-heading animated faster slidInUp">Athletics</h6>
-            </div>
-            
-            <div class="basketball heading-container hidden">
-                <div class="divider long animated faster slidInUp"></div>
-                <h6 class="event-heading animated faster slidInUp">Basketball</h6>
-            </div>
-            
-            <div class="volleyball heading-container hidden">
-                <div class="divider long animated faster slidInUp"></div>
-                <h6 class="event-heading animated faster slidInUp">Volleyball</h6>
-            </div>
-            
-            <div class="throwball heading-container hidden">
-                <div class="divider long animated faster slidInUp"></div>
-                <h6 class="event-heading animated faster slidInUp">Throwball</h6>
-            </div>
-        </div>
-        <!--END OF RIGHT SECTION -->
+                <div class="athletics heading-container hidden">
+                    <div class="divider long animated faster slidInUp"></div>
+                    <h6 class="event-heading animated faster slidInUp">Athletics</h6>
+                </div>
 
-        <!-- ADDING THE INFINITE COUNTERS -->
+                <div class="basketball heading-container hidden">
+                    <div class="divider long animated faster slidInUp"></div>
+                    <h6 class="event-heading animated faster slidInUp">Basketball</h6>
+                </div>
+
+                <div class="volleyball heading-container hidden">
+                    <div class="divider long animated faster slidInUp"></div>
+                    <h6 class="event-heading animated faster slidInUp">Volleyball</h6>
+                </div>
+
+                <div class="throwball heading-container hidden">
+                    <div class="divider long animated faster slidInUp"></div>
+                    <h6 class="event-heading animated faster slidInUp">Throwball</h6>
+                </div>
+            </div>
+            <!--END OF RIGHT SECTION -->
+
+            <!-- ADDING THE INFINITE COUNTERS -->
             <?php
                 require_once('../includes/components/light-counters.php');
             ?>

@@ -4,10 +4,11 @@
 define('HOME_PAGE', 'Home');
 
 // Social Media Links
-define('FACEBOOK_LINK', '');
-define('TWITTER_LINK', '');
-define('INSTAGRAM_LINK', '');
-define('YOUTUBE_LINK', '');
-define('SNAPCHAT_LINK', '');
+define('FACEBOOK_LINK', 'https://www.facebook.com/KJSCESKREAM/');
+define('TWITTER_LINK', 'https://twitter.com/kjsceskream');
+define('INSTAGRAM_LINK', 'https://www.instagram.com/kjscelive/');
+define('YOUTUBE_LINK', 'https://www.youtube.com/kjscelive/');
+define('SNAPCHAT_LINK', 'https://www.snapchat.com/add/kjscelive');
 
+define('COMPETE_NOW_LINK', 'http://bit.ly/SkreamRegistration');
 ?>

@@ -16,7 +16,7 @@
     <!-- GLOBAL STYLES -->
     <link rel="stylesheet" media="screen and (min-device-width: 1025px) and (max-device-width: 1920px)" href="../../index.css">
     <!-- MOBILE CSS -->
-    <link rel="stylesheet" media="screen and (max-device-width: 480px)" href="../../mobile.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 1024px)" href="../../mobile.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn t work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -28,34 +28,9 @@
 <body>
     <!-- SIDEBAR -->
 
-    <div class="sidebar-wrapper close">
-        <nav>
-            <a href="../home/home.php" class="animated faster slideInUp">
-                <li class="sidebar-option animated"> home </li>
-            </a>
-            <a href="../events/events.php" class="animated faster slideInUp">
-                <li class="sidebar-option animated"> events </li>
-            </a>
-            <a href="../rules/rules.php" class="animated faster slideInUp">
-                <li class="sidebar-option animated"> rules </li>
-            </a>
-            <a href="../accomodation/accomodation.php" class="animated faster slideInUp">
-                <li class="sidebar-option animated"> accomodation </li>
-            </a>
-            <a href="../registration/registration.php" class="animated faster slideInUp">
-                <li class="sidebar-option animated"> registration </li>
-            </a>
-            <a href="../parvaah/parvaah.php" class="animated faster slideInUp">
-                <li class="sidebar-option animated"> parvaah </li>
-            </a>
-            <a href="../sponsors/sponsors.php" class="animated faster slideInUp">
-                <li class="sidebar-option animated"> sponsors </li>
-            </a>
-            <a href="../contact/contact.php" class="animated faster slideInUp">
-                <li class="sidebar-option animated"> contact </li>
-            </a>
-        </nav>
-    </div>
+    <?php
+        require_once("../includes/components/sidebar.php");
+    ?>
     <!-- SOCIAL LINKS -->
     <div class="social-links animated fadeInRight">
         <a href="https://www.facebook.com/KJSCESKREAM/"><i class="social-link fa fa-facebook"></i></a>
@@ -70,7 +45,7 @@
         <!-- LEFT SECTION -->
         <div class="info-section animated fadeInUp">
             <img class="logo" src="../../assets/images/logo/skream-logo.svg" alt="Skream Logo">
-            <img class="student-council" src="../../assets/images/contact.png" alt="KJSCE STUDENT COUNCIL INFO">
+            <img class="student-council" src="../../assets/images/address.png" alt="KJSCE STUDENT COUNCIL INFO">
             <div class="content">
                 <p class="sub-heading">For any queries contact : </p>
                 <ul>
