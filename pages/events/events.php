@@ -31,20 +31,71 @@
 
 <body>
     <!-- SIDEBAR -->
-    <?php
-        require_once('../includes/components/sidebar.php');
-    ?>
+    <div class="sidebar-wrapper close">
+        <nav>
+            <!-- HOME -->
+            <a href="../home/home.php" class="animated fadeInUp">
+                <li class="sidebar-option animated selected">
+                    home
+                </li>
+            </a>
+
+            <!-- EVENTS -->
+            <a href="../events/events.php" class="animated fadeInUp">
+                <li class="sidebar-option animated">
+                    events
+                </li>
+            </a>
+
+            <!-- RULES -->
+            <a href="../rules/rules.php" class="animated fadeInUp">
+                <li class="sidebar-option animated">
+                    events
+                </li>
+            </a>
+
+            <!-- ACCOMODATION -->
+            <a href="../accomodation/accomodation.php" class="animated fadeInUp">
+                <li class="sidebar-option animated">
+                    accomodations
+                </li>
+            </a>
+
+            <!-- REGISTRATION  -->
+            <a href="../registration/registration.php" class="animated fadeInUp">
+                <li class="sidebar-option animated">
+                    registration
+                </li>
+            </a>
+
+            <!-- PARVAAH  -->
+            <a href="../parvaah/parvaah.php" class="animated fadeInUp">
+                <li class="sidebar-option animated">
+                    parvaah
+                </li>
+            </a>
+
+            <!-- CONTACT  -->
+            <a href="../contact/contact.php" class="animated fadeInUp">
+                <li class="sidebar-option animated">
+                    contact
+                </li>
+            </a>
+        </nav>
+    </div>
 
     <!-- SOCIAL LINKS -->
-    <?php
-        require_once('../includes/components/social-links.php');
-    ?>
+    <div class="social-links animated fadeInRight">
+        <a href="https://www.facebook.com/KJSCESKREAM/"><i class="social-link fa fa-facebook"></i></a>
+        <a href="https://twitter.com/kjsceskream"><i class="social-link fa fa-twitter"></i></a>
+        <a href="https://www.snapchat.com/add/kjscelive"><i class="social-link fa fa-snapchat-ghost"></i></a>
+        <a href="https://www.instagram.com/kjscelive/"><i class="social-link fa fa-instagram"></i></a>
+        <a href="https://www.youtube.com/kjscelive/"><i class="social-link fa fa-youtube-play"></i></a>
+    </div>
 
     <section class="events section">
         <!-- HAMBURGER -->
-        <?php
-                require_once('../includes/components/hamburger.php');
-            ?>
+        <div class="hamburger" id="hamburger"></div>
 
         <!-- RIGHT SECTION -->
         <div class="events-info mobile">
@@ -143,8 +194,8 @@
                 </div>
 
                 <!-- DEFAULT SECTION -->
-                <div class="event sport">  
-                    <div class="content">   
+                <div class="event sport">
+                    <div class="content">
                         <br>
                         Participants from about <span>100 institutes</span> over the country participate in :
                         <ul class="headings">
@@ -267,7 +318,7 @@
                                 <div class="column">&#x20b9; 500</div>
                             </div>
                         </div>
-                        
+
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
                             Tanisha Ashar: 8976284930
@@ -320,7 +371,7 @@
                                 <div class="column">&#x20b9; 2,800</div>
                             </div>
                         </div>
-                        
+
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
                             Aniket Shah: 9930186221
@@ -948,7 +999,7 @@
                                 <div class="column">&#x20b9; 150</div>
                             </div>
                         </div>
-                        
+
                         <h6 class="content-heading">Event Heads</h6>
                         <p class="content">
                             Deepika Mantri: 7588352761
@@ -1037,7 +1088,7 @@
 
                     <!-- GIRLS-->
                     <div id="girls" class="hidden">
-                        
+
 
                         <h6 class="content-heading">Prize</h6>
                         <div class="prize-money team">
@@ -1284,7 +1335,7 @@
                         </div>
                         <div class="entry-fee">
                             <div class="header">
-                                <div class="column">SHOTPUT</div>                                
+                                <div class="column">SHOTPUT</div>
                             </div>
                             <div class="fee">
                                 <div class="column">&#x20b9; 100</div>
@@ -1566,12 +1617,12 @@
             </div>
             <!-- END OF LEFT SECTION -->
 
-        <!-- RIGHT SECTION -->
-        <div class="events-info desktop">
-            <div class="heading-container sport">
-                <div class="divider long animated faster slideInUp"></div>
-                <h6 class="event-heading animated faster slideInUp">Events</h6>
-            </div>
+            <!-- RIGHT SECTION -->
+            <div class="events-info desktop">
+                <div class="heading-container sport">
+                    <div class="divider long animated faster slideInUp"></div>
+                    <h6 class="event-heading animated faster slideInUp">Events</h6>
+                </div>
 
                 <div class="football heading-container hidden">
                     <div class="divider long animated faster slideInUp"></div>
@@ -1641,9 +1692,30 @@
             <!--END OF RIGHT SECTION -->
 
             <!-- ADDING THE INFINITE COUNTERS -->
-            <?php
-                require_once('../includes/components/light-counters.php');
-            ?>
+            <!-- ADDING THE INFINITE COUNTERS -->
+            <div class="counters">
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+            </div>
+            <!-- END OF INFINITE COUNTERS -->
             <!-- END OF INFINITE COUNTERS -->
     </section>
 
