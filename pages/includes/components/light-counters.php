@@ -1,9 +1,22 @@
 <div class="counters">
-    <?php 
-        for($i=0;$i<20;$i++) {
-    ?>
     <div class="counter"></div>
-    <?php
-    	}
-	?>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
 </div>

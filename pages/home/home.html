@@ -1,8 +1,3 @@
-<?php
-    require_once('../includes/constants.php');
-    $page = HOME_PAGE;
-?>
-
 <!DOCTYPE html>
 <html lang="">
 
@@ -34,65 +29,66 @@
         <nav>
             <!-- HOME -->
             <a href="../home/home.php" class="animated fadeInUp">
-                <li class="sidebar-option animated">">
+                <li class="sidebar-option animated selected">
                     home
                 </li>
             </a>
-            
+
             <!-- EVENTS -->
             <a href="../events/events.php" class="animated fadeInUp">
-                <li class="sidebar-option animated">">
+                <li class="sidebar-option animated">
                     events
                 </li>
             </a>
-            
+
             <!-- RULES -->
             <a href="../rules/rules.php" class="animated fadeInUp">
-                <li class="sidebar-option animated">">
+                <li class="sidebar-option animated">
                     events
                 </li>
             </a>
-            
+
             <!-- ACCOMODATION -->
             <a href="../accomodation/accomodation.php" class="animated fadeInUp">
-                <li class="sidebar-option animated">">
+                <li class="sidebar-option animated">
                     accomodations
                 </li>
             </a>
-            
+
             <!-- REGISTRATION  -->
             <a href="../registration/registration.php" class="animated fadeInUp">
-                <li class="sidebar-option animated">">
+                <li class="sidebar-option animated">
                     registration
                 </li>
             </a>
-            
+
             <!-- PARVAAH  -->
             <a href="../parvaah/parvaah.php" class="animated fadeInUp">
-                <li class="sidebar-option animated">">
+                <li class="sidebar-option animated">
                     parvaah
                 </li>
             </a>
-            
+
             <!-- CONTACT  -->
             <a href="../contact/contact.php" class="animated fadeInUp">
-                <li class="sidebar-option animated">">
+                <li class="sidebar-option animated">
                     contact
                 </li>
             </a>
         </nav>
     </div>
 
-    <!-- SOCIAL LINKS -->
-    <?php
-        require_once('../includes/components/social-links.php');
-    ?>
+    <div class="social-links animated fadeInRight">
+        <a href="https://www.facebook.com/KJSCESKREAM/"><i class="social-link fa fa-facebook"></i></a>
+        <a href="https://twitter.com/kjsceskream"><i class="social-link fa fa-twitter"></i></a>
+        <a href="https://www.snapchat.com/add/kjscelive"><i class="social-link fa fa-snapchat-ghost"></i></a>
+        <a href="https://www.instagram.com/kjscelive/"><i class="social-link fa fa-instagram"></i></a>
+        <a href="https://www.youtube.com/kjscelive/"><i class="social-link fa fa-youtube-play"></i></a>
+    </div>
 
     <section id="home" class="home section">
         <!-- HAMBURGER -->
-        <?php
-                require_once('../includes/components/hamburger.php');
-        ?>
+        <div class="hamburger" id="hamburger"></div>
 
         <!-- LEFT SECTION -->
         <div class="fixed-section">
@@ -134,17 +130,36 @@
 
 
             <div class="social-links-mobile">
-                <a href="<?php echo FACEBOOK_LINK ?>"><i class="social-link fa fa-facebook"></i></a>
-                <a href="<?php echo TWITTER_LINK ?>"><i class="social-link fa fa-twitter"></i></a>
-                <a href="<?php echo SNAPCHAT_LINK ?>"><i class="social-link fa fa-snapchat-ghost"></i></a>
-                <a href="<?php echo INSTAGRAM_LINK ?>"><i class="social-link fa fa-instagram"></i></a>
-                <a href="<?php echo YOUTUBE_LINK ?>"><i class="social-link fa fa-youtube-play"></i></a>
+                <a href="https://www.facebook.com/KJSCESKREAM/"><i class="social-link fa fa-facebook"></i></a>
+                <a href="https://twitter.com/kjsceskream"><i class="social-link fa fa-twitter"></i></a>
+                <a href="https://www.snapchat.com/add/kjscelive"><i class="social-link fa fa-snapchat-ghost"></i></a>
+                <a href="https://www.instagram.com/kjscelive/"><i class="social-link fa fa-instagram"></i></a>
+                <a href="https://www.youtube.com/kjscelive/"><i class="social-link fa fa-youtube-play"></i></a>
             </div>
 
             <!-- ADDING THE INFINITE COUNTERS -->
-            <?php
-                require_once('../includes/components/light-counters.php');
-            ?>
+            <div class="counters">
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+            </div>
             <!-- END OF INFINITE COUNTERS -->
         </div>
         <!--END OF RIGHT SECTION -->
