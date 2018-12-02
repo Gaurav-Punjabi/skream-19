@@ -1,8 +1,3 @@
-<?php
-    require_once('../includes/constants.php');
-    $page = HOME_PAGE;
-?>
-
 <!DOCTYPE html>
 <html lang="">
 
@@ -31,20 +26,71 @@
 
 <body>
     <!-- SIDEBAR -->
-    <?php
-        require_once('../includes/components/sidebar.php');
-    ?>
+    <div class="sidebar-wrapper close">
+        <nav>
+            <!-- HOME -->
+            <a href="../home/home.html" class="animated fadeInUp">
+                <li class="sidebar-option animated selected">
+                    home
+                </li>
+            </a>
 
-    <!-- SOCIAL LINKS -->
-    <?php
-        require_once('../includes/components/social-links.php');
-    ?>
+            <!-- EVENTS -->
+            <a href="../events/events.html" class="animated fadeInUp">
+                <li class="sidebar-option animated">
+                    events
+                </li>
+            </a>
+
+            <!-- RULES -->
+            <a href="../rules/rules.html" class="animated fadeInUp">
+                <li class="sidebar-option animated">
+                    rules
+                </li>
+            </a>
+
+            <!-- ACCOMODATION -->
+            <a href="../accomodation/accomodation.html" class="animated fadeInUp">
+                <li class="sidebar-option animated">
+                    accomodations
+                </li>
+            </a>
+
+            <!-- REGISTRATION  -->
+            <a href="../registration/registration.html" class="animated fadeInUp">
+                <li class="sidebar-option animated">
+                    registration
+                </li>
+            </a>
+
+            <!-- PARVAAH  -->
+            <a href="../parvaah/parvaah.html" class="animated fadeInUp">
+                <li class="sidebar-option animated">
+                    parvaah
+                </li>
+            </a>
+
+            <!-- CONTACT  -->
+            <a href="../contact/contact.html" class="animated fadeInUp">
+                <li class="sidebar-opgtion animated">
+                    contact
+                </li>
+            </a>
+        </nav>
+    </div>
+
+    <div class="social-links animated fadeInRight">
+        <a href="https://www.facebook.com/KJSCESKREAM/"><i class="social-link fa fa-facebook"></i></a>
+        <a href="https://twitter.com/kjsceskream"><i class="social-link fa fa-twitter"></i></a>
+        <a href="https://www.snapchat.com/add/kjscelive"><i class="social-link fa fa-snapchat-ghost"></i></a>
+        <a href="https://www.instagram.com/kjscelive/"><i class="social-link fa fa-instagram"></i></a>
+        <a href="https://www.youtube.com/kjscelive/"><i class="social-link fa fa-youtube-play"></i></a>
+    </div>
 
     <section id="parvaah" class="parvaah section">
         <!-- SIDEBAR -->
-        <?php
-            require_once('../includes/components/hamburger.php');
-        ?>
+        <div class="hamburger" id="hamburger"></div>
+        
         <div class="parvaah-info-container col-md-12">
             <div class="logo-container">
                 <img src="../../assets/images/logo/parvah-1.svg" alt="Parvah Logo">
@@ -90,9 +136,29 @@
         </div>
 
         <!-- ADDING THE INFINITE COUNTERS -->
-        <?php
-            require_once('../includes/components/light-counters.php');
-        ?>
+        <div class="counters">
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+                <div class="counter"></div>
+            </div>
+            <!-- END OF INFINITE COUNTERS -->
     </section>
 
     <!-- JQUERY -->
