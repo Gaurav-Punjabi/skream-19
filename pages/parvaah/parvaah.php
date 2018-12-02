@@ -72,36 +72,21 @@
             <img src="../../assets/images/parvaah/plastic-collection.jpg" alt="Beach Clean" class="event-image right">
         </div>
 
-        <div class="parvaah-event">
-            <img src="../../assets/images/parvaah/ganpati-visarjan.jpg" alt="Beach Clean" class="event-image">
-            <div class="parvaah-event-info">
-                <h6 class="heading right">GANPATI VISARJAN CLEAN-UP</h6>
-                <p class="content right">The festive season of Ganesh Chaturthi is one which is celebrated with great pride and enthusiasm all across the state. But what follows at the end of 11 days is a beach replete of floral waste and half-broken idols. To overcome this, Parvaah has decided to organize a beach clean-up at the Girgaum Chowpatty on the day after Ganesh Visarjan to clear up the beach of all its waste. We plan on associating with other college students from that area and make this a ground-breaking youth moment. Similarly, we would also be spreading awareness about celebrating an eco-friendly Ganesh Utsav in the weeks leading to the festival.</p>
-            </div>
-        </div>
 
         <div class="parvaah-event">
             <div class="parvaah-event-info">
-                <h6 class="heading left">SIGNAL SHALA</h6>
-                <p class="content left">Signal Shala is an innovative concept initialized by Samarth Bharat Vyaspith along with Thane Municipal Corporation, to provide education to underprivileged children living on signals in Thane. Situated in a small container below a bridge, the main aim of Signal Shala is to make these kids capable of adjusting themselves with the mainstream world. We at Parvaah plan on spreading awareness about Zero Waste with the help of these kids and also teach them simple ways to treat their waste. As signals witness a frequent number of vehicles, we aim to use this medium to make the people aware of the basic habits they can follow to effectively manage their waste. We at Parvaah believe that only when it is a collective effort of all its citizens can a city truly make great progress in achieving a goal.</p>
+                <h6 class="heading right">SIGNAL SHALA</h6>
+                <p class="content right">Signal Shala is an innovative concept initialized by Samarth Bharat Vyaspith along with Thane Municipal Corporation, to provide education to underprivileged children living on signals in Thane. Situated in a small container below a bridge, the main aim of Signal Shala is to make these kids capable of adjusting themselves with the mainstream world. We at Parvaah plan on spreading awareness about Zero Waste with the help of these kids and also teach them simple ways to treat their waste. As signals witness a frequent number of vehicles, we aim to use this medium to make the people aware of the basic habits they can follow to effectively manage their waste. We at Parvaah believe that only when it is a collective effort of all its citizens can a city truly make great progress in achieving a goal.</p>
             </div>
             <img src="../../assets/images/parvaah/ganpati-visarjan.jpg" alt="Beach Clean" class="event-image right">
         </div>
 
         <div class="parvaah-event">
-            <img src="../../assets/images/parvaah/secret-santa.jpg" alt="Beach Clean" class="event-image">
+            <img src="../../assets/images/parvaah/secret-santa.jpg" alt="Beach Clean" class="event-image left">
             <div class="parvaah-event-info">
-                <h6 class="heading right">SECRET SANTA</h6>
-                <p class="content right">On the occasion of Christmas, Parvaah plans on visiting an orphanage and celebrate with the kids. To further the joy, we would also be distributing toys, goodies, and sweets among the kids. This would be followed by playing games with the children, interacting with them and ensuring that everyone has a smile on his or her face.</p>
+                <h6 class="heading left">SECRET SANTA</h6>
+                <p class="content left">On the occasion of Christmas, Parvaah plans on visiting an orphanage and celebrate with the kids. To further the joy, we would also be distributing toys, goodies, and sweets among the kids. This would be followed by playing games with the children, interacting with them and ensuring that everyone has a smile on his or her face.</p>
             </div>
-        </div>
-
-        <div class="parvaah-event">
-            <div class="parvaah-event-info">
-                <h6 class="heading left">PARVAAH MARATHON</h6>
-                <p class="content left">Parvaah plans to organize a marathon to raise awareness about waste crisis. The marathon is proposed to take place in the Ghatkopar area of suburban Mumbai. We would also be starting a fundraiser event through this marathon.</p>
-            </div>
-            <img src="../../assets/images/parvaah/ganpati-visarjan.jpg" alt="Beach Clean" class="event-image right">
         </div>
 
         <!-- ADDING THE INFINITE COUNTERS -->

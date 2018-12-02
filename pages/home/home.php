@@ -63,7 +63,7 @@
             <div class="card" id="about-section-2">
                 <div class="card-content animated faster fadeInRight">
                     <div class="divider long"></div>
-                    <h3 class="heading">About <br><span>Scream</span></h3>
+                    <h3 class="heading">About <br><span>Skream</span></h3>
                     <p class="content">
                         Skream is the national level sports festival of K.J. Somaiya College of Engineering and has completed 5 editions. It was started with the aim of cultivating and promoting sportsmanship, competitiveness, and discipline. It hosts students from over 100 institutes and boasts an array of indoor and outdoor games such as Football, Cricket, Badminton, Chess, Throwball, Basketball, Lawn Tennis, Squash etc.
                         Skream has been graced by prominent sports personalities such as Mr. Balwinder Singh Sandhu, Mr. Wasim Jaffer, Mr. Devindar Walmiki, and many more. Along with Parvaah, the social initiative of KJSCE, has hosted paralympic teams such as the Wheelchair Basketball Federation of India, Indian Blind Football Federation etc.
