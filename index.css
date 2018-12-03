@@ -738,11 +738,11 @@ a:focus, a:hover {
 }
 
 .events-info .heading-container.squash {
-    background-image: url('./assets/images/Squash.png');
+    background-image: url('./assets/images/squash.png');
 }
 
 .events-info .heading-container.lawn-tennis {
-    background-image: url('./assets/images/Tennis.png');
+    background-image: url('./assets/images/tennis.png');
 }
 
 .events-info .heading-container.table-tennis {
@@ -750,7 +750,7 @@ a:focus, a:hover {
 }
 
 .events-info .heading-container.carrom {
-    background-image: url('./assets/images/Carrom.png');
+    background-image: url('./assets/images/carrom.png');
 }
 
 .events-info .heading-container.athletics {
@@ -758,7 +758,7 @@ a:focus, a:hover {
 }
 
 .events-info .heading-container.basketball {
-    background-image: url('./assets/images/Basketball.png');
+    background-image: url('./assets/images/basketball.png');
 }
 
 .events-info .heading-container.volleyball {
