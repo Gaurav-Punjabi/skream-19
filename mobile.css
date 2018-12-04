@@ -710,7 +710,7 @@ a:focus, a:hover {
 }
 
 .events-info .heading-container.cricket {
-    background-image: url('./assets/images/Cricket.png');
+    background-image: url('./assets/images/cricket.png');
 }
 
 .events-info .heading-container.football {
@@ -722,27 +722,27 @@ a:focus, a:hover {
 }
 
 .events-info .heading-container.box-cricket {
-    background-image: url('./assets/images/Box%20Cricket.png');
+    background-image: url('./assets/images/box-cricket.png');
 }
 
 .events-info .heading-container.rink-football {
-    background-image: url('./assets/images/Rink%20Football.png');
+    background-image: url('./assets/images/rink-football.png');
 }
 
 .events-info .heading-container.squash {
-    background-image: url('./assets/images/Squash.png');
+    background-image: url('./assets/images/squash.png');
 }
 
 .events-info .heading-container.lawn-tennis {
-    background-image: url('./assets/images/Tennis.png');
+    background-image: url('./assets/images/tennis.png');
 }
 
 .events-info .heading-container.table-tennis {
-    background-image: url('./assets/images/Table%20Tennis.png');
+    background-image: url('./assets/images/table-tennis.png');
 }
 
 .events-info .heading-container.carrom {
-    background-image: url('./assets/images/Carrom.png');
+    background-image: url('./assets/images/carrom.png');
 }
 
 .events-info .heading-container.athletics {
@@ -750,15 +750,15 @@ a:focus, a:hover {
 }
 
 .events-info .heading-container.basketball {
-    background-image: url('./assets/images/Basketball.png');
+    background-image: url('./assets/images/basketball.png');
 }
 
 .events-info .heading-container.volleyball {
-    background-image: url('./assets/images/Volleyball.png');
+    background-image: url('./assets/images/volleyball.png');
 }
 
 .events-info .heading-container.throwball {
-    background-image: url('./assets/images/Throwball.png');
+    background-image: url('./assets/images/throwball.png');
 }
 
 /************************************************************************************************
