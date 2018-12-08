@@ -577,7 +577,7 @@ a:focus, a:hover {
 }
 
 .prize-money {
-    width: 350px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
@@ -640,7 +640,7 @@ a:focus, a:hover {
 
 
 .entry-fee {
-    width: 200px;
+    width: 250px;
     height: 60px;
     display: flex;
     margin-bottom: 25px;
@@ -778,6 +778,10 @@ a:focus, a:hover {
 
 .events-info .heading-container.carrom {
     background-image: url('./assets/images/carrom.png');
+}
+
+.events-info .heading-container.chess {
+    background-image: url('./assets/images/Chess.png');
 }
 
 .events-info .heading-container.athletics {
