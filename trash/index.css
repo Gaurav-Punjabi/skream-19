@@ -1,0 +1,1316 @@
+:root {
+    --bg-color: #434242;
+    --primary-color: #f6ad23;
+    --secondary-color: #f6ad23;
+    --accent-color: #2C5A8F;
+}
+
+a {
+    color: transparent;
+    text-decoration: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: var(--bg-color);
+    overflow-x: hidden;
+}
+
+
+@font-face {
+    font-family: UniSansBold;
+    src: url('./assets/fonts/uni-sans/bold.ttf');
+}
+
+@font-face {
+    font-family: UniSansRegular;
+    src: url('./assets/fonts/uni-sans/regular.ttf');
+}
+
+@font-face {
+    font-family: UniSansSemiBold;
+    src: url('./assets/fonts/uni-sans/semi-bold.ttf');
+}
+
+@font-face {
+    font-family: UniSansThin;
+    src: url('./assets/fonts/uni-sans/thin.ttf');
+}
+
+@font-face {
+    font-family: UniSansLight;
+    src: url('./assets/fonts/uni-sans/light.ttf');
+}
+
+
+/************************************************************************************************
+                                    GENERAL STYLING SECTION
+************************************************************************************************/
+.hidden {
+    display: none;
+}
+
+.section {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+a:focus, a:hover {
+    color: transparent;
+}
+
+.section.sidebar-open {
+    animation-name: push-right;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+}
+
+.section.sidebar-close {
+    animation-name: push-left;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+
+.hamburger {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    left: 15px;
+    top: 15px;
+    background: url('assets/images/hamburger.png') no-repeat center center;
+    background-size: cover;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.logo.small {
+    width: 30%;
+    margin-left: 30px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.divider.long {
+    color: var(--secondary-color);
+    width: 150px;
+    height: 8px;
+    margin-bottom: 20px;
+}
+
+
+
+.custom-select {
+    position: relative;
+    font-family: 'UniSansBold';
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.custom-select select {
+    display: none;
+    /*
+        hide original SELECT element:
+    */
+}
+
+.select-selected {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 18px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-color: var(--bg-color) transparent transparent transparent;
+}
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 124px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+    color: color(--bg-color);
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    background-color: var(--secondary-color);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.compete-button-bottom {
+    border: 1px solid var(--bg-color);
+    text-transform: uppercase;
+    padding: 5px 20px;
+    font-family: 'UniSansLight';
+    color: var(--bg-color);
+    font-size: 26px;
+    border-radius: 30px;
+    text-decoration: none;
+    outline: none;
+    position: fixed;
+    bottom: 50px;
+    right: 80px;
+}
+.compete-button-bottom:hover {
+    color: var(--bg-color);
+    text-decoration: none;
+}
+/*----------------------------------------SOCIAL-LINKS-----------------------------------------*/
+.social-links {
+    z-index: 500;
+    position: fixed;
+    top: 40px;
+    right: 5%;
+}
+
+.social-links-mobile {
+    display: none;
+}
+
+.social-link {
+    color: var(--secondary-color);
+    font-size: 24px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+
+/*-------------------------------------KEYFRAMES-----------------------------------------------*/
+@keyframes push-right {
+    from {
+        position: relative;
+        left: 0%;
+    }
+
+    to {
+        position: relative;
+        left: 52%;
+    }
+}
+
+@keyframes push-left {
+    from {
+        position: relative;
+        left: 50%;
+    }
+
+    to {
+        position: relative;
+        left: 0%;
+    }
+}
+
+/************************************************************************************************
+                                    SIDEBAR STYLING SECTION
+************************************************************************************************/
+.sidebar-wrapper {
+    width: 50%;
+    height: 100%;
+    background-color: var(--primary-color);
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: -50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.sidebar-wrapper.open {
+    animation-name: open;
+    animation-duration: 400ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+}
+
+.sidebar-wrapper.close {
+    animation-name: close;
+    animation-duration: 400ms;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+}
+
+
+.sidebar-wrapper .sidebar-option {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 3.2em;
+    color: var(--bg-color);
+    font-family: 'UniSansBold';
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+.sidebar-wrapper .sidebar-option.last {
+    margin-bottom: 0;
+}
+
+.sidebar-wrapper .sidebar-option:hover {
+    color: white;
+}
+
+.sidebar-wrapper .sidebar-option.selected {
+    color: white;
+}
+
+/*-------------------------------------KEYFRAMES-----------------------------------------------*/
+@keyframes open {
+    from {
+        left: -50%;
+    }
+
+    to {
+        left: 0
+    }
+}
+
+@keyframes close {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: -50%;
+    }
+}
+
+/************************************************************************************************
+                                      COUNTERS PAGE STYLING
+************************************************************************************************/
+.counters {
+    height: 100%;
+    width: 4%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 500;
+}
+
+.counters.dark .counter {
+    font-family: UniSansRegular;
+    color: #333;
+}
+
+.counter {
+    color: white;
+    font-family: UniSansLight;
+    letter-spacing: 1px;
+    font-size: 12px;
+    margin: 30px 0;
+    transform: rotate(270deg);
+}
+
+
+/************************************************************************************************
+                                    HOME PAGE STYLING
+************************************************************************************************/
+.home {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/*-------------------------------------FIXED SECTION-----------------------------------------------*/
+.fixed-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.home-fixed-wrapper {
+    display: flex;
+    margin-left: 20%;
+    padding-top: 8%; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.logo {
+    width: 50%;
+    margin-bottom: 80px;
+}
+
+.divider {
+    width: 130px;
+    height: 3px;
+    background: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.home-heading {
+    text-transform: uppercase;
+    font-family: 'UniSansBold';
+    line-height: 1em;
+    font-size: 55px;
+    color: var(--secondary-color);
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.skream-date {
+    font-family: 'UniSansThin';
+    letter-spacing: 5px;
+    font-weight: 300;
+    font-size: 36px;
+    color: var(--secondary-color);
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.compete-button {
+    border: 1px solid white;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    font-family: 'UniSansLight';
+    color: white;
+    font-size: 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    outline: none;
+}
+
+.compete-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-decoration: none;
+}
+
+/*-------------------------------------INFO SECTION-----------------------------------------------*/
+.home-info {
+    flex: 1;
+    
+    display: flex;
+}
+
+#about-section-2 {
+    background: url('assets/images/2.png') no-repeat center center;
+}
+#about-kjsce {
+    background: url('assets/images/about%20kjsce.png') no-repeat center center;
+}
+.home-info .card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.home-info .card .card-content {
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+.home-info .card .card-content .heading {
+    font-family: UniSansRegular;
+    font-size: 4.6rem;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.home-info .card .card-content .heading span {
+    font-family: UniSansBold;
+}
+
+.home-info .card .card-content .content {
+    color: #fff;
+    font-size: 20px;
+    font-family: UniSansRegular;
+    letter-spacing: 1px;
+}
+
+.home-info .pagination-container {
+    width: 50%;
+    height: 10%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-info .pagination-container .indicator {
+    width: 15px;
+    height: 15px;
+    margin-left: 20px;
+    border-radius: 50%;
+    background: #2C5A8F;
+}
+
+.home-info .pagination-container .indicator.active {
+    background: var(--secondary-color);
+}
+
+/************************************************************************************************
+                                    EVENTS PAGE STYLING
+************************************************************************************************/
+.events {
+    height: 100%;
+    overflow: auto;
+}
+
+.events .fixed-section {
+    width: 55%;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.event-wrapper {
+    min-height: min-content;
+    display: flex;
+    margin-left: 120px;
+    margin-right: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.event .gender {
+    font-size: 32px;
+    font-family: 'UniSansBold';
+    text-transform: uppercase;
+    margin-right: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    color: var(--accent-color);
+    display: inline-block;
+}
+
+.events .fixed-section .event-wrapper #select-event{
+    width: 300px;
+    z-index: 300;
+}
+
+.event .gender.selected {
+    color: var(--secondary-color);
+}
+
+.event .content-heading {
+    color: var(--secondary-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'UniSansSemiBold';
+    margin: 0;
+}
+
+.event .content {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'UniSansRegular';
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.event .content .headings li {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.event .content li {
+    text-transform: uppercase;
+}
+
+.event .content span {
+    font-family: 'UniSansBold';
+}
+
+.prize-money {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.prize-money.team {
+    height: 80px;
+}
+
+.prize-money.col-2 {
+    height: 60px;
+}
+
+.prize-money.no-margin {
+    margin-bottom: 0;
+}
+
+.prize-money.team .header {
+    display: flex;
+    flex-direction: row;
+}
+
+.prize-money.team .header .column {
+    flex: 1;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-family: 'UniSansRegular';
+    color: #fff;
+    padding-left: 13px;
+    margin: 1px;
+}
+
+.prize-money.team .winning-place {
+    display: flex;
+    flex-direction: row;
+}
+
+.prize-money.team .winning-place .column {
+    flex: 1;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 2px;
+    margin-right: 2px;
+    padding-left: 13px;
+    font-family: 'UniSansBold';
+    text-transform: uppercase;
+    background: #2C5A8F;
+}
+
+.prize-money.team .winning-place .column.label {
+    flex: 1;
+    background: #0F2947;
+    color: #597CA4;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-top: 5px;
+    text-align: center;
+    border-radius: 0;
+}
+
+
+.entry-fee {
+    width: 250px;
+    height: 60px;
+    display: flex;
+    margin-bottom: 25px;
+    flex-direction: column;
+}
+
+.entry-fee.no-margin {
+    margin-bottom: 0;
+}
+
+.entry-fee .header {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.entry-fee .header .column {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 5px;
+    text-transform: uppercase;
+    color: #597CA4;
+    letter-spacing: 1px;
+}
+
+.entry-fee .fee {
+    display: flex;
+    flex-direction: row;
+}
+
+.entry-fee .fee .column {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2px;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'UniSansBold';
+    text-transform: uppercase;
+    background: #2C5A8F;
+}
+
+/*-------------------------------------RIGHT SECTION-----------------------------------------------*/
+.events-info {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    width: 45%;
+    left: 55%;
+    top: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.events-info.mobile {
+    display: none;
+}
+
+.section.sidebar-open .events-info {
+    left: 120%;
+}
+
+.section.sidebar-close .events-info {
+    left: 55%;
+}
+
+.events-info .event-heading {
+    color: var(--secondary-color);
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: 'UniSansBold';
+    margin-left: -10%;
+    letter-spacing: 15px;
+}
+
+.events-info .divider.long {
+    margin-left: -10%;
+}
+
+
+.events-info .heading-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.events-info .heading-container.sport {
+    background-image: url('./assets/images/2.png');
+}
+
+.events-info .heading-container.cricket {
+    background-image: url('./assets/images/Cricket.png');
+}
+
+.events-info .heading-container.football {
+    background-image: url('./assets/images/football.png');
+}
+
+.events-info .heading-container.badminton {
+    background-image: url('./assets/images/badminton.png');
+}
+
+.events-info .heading-container.box-cricket {
+    background-image: url('./assets/images/box-cricket.png');
+}
+
+.events-info .heading-container.rink-football {
+    background-image: url('./assets/images/rink-football.png');
+}
+
+.events-info .heading-container.squash {
+    background-image: url('./assets/images/squash.png');
+}
+
+.events-info .heading-container.lawn-tennis {
+    background-image: url('./assets/images/tennis.png');
+}
+
+.events-info .heading-container.table-tennis {
+    background-image: url('./assets/images/table-tennis.png');
+}
+
+.events-info .heading-container.carrom {
+    background-image: url('./assets/images/carrom.png');
+}
+
+.events-info .heading-container.chess {
+    background-image: url('./assets/images/Chess.png');
+}
+
+.events-info .heading-container.athletics {
+    background-image: url('./assets/images/athletics.png');
+}
+
+.events-info .heading-container.basketball {
+    background-image: url('./assets/images/basketball.png');
+}
+
+.events-info .heading-container.volleyball {
+    background-image: url('./assets/images/volleyball.png');
+}
+
+.events-info .heading-container.throwball {
+    background-image: url('./assets/images/throwball.png');
+}
+
+/************************************************************************************************
+                                    RULES STYLING SECTION
+************************************************************************************************/
+.rules-section {
+    height: 100%;
+    width: 100%;
+}
+
+.rules .rules-wrapper .logo.small {
+    margin-left: 0;
+    width: 20%;
+}
+
+.rules .fixed-section {
+    width: 70%;
+    height: 100%;
+}
+
+.rules .fixed-section .rules-wrapper {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 100px;
+    padding-right: 120px;
+}
+
+
+.rules-wrapper .heading {
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-family: UniSansBold;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
+.rules-wrapper .heading.small {
+    font-size: 18px;
+    font-family: UniSansSemiBold;
+}
+
+.rules-wrapper .note {
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: UniSansSemiBold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.rules-wrapper .content {
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: UniSansRegular;
+}
+
+.rules-wrapper .note span {
+    color: var(--secondary-color);
+}
+
+.rules-wrapper .content strong {
+    font-family: UniSansBold;
+}
+
+.rules-wrapper .main-heading {
+    display: none;
+}
+
+/*-------------------------------------RIGHT SECTION-----------------------------------------------*/
+.rules-info {
+    position: fixed;
+    top: 0;
+    left: 70%;
+    width: 30%;
+    height: 100%;
+    background: #f6ad23;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.rules-info .divider.long {
+    margin-left: -20%;
+    background: #fff;
+}
+
+.rules-info .heading {
+    font-size: 70px;
+    margin-left: -25%;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'UniSansBold';
+    letter-spacing: 15px;
+}
+
+.section.sidebar-open .rules-info {
+    left: 120%;
+}
+
+
+
+/************************************************************************************************
+                                     ACCOMODATION STYLING SECTION
+************************************************************************************************/
+.accomodation.section {
+    height: 100%;
+    width: 100%;
+}
+
+.accomodation .accomodation-wrapper .logo.small {
+    margin-left: 0;
+    width: 20%;
+}
+
+.accomodation .fixed-section {
+    width: 70%;
+    height: 100%;
+}
+
+.accomodation .fixed-section .accomodation-wrapper {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 140px;
+    padding-right: 190px;
+}
+
+
+.accomodation-wrapper .content {
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: UniSansRegular;
+}
+
+
+.accomodation-wrapper .content strong {
+    font-family: UniSansBold;
+}
+
+.accomodation-wrapper .main-heading {
+    display: none;
+}
+
+/*-------------------------------------RIGHT SECTION-----------------------------------------------*/
+.accomodation-info {
+    position: fixed;
+    top: 0;
+    left: 70%;
+    width: 30%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.accomodation-info .divider.long {
+    margin-left: -40%;
+}
+
+.accomodation-info .heading {
+    font-size: 40px;
+    margin-left: -40%;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-family: 'UniSansBold';
+    letter-spacing: 15px;
+}
+
+.section.sidebar-open .accomodation-info {
+    left: 150%;
+}
+
+
+
+
+/************************************************************************************************
+                                     REGISTRATION STYLING SECTION
+************************************************************************************************/
+.registration.section {
+    height: 100%;
+    width: 100%;
+}
+
+.registration .registration-wrapper .logo.small {
+    margin-left: 0;
+    width: 20%;
+}
+
+.registration .fixed-section {
+    width: 70%;
+    height: 100%;
+}
+
+.registration .fixed-section .registration-wrapper {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 100px;
+    padding-right: 150px;
+}
+
+
+.registration-wrapper .heading {
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-family: UniSansBold;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
+.registration-wrapper .heading.small {
+    font-size: 18px;
+    font-family: UniSansSemiBold;
+}
+
+.registration-wrapper .note {
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: UniSansSemiBold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.registration-wrapper .content {
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: UniSansRegular;
+}
+
+.registration-wrapper span {
+    color: var(--secondary-color);
+}
+
+.registration-wrapper strong {
+    font-family: UniSansBold;
+}
+
+.registration-wrapper .main-heading {
+    display: none;
+}
+
+
+/*-------------------------------------RIGHT SECTION-----------------------------------------------*/
+.registration-info {
+    position: fixed;
+    top: 0;
+    left: 70%;
+    width: 30%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.registration-info .divider.long {
+    margin-left: -30%;
+}
+
+.registration-info .heading {
+    font-size: 40px;
+    margin-left: -30%;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-family: 'UniSansBold';
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+
+.section.sidebar-open .registration-info {
+    left: 150%;
+}
+
+
+
+
+
+
+
+
+/************************************************************************************************
+                                    PARVAAH PAGE STYLING
+************************************************************************************************/
+.parvaah {
+    height: 100%;
+}
+
+/*-------------------------------------FIXED SECTION-----------------------------------------------*/
+.parvah-info-container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px; 
+}
+.logo-container img {
+    margin: 0 60px;
+}
+
+/*-------------------------------------INFO SECTION-----------------------------------------------*/
+.parvaah-info-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15%;
+}
+
+.parvah-info-container .logo.parvaah {
+    width: 25%;
+}
+.parvaah-info-container .logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.content {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: UniSansRegular;
+    color: white;
+}
+.content.right {
+    text-align: left;
+}
+.content.left {
+    text-align: right;
+}
+.parvaah-info-container .content {
+    text-align: center;
+}
+
+.volunteer-button {
+    border: 1px solid white;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    font-family: 'UniSansLight';
+    color: white;
+    font-size: 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    outline: none;
+    margin-top: 50px;
+}
+
+.volunteer-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-decoration: none;
+}
+
+.parvaah-event {
+    padding: 0 10%;
+    box-sizing: border-box;
+    margin-bottom: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.parvaah-event .event-image {
+    margin-right: 10%;
+    width: 25%; 
+}
+.parvaah-event .event-image.right {
+    margin-right: 0%;
+    margin-left: 10%;
+}
+.parvaah-event .parvaah-event-info {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.parvaah-event .parvaah-event-info .heading {
+    font-size: 28px;
+    text-align: left;
+    color: var(--secondary-color);
+    font-family: UniSansBold;
+    align-self: stretch;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.parvaah-event .parvaah-event-info .heading.left {
+    text-align: right;
+}
+.parvaah-event .parvaah-event-info .heading.right {
+    text-align: left;
+}
+
+.parvaah.section.sidebar-open {
+    width: 50%;
+}
+.parvaah.section.sidebar-close {
+    width: 100%;
+}
+
+
+/************************************************************************************************
+                                        CONTACT PAGE STYLING
+************************************************************************************************/
+.contact.section {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+/*-------------------------------------FIXED SECTION-----------------------------------------------*/
+.info-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 3%;
+}
+.student-council {
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+.contact .heading {
+    text-transform: uppercase;
+    font-family: 'UniSansBold';
+    line-height: 1.2em;
+    font-size: 3em;
+    color: var(--secondary-color);
+    margin: 0;
+    margin-bottom: 20px;
+}
+.contact .content {
+    font-size: 20px;
+    color: white;
+    font-family: UniSansRegular;
+    letter-spacing: 1px;
+    line-height: 1.6em;
+}
+.contact .sub-heading {
+    text-transform: uppercase;
+    font-family: 'UniSansBold';
+    line-height: 1.2em;
+    font-size: 1.4em;
+    color: var(--secondary-color);
+    margin: 0;
+    margin-bottom: 20px;
+}
+.contact .content strong {
+    color: var(--secondary-color);
+}
+.contact .content span {
+    font-family: UniSansSemiBold;
+}
+.contact .info-section .logo {
+    width: 50%;
+    margin-bottom: 80px;
+}
+
+/*-------------------------------------MAP SECTION SECTION-----------------------------------------------*/
+.map-section {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+.section.sidebar-open  .map-section {
+    right: -50%;
+}
+.section.sidebar-close .map-section {
+    right: 0%;
+}
+#googleMap {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/************************************************************************************************
+                                        SPONSORS PAGE STYLING
+************************************************************************************************/
+.usesvh {
+    text-align: center;
+}
+.usesvh .logo.small {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.sponsors.section.sidebar-open {
+    width: 48%;
+    margin-left: 0px;
+}

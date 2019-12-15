@@ -1,0 +1,22 @@
+<div class="counters">
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+    <div class="counter"></div>
+</div>
