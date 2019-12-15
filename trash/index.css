@@ -1,8 +1,8 @@
 :root {
-    --bg-color: #434242;
+    --bg-color: #fff;
     --primary-color: #f6ad23;
     --secondary-color: #f6ad23;
-    --accent-color: #2C5A8F;
+    --accent-color: #cccccc;
 }
 
 a {
@@ -59,7 +59,8 @@ body {
     left: 0;
 }
 
-a:focus, a:hover {
+a:focus,
+a:hover {
     color: transparent;
 }
 
@@ -124,7 +125,7 @@ a:focus, a:hover {
 
 .select-selected {
     background-color: var(--secondary-color);
-    border-radius: 5px;
+    /*    border-radius: 5px;*/
 }
 
 /*style the arrow inside the select element:*/
@@ -192,10 +193,12 @@ a:focus, a:hover {
     bottom: 50px;
     right: 80px;
 }
+
 .compete-button-bottom:hover {
     color: var(--bg-color);
     text-decoration: none;
 }
+
 /*----------------------------------------SOCIAL-LINKS-----------------------------------------*/
 .social-links {
     z-index: 500;
@@ -289,16 +292,17 @@ a:focus, a:hover {
     outline: none;
     cursor: pointer;
 }
+
 .sidebar-wrapper .sidebar-option.last {
     margin-bottom: 0;
 }
 
 .sidebar-wrapper .sidebar-option:hover {
-    color: white;
+    color: #434242;
 }
 
 .sidebar-wrapper .sidebar-option.selected {
-    color: white;
+    color: #fff;
 }
 
 /*-------------------------------------KEYFRAMES-----------------------------------------------*/
@@ -374,7 +378,7 @@ a:focus, a:hover {
 .home-fixed-wrapper {
     display: flex;
     margin-left: 20%;
-    padding-top: 8%; 
+    padding-top: 8%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -405,44 +409,47 @@ a:focus, a:hover {
 .skream-date {
     font-family: 'UniSansThin';
     letter-spacing: 5px;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 36px;
-    color: var(--secondary-color);
+    color: #434242;
     margin: 0;
     margin-bottom: 30px;
 }
 
 .compete-button {
-    border: 1px solid white;
+    border: 1px solid #434242;
     text-transform: uppercase;
     padding: 5px 20px;
     font-family: 'UniSansLight';
-    color: white;
+    color: #434242;
     font-size: 22px;
     border-radius: 30px;
     text-decoration: none;
     outline: none;
+    font-weight: 600;
 }
 
 .compete-button:hover {
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
+    background: rgba(0, 0, 0, 0.1);
+    color: #000;
     text-decoration: none;
 }
 
 /*-------------------------------------INFO SECTION-----------------------------------------------*/
 .home-info {
     flex: 1;
-    
+
     display: flex;
 }
 
 #about-section-2 {
     background: url('assets/images/2.png') no-repeat center center;
 }
+
 #about-kjsce {
     background: url('assets/images/about%20kjsce.png') no-repeat center center;
 }
+
 .home-info .card {
     flex: 1;
     display: flex;
@@ -537,7 +544,7 @@ a:focus, a:hover {
     display: inline-block;
 }
 
-.events .fixed-section .event-wrapper #select-event{
+.events .fixed-section .event-wrapper #select-event {
     width: 300px;
     z-index: 300;
 }
@@ -555,7 +562,7 @@ a:focus, a:hover {
 }
 
 .event .content {
-    color: #fff;
+    color: #000;
     font-size: 16px;
     letter-spacing: 1px;
     font-family: 'UniSansRegular';
@@ -618,19 +625,19 @@ a:focus, a:hover {
 .prize-money.team .winning-place .column {
     flex: 1;
     font-size: 20px;
-    color: #fff;
+    color: #434242;
     margin-top: 2px;
     margin-right: 2px;
     padding-left: 13px;
     font-family: 'UniSansBold';
     text-transform: uppercase;
-    background: #2C5A8F;
+    background: #cccccc;
 }
 
 .prize-money.team .winning-place .column.label {
     flex: 1;
-    background: #0F2947;
-    color: #597CA4;
+    background: #434242;
+    color: #fff;
     font-size: 16px;
     text-transform: uppercase;
     padding-top: 5px;
@@ -665,7 +672,7 @@ a:focus, a:hover {
     align-items: flex-end;
     padding: 5px;
     text-transform: uppercase;
-    color: #597CA4;
+    color: #434242;
     letter-spacing: 1px;
 }
 
@@ -685,7 +692,7 @@ a:focus, a:hover {
     color: #fff;
     font-family: 'UniSansBold';
     text-transform: uppercase;
-    background: #2C5A8F;
+    background: #434242;
 }
 
 /*-------------------------------------RIGHT SECTION-----------------------------------------------*/
@@ -845,11 +852,11 @@ a:focus, a:hover {
     letter-spacing: 1px;
     font-family: UniSansSemiBold;
     text-transform: uppercase;
-    color: #fff;
+    color: #000;
 }
 
 .rules-wrapper .content {
-    color: white;
+    color: #000;
     font-size: 16px;
     letter-spacing: 1px;
     font-family: UniSansRegular;
@@ -929,7 +936,7 @@ a:focus, a:hover {
 
 
 .accomodation-wrapper .content {
-    color: white;
+    color: #000;
     font-size: 16px;
     letter-spacing: 1px;
     font-family: UniSansRegular;
@@ -1023,11 +1030,11 @@ a:focus, a:hover {
     letter-spacing: 1px;
     font-family: UniSansSemiBold;
     text-transform: uppercase;
-    color: #fff;
+    color: #000;
 }
 
 .registration-wrapper .content {
-    color: white;
+    color: #000;
     font-size: 16px;
     letter-spacing: 1px;
     font-family: UniSansRegular;
@@ -1098,15 +1105,17 @@ a:focus, a:hover {
     height: 100%;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
+
 .logo-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 }
+
 .logo-container img {
     margin: 0 60px;
 }
@@ -1124,6 +1133,7 @@ a:focus, a:hover {
 .parvah-info-container .logo.parvaah {
     width: 25%;
 }
+
 .parvaah-info-container .logo-container {
     display: flex;
     flex-direction: row;
@@ -1131,28 +1141,32 @@ a:focus, a:hover {
     align-items: center;
     margin-bottom: 60px;
 }
+
 .content {
     font-size: 18px;
     letter-spacing: 1px;
     font-family: UniSansRegular;
-    color: white;
+    color: #000;
 }
+
 .content.right {
     text-align: left;
 }
+
 .content.left {
     text-align: right;
 }
+
 .parvaah-info-container .content {
     text-align: center;
 }
 
 .volunteer-button {
-    border: 1px solid white;
+    border: 1px solid #000;
     text-transform: uppercase;
     padding: 5px 20px;
     font-family: 'UniSansLight';
-    color: white;
+    color: #000;
     font-size: 22px;
     border-radius: 30px;
     text-decoration: none;
@@ -1161,8 +1175,8 @@ a:focus, a:hover {
 }
 
 .volunteer-button:hover {
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
+    background: rgba(0, 0, 0, 0.1);
+    color: #000;
     text-decoration: none;
 }
 
@@ -1176,14 +1190,17 @@ a:focus, a:hover {
     align-items: center;
     justify-content: center;
 }
+
 .parvaah-event .event-image {
     margin-right: 10%;
-    width: 25%; 
+    width: 25%;
 }
+
 .parvaah-event .event-image.right {
     margin-right: 0%;
     margin-left: 10%;
 }
+
 .parvaah-event .parvaah-event-info {
     width: 75%;
     display: flex;
@@ -1191,6 +1208,7 @@ a:focus, a:hover {
     justify-content: center;
     align-items: center;
 }
+
 .parvaah-event .parvaah-event-info .heading {
     font-size: 28px;
     text-align: left;
@@ -1204,6 +1222,7 @@ a:focus, a:hover {
 .parvaah-event .parvaah-event-info .heading.left {
     text-align: right;
 }
+
 .parvaah-event .parvaah-event-info .heading.right {
     text-align: left;
 }
@@ -1211,6 +1230,7 @@ a:focus, a:hover {
 .parvaah.section.sidebar-open {
     width: 50%;
 }
+
 .parvaah.section.sidebar-close {
     width: 100%;
 }
@@ -1235,6 +1255,7 @@ a:focus, a:hover {
     box-sizing: border-box;
     padding: 3%;
 }
+
 .student-council {
     width: 80%;
     margin-bottom: 100px;
@@ -1249,6 +1270,7 @@ a:focus, a:hover {
     margin: 0;
     margin-bottom: 20px;
 }
+
 .contact .content {
     font-size: 20px;
     color: white;
@@ -1256,6 +1278,7 @@ a:focus, a:hover {
     letter-spacing: 1px;
     line-height: 1.6em;
 }
+
 .contact .sub-heading {
     text-transform: uppercase;
     font-family: 'UniSansBold';
@@ -1265,12 +1288,15 @@ a:focus, a:hover {
     margin: 0;
     margin-bottom: 20px;
 }
+
 .contact .content strong {
     color: var(--secondary-color);
 }
+
 .contact .content span {
     font-family: UniSansSemiBold;
 }
+
 .contact .info-section .logo {
     width: 50%;
     margin-bottom: 80px;
@@ -1285,12 +1311,15 @@ a:focus, a:hover {
     top: 0;
     z-index: 100;
 }
-.section.sidebar-open  .map-section {
+
+.section.sidebar-open .map-section {
     right: -50%;
 }
+
 .section.sidebar-close .map-section {
     right: 0%;
 }
+
 #googleMap {
     width: 100%;
     height: 100%;
@@ -1304,6 +1333,7 @@ a:focus, a:hover {
 .usesvh {
     text-align: center;
 }
+
 .usesvh .logo.small {
     text-align: center;
     margin-top: 20px;
