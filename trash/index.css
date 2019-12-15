@@ -49,6 +49,52 @@ body {
 /************************************************************************************************
                                     GENERAL STYLING SECTION
 ************************************************************************************************/
+
+
+#preloader {
+
+
+    /*Make FullScreen*/
+    width: 100%;
+    height: 100%;
+
+    /********** To Make it Full-screen (Another way)*******/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: #434242;
+    display: table;
+    z-index: 9999;
+
+}
+
+#preloader h1 {
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 80%;
+    left: 49%;
+    transform: translateX(-50%);
+    font-family: 'UniSansBold';
+}
+
+#preloader img {
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*    transform: translateX(-50%);*/
+    display: table-cell;
+    vertical-align: middle;
+    width: 300px;
+
+}
+
+
 .hidden {
     display: none;
 }
@@ -378,15 +424,22 @@ a:hover {
 .home-fixed-wrapper {
     display: flex;
     margin-left: 20%;
-    padding-top: 8%;
+    padding-top: 0%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
 
+.nitin {
+    position: absolute;
+    top: 350px;
+    left: 390px;
+    width: 30%;
+}
+
 .logo {
     width: 50%;
-    margin-bottom: 80px;
+    margin-bottom: 0px;
 }
 
 .divider {
@@ -800,7 +853,7 @@ a:hover {
 }
 
 .events-info .heading-container.volleyball {
-    background-image: url('./assets/images/volleyball.png');
+    background-image: url('./assets/images/VOLLEY.svg');
 }
 
 .events-info .heading-container.throwball {
@@ -1101,24 +1154,22 @@ a:hover {
 
 /*-------------------------------------FIXED SECTION-----------------------------------------------*/
 .parvah-info-container {
-    display: flex;
+
+    /*    display: flex;*/
     height: 100%;
+    /*
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+*/
 
-.logo-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
 }
 
 .logo-container img {
-    margin: 0 60px;
+
+    /*    height: 50%;*/
 }
+
 
 /*-------------------------------------INFO SECTION-----------------------------------------------*/
 .parvaah-info-container {
