@@ -11,7 +11,7 @@ a {
 }
 
 html,
-body {
+body {    
     width: 100%;
     height: 100%;
     margin: 0;
@@ -44,6 +44,7 @@ body {
     font-family: UniSansLight;
     src: url('./assets/fonts/uni-sans/light.ttf');
 }
+
 
 
 /************************************************************************************************
@@ -94,7 +95,9 @@ body {
 
 }
 
-
+.close-img{
+    display: none;
+}
 .hidden {
     display: none;
 }
@@ -110,14 +113,21 @@ a:hover {
     color: transparent;
 }
 
-.section.sidebar-open {
+.section.sidebar-open{
     animation-name: push-right;
     animation-duration: 200ms;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
     animation-direction: normal;
+   
 }
-
+/*
+.sidebar-wrapper.open .hamburger{
+    background: url('assets/images/SKREAM-20-IMAGES/');    
+    z-index: 999;
+    background: #000;
+}
+*/
 .section.sidebar-close {
     animation-name: push-left;
     animation-duration: 200ms;
@@ -130,12 +140,16 @@ a:hover {
     position: fixed;
     width: 80px;
     height: 80px;
-    left: 15px;
-    top: 15px;
-    background: url('assets/images/hamburger.png') no-repeat center center;
+    left: 10px;
+    top: 10px;
+/*    background: url('assets/images/SKREAM-20-IMAGES/hamburger.png') no-repeat center center;*/
     background-size: cover;
     z-index: 999;
     cursor: pointer;
+}
+.hamburger img{
+    width: 100%;
+    
 }
 
 .logo.small {
@@ -147,9 +161,10 @@ a:hover {
 
 .divider.long {
     color: var(--secondary-color);
-    width: 150px;
+    width: 100px;
     height: 8px;
-    margin-bottom: 20px;
+
+    margin: 20px 10px;
 }
 
 
@@ -296,7 +311,7 @@ a:hover {
 .sidebar-wrapper {
     width: 50%;
     height: 100%;
-    background-color: var(--primary-color);
+    background-color: #434242;
     position: fixed;
     overflow: auto;
     top: 0;
@@ -330,7 +345,7 @@ a:hover {
     margin: 0;
     padding: 0;
     font-size: 3.2em;
-    color: var(--bg-color);
+    color:#666;
     font-family: 'UniSansBold';
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -344,7 +359,7 @@ a:hover {
 }
 
 .sidebar-wrapper .sidebar-option:hover {
-    color: #434242;
+    color: #fff;
 }
 
 .sidebar-wrapper .sidebar-option.selected {
@@ -451,7 +466,7 @@ a:hover {
 
 .home-heading {
     text-transform: uppercase;
-    font-family: 'UniSansBold';
+    font-family: 'LakeShore',sans-serif;
     line-height: 1em;
     font-size: 55px;
     color: var(--secondary-color);
@@ -472,7 +487,7 @@ a:hover {
 .compete-button {
     border: 1px solid #434242;
     text-transform: uppercase;
-    padding: 5px 20px;
+    padding: 15px 20px;
     font-family: 'UniSansLight';
     color: #434242;
     font-size: 22px;
@@ -480,6 +495,7 @@ a:hover {
     text-decoration: none;
     outline: none;
     font-weight: 600;
+    margin-top: 4rem;
 }
 
 .compete-button:hover {
@@ -488,6 +504,10 @@ a:hover {
     text-decoration: none;
 }
 
+.fixed-section .home-heading{
+    font-size: 9.5rem;
+    margin-bottom: 3rem;
+}
 /*-------------------------------------INFO SECTION-----------------------------------------------*/
 .home-info {
     flex: 1;
@@ -496,11 +516,14 @@ a:hover {
 }
 
 #about-section-2 {
-    background: url('assets/images/2.png') no-repeat center center;
+    background: url('assets/images/SKREAM-20-IMAGES/WEBSITE%20MAIN.png') no-repeat center center;
+    background-size: cover;
+    
 }
 
 #about-kjsce {
-    background: url('assets/images/about%20kjsce.png') no-repeat center center;
+    background: url('assets/images/SKREAM-20-IMAGES/WEBSITE%20ABOUT.png') no-repeat center center;
+    background-size: cover;
 }
 
 .home-info .card {
@@ -775,16 +798,155 @@ a:hover {
 }
 
 .events-info .event-heading {
-    color: var(--secondary-color);
+ 
+     writing-mode: vertical-rl;
+    text-orientation: upright;   
     font-size: 60px;
     text-transform: uppercase;
-    font-family: 'UniSansBold';
-    margin-left: -10%;
-    letter-spacing: 15px;
+    font-family: 'Lakeshore';
+    transform: translateX(-130%);
+/*    margin-left: -10%;*/
+/*    letter-spacing: 15px;*/
+/*    transform: rotate(90);*/
 }
 
-.events-info .divider.long {
-    margin-left: -10%;
+.events-info .volleyball h6{
+    color: #99cc66;
+}
+
+.events-info .volleyball .divider{
+    background: #99cc66;
+    transform: rotate(90deg);
+}
+
+
+
+.events-info .cricket h6{
+    color: #FF0000;
+}
+
+.events-info .cricket .divider{
+    background: #FF0000;
+    transform: rotate(90deg);
+}
+
+
+
+.events-info .box-cricket h6{
+    color: #00ccFF;
+}
+
+.events-info .box-cricket .divider{
+    background: #00ccFF;
+    transform: rotate(90deg);
+}
+
+
+
+.events-info .throwball h6{
+    color: #cccc33;
+}
+.events-info .throwball .divider{
+    background: #cccc33;
+    transform: rotate(90deg);
+}
+
+
+.events-info .badminton h6{
+    color: #13636E;
+}
+.events-info .badminton .divider{
+    background: #cccc33;
+    transform: rotate(90deg);
+}
+
+
+
+
+.events-info .lawn-tennis h6{
+    color: #33cc99;
+}
+.events-info .lawn-tennis .divider{
+    background: #33cc99;
+    transform: rotate(90deg);
+}
+
+
+
+.events-info .basketball .divider{
+    background: #FF06A0;
+    transform: rotate(90deg);
+}
+
+.events-info .basketball h6{
+    color: #FF06A0;
+}
+
+
+.events-info .chess .divider{
+    background: #000;
+    transform: rotate(90deg);
+}
+.events-info .chess h6{
+    color: #000;
+}
+
+
+
+.events-info .athletics .divider{
+    background: #d243b5;
+    transform: rotate(90deg);
+}
+.events-info .athletics h6{
+    color: #d243b5;
+}
+
+
+.events-info .rink-football .divider{
+    background: #ff0066;
+    transform: rotate(90deg);
+}
+.events-info .rink-football h6{
+    color: #ff0066;
+}
+
+
+.events-info .carrom .divider{
+    background: #a0452a;
+    transform: rotate(90deg);
+}
+.events-info .carrom h6{
+    color: #a0452a;
+}
+
+
+.events-info .squash .divider{
+    background: #6666FF;
+    transform: rotate(90deg);
+}
+.events-info .squash h6{
+    color: #6666FF;
+}
+
+.events-info .table-tennis .divider{
+    background: #0070AD;
+    transform: rotate(90deg);
+}
+.events-info .table-tennis h6{
+    color: #0070AD;
+}
+
+.events-info .football .divider{
+    background: #003399;
+    transform: rotate(90deg);
+}
+.events-info .football h6{
+    color: #003399;
+}
+
+.events-info .long{
+    margin-left: -14%;
+    margin-top: 8rem;
 }
 
 
@@ -801,63 +963,63 @@ a:hover {
 }
 
 .events-info .heading-container.sport {
-    background-image: url('./assets/images/2.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/WEBSITE%20MAIN.png');
 }
 
 .events-info .heading-container.cricket {
-    background-image: url('./assets/images/Cricket.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/cricket.png');
 }
 
 .events-info .heading-container.football {
-    background-image: url('./assets/images/football.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/football.png');
 }
 
 .events-info .heading-container.badminton {
-    background-image: url('./assets/images/badminton.png');
+    background-image: url('./assets/images//SKREAM-20-IMAGES/badminton.png');
 }
 
 .events-info .heading-container.box-cricket {
-    background-image: url('./assets/images/box-cricket.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/box_cricket.png');
 }
 
 .events-info .heading-container.rink-football {
-    background-image: url('./assets/images/rink-football.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/rink_football.png');
 }
 
 .events-info .heading-container.squash {
-    background-image: url('./assets/images/squash.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/squash.png');
 }
 
 .events-info .heading-container.lawn-tennis {
-    background-image: url('./assets/images/tennis.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/lawn_tennis.png');
 }
 
 .events-info .heading-container.table-tennis {
-    background-image: url('./assets/images/table-tennis.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/table_tennis.png');
 }
 
 .events-info .heading-container.carrom {
-    background-image: url('./assets/images/carrom.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/carrom.png');
 }
 
 .events-info .heading-container.chess {
-    background-image: url('./assets/images/Chess.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/chess.png');
 }
 
 .events-info .heading-container.athletics {
-    background-image: url('./assets/images/athletics.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/athletics.png');
 }
 
 .events-info .heading-container.basketball {
-    background-image: url('./assets/images/basketball.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/basketball.png');
 }
 
 .events-info .heading-container.volleyball {
-    background-image: url('./assets/images/VOLLEY.svg');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/VOLLEYBALL.png');
 }
 
 .events-info .heading-container.throwball {
-    background-image: url('./assets/images/throwball.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/throwball.png');
 }
 
 /************************************************************************************************
@@ -934,7 +1096,7 @@ a:hover {
     left: 70%;
     width: 30%;
     height: 100%;
-    background: #f6ad23;
+    background: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -960,7 +1122,17 @@ a:hover {
 }
 
 
-
+.heading{
+    font-family: 'Lakeshore'!important;
+/*
+    writing-mode: vertical-rl;
+    text-orientation: upright; 
+*/
+    font-size:5rem;
+    letter-spacing: 12px;
+    
+    color:var(--primary-color);
+}
 /************************************************************************************************
                                      ACCOMODATION STYLING SECTION
 ************************************************************************************************/
@@ -1167,7 +1339,14 @@ a:hover {
 
 .logo-container img {
 
-    /*    height: 50%;*/
+/*        height: 100px;*/
+}
+
+.logo-container .parvaah{
+    height: 400px;
+}
+.logo-container .zero-waste{
+    height: 200px;
 }
 
 
@@ -1324,7 +1503,7 @@ a:hover {
 
 .contact .content {
     font-size: 20px;
-    color: white;
+    color: #000;
     font-family: UniSansRegular;
     letter-spacing: 1px;
     line-height: 1.6em;
