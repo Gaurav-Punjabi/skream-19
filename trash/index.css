@@ -21,6 +21,11 @@ body {
 
 
 @font-face {
+    font-family: 'Lakeshore';
+    src: url('./assets/fonts/Lakeshore/Lakeshore-Regular.ttf');
+}
+
+@font-face {
     font-family: UniSansBold;
     src: url('./assets/fonts/uni-sans/bold.ttf');
 }
@@ -79,7 +84,8 @@ body {
     top: 80%;
     left: 49%;
     transform: translateX(-50%);
-    font-family: 'UniSansBold';
+    font-family: 'Lakeshore';
+    font-size: 7rem;
 }
 
 #preloader img {
@@ -466,7 +472,7 @@ a:hover {
 
 .home-heading {
     text-transform: uppercase;
-    font-family: 'LakeShore',sans-serif;
+    font-family: 'LakeShore', sans-serif;
     line-height: 1em;
     font-size: 55px;
     color: var(--secondary-color);
@@ -548,7 +554,7 @@ a:hover {
 }
 
 .home-info .card .card-content .heading span {
-    font-family: UniSansBold;
+    font-family: 'Lakeshore';
 }
 
 .home-info .card .card-content .content {
@@ -575,7 +581,7 @@ a:hover {
     height: 15px;
     margin-left: 20px;
     border-radius: 50%;
-    background: #2C5A8F;
+    background: #434242;
 }
 
 .home-info .pagination-container .indicator.active {
@@ -1036,7 +1042,7 @@ a:hover {
 }
 
 .rules .fixed-section {
-    width: 70%;
+    width: 100%;
     height: 100%;
 }
 
@@ -1045,7 +1051,7 @@ a:hover {
     height: 100%;
     box-sizing: border-box;
     padding-left: 100px;
-    padding-right: 120px;
+/*    padding-right: 120px;*/
 }
 
 
@@ -1085,8 +1091,14 @@ a:hover {
     font-family: UniSansBold;
 }
 
+.rules-wrapper{
+    padding: 0;
+}
 .rules-wrapper .main-heading {
-    display: none;
+/*    display: none;*/
+    font-family: Lakeshore;
+    color: var(--primary-color);
+    font-size: 55px;
 }
 
 /*-------------------------------------RIGHT SECTION-----------------------------------------------*/
@@ -1147,7 +1159,7 @@ a:hover {
 }
 
 .accomodation .fixed-section {
-    width: 70%;
+    width: 100%;
     height: 100%;
 }
 
@@ -1173,7 +1185,10 @@ a:hover {
 }
 
 .accomodation-wrapper .main-heading {
-    display: none;
+/*    display: none;*/
+    font-family: Lakeshore;
+    color: var(--primary-color);
+    font-size: 55px;
 }
 
 /*-------------------------------------RIGHT SECTION-----------------------------------------------*/
@@ -1224,7 +1239,7 @@ a:hover {
 }
 
 .registration .fixed-section {
-    width: 70%;
+    width: 100%;
     height: 100%;
 }
 
@@ -1274,7 +1289,10 @@ a:hover {
 }
 
 .registration-wrapper .main-heading {
-    display: none;
+/*    display: none;*/
+    font-family: Lakeshore;
+    color: var(--primary-color);
+    font-size: 55px;
 }
 
 

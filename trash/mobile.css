@@ -14,6 +14,11 @@ body {
 }
 
 @font-face {
+    font-family: 'Lakeshore';
+    src: url('./assets/fonts/Lakeshore/Lakeshore-Regular.ttf');
+}
+
+@font-face {
     font-family: UniSansBold;
     src: url('./assets/fonts/uni-sans/bold.ttf');
 }
@@ -51,12 +56,16 @@ body {
     height: 70px;
     left: 0px;
     top: 0px;
-    background: url('assets/images/hamburger.png') no-repeat center center;
-    background-size: cover;
+/*    background: url('assets/images/hamburger.png') no-repeat center center;*/
+/*    background-size: cover;*/
     z-index: 999;
     cursor: pointer;
 }
 
+.hamburger img{
+    width: 100%;
+    z-index: 999;
+} 
 .compete-button-bottom {
     display: none;
 }
@@ -316,7 +325,7 @@ a:focus, a:hover {
 
 .home-heading {
     text-transform: uppercase;
-    font-family: UniSansBold;
+    font-family: Lakeshore;
     line-height: 1em;
     font-size: 40px;
     align-self: flex-start;
@@ -761,9 +770,9 @@ ul{
     position: fixed;
     width: 70px;
     height: 70px;
-    left: 0px;
-    top: 0px;
-    background: url('assets/images/hamburger.png') no-repeat center center;
+    left: 10px;
+    top: 10px;
+/*    background: url('assets/images/hamburger.png') no-repeat center center;*/
     background-size: cover;
     z-index: 999;
     cursor: pointer;
@@ -794,9 +803,10 @@ ul{
     color: #fff;
     position: absolute;
     top: 60%;
-    left: 33%;
+    left: 30%;
     transform: translateX(-20%);
-    font-family: 'UniSansBold';
+    font-family: 'Lakeshore';
+    font-size: 7rem;
 }
 
 #preloader img {
@@ -808,7 +818,8 @@ ul{
     /*    transform: translateX(-50%);*/
     display: table-cell;
     vertical-align: middle;
-    width: 100px;
+    margin-bottom: 25px;
+    width: 190px;
 
 }
 
@@ -970,7 +981,7 @@ ul{
 .sidebar-wrapper {
     width: 100%;
     height: 100%;
-    background-color: var(--primary-color);
+    background-color: #434242;
     display: flex;
     z-index: 999;
     
@@ -1006,7 +1017,7 @@ a:focus, a:hover {
     margin: 0;
     padding: 0;
     font-size: 2.2em;
-    color: var(--bg-color);
+    color: #666666;
     font-family: 'UniSansBold';
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -1016,11 +1027,11 @@ a:focus, a:hover {
 }
 
 .sidebar-wrapper .sidebar-option:hover {
-    color: #434242;
+    color: #fff;
 }
 
 .sidebar-wrapper .sidebar-option.selected {
-    color: white;
+    color: #666666;
 }
 
 /************************************************************************************************
@@ -1070,9 +1081,9 @@ a:focus, a:hover {
 
 .home-heading {
     text-transform: uppercase;
-    font-family: UniSansBold;
+    font-family: 'Lakeshore';
     line-height: 1em;
-    font-size: 40px;
+    font-size: 60px;
     align-self: flex-start;
     margin-left: 50%;
     display: inline-block;
@@ -1092,11 +1103,11 @@ a:focus, a:hover {
 }
 
 .compete-button {
-    border: 1px solid white;
+    border: 1px solid #000;
     text-transform: uppercase;
-    padding: 5px 20px;
+    padding: 5px 25px;
     font-family: UniSansLight;
-    color: white;
+    color: #000;
     font-size: 20px;
     border-radius: 30px;
     text-decoration: none;
@@ -1105,7 +1116,7 @@ a:focus, a:hover {
 
 .compete-button:hover {
     background: rgba(255, 255, 255, 0.1);
-    color: white;
+    color: #000;
     text-decoration: none;
 }
 
@@ -1166,14 +1177,20 @@ a:focus, a:hover {
 
 #about-section {
     background: url('assets/images/SKREAM-20-IMAGES/WEBSITE%20ABOUT.png') no-repeat center center;
+    background-size: cover;
+    opacity: 0.8;
 }
 
 #about-section-2 {
     background: url('assets/images/SKREAM-20-IMAGES/WEBSITE%20MAIN.png') no-repeat center center;
+    background-size: cover;
+    opacity: 0.8;
 }
 
 #about-kjsce {
     background: url('assets/images/SKREAM-20-IMAGES//WEBSITE%20ABOUT.png') no-repeat center center;
+    background-size: cover;
+    opacity: 0.8;
 }
 
 
@@ -1422,17 +1439,25 @@ a:focus, a:hover {
 /*-------------------------------------RIGHT SECTION-----------------------------------------------*/
 .events-info.desktop {
     display: none;
+     
 }
 
 .events-info.mobile {
     height: 30%;
-    width: 100%;
+/*    width: 100%;*/
     margin-top: 70px;
     flex-direction: row;
     justify-content: center;
     align-content: flex-start;
+/*    background-image: url('./assets/images/SKREAM-20-IMAGES/WEBSITE%20MAIN.png');*/
 }
-
+.imgc{
+    width: 100%;
+    
+}
+.imgc img{
+    width: 100%;
+}
 .events-info .event-heading {
     color: var(--secondary-color);
     font-size: 3rem;
@@ -1649,7 +1674,7 @@ a:focus, a:hover {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 2px;
-    font-family: UniSansBold;
+    font-family: Lakeshore;
 }
 @media (max-width: 320px) {
     .rules-wrapper .main-heading  {
@@ -1907,11 +1932,17 @@ a:focus, a:hover {
 /************************************************************************************************
                                     PARVAAH PAGE STYLING
 ************************************************************************************************/
+/*
 .parvaah {
     height: 100%;
 }
+*/
 
 /*-------------------------------------INFO SECTION-----------------------------------------------*/
+.parvaah-event{
+    display: flex;
+    flex-direction: column;
+}
 .parvaah-info-container {
     height: 100%;
     display: flex;
@@ -2161,11 +2192,11 @@ a:focus, a:hover {
     letter-spacing: 1px;
     font-family: UniSansSemiBold;
     text-transform: uppercase;
-    color: #fff;
+    color: #000;
 }
 
 .rules-wrapper .content {
-    color: white;
+    color: #000;
     font-size: 15px;
     letter-spacing: 1px;
     font-family: UniSansRegular;
@@ -2180,12 +2211,12 @@ a:focus, a:hover {
 }
 
 .rules-wrapper .main-heading {
-    font-size: 35px;
+    font-size: 55px;
     color: var(--secondary-color);
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 2px;
-    font-family: UniSansBold;
+    font-family: Lakeshore;
 }
 @media (max-width: 320px) {
     .rules-wrapper .main-heading  {
@@ -2278,7 +2309,7 @@ a:focus, a:hover {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 2px;
-    font-family: UniSansBold;
+    font-family: Lakeshore;
 }
 
 @media (max-width: 320px) {
@@ -2387,7 +2418,7 @@ a:focus, a:hover {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 2px;
-    font-family: UniSansBold;
+    font-family: Lakeshore;
 }
 
 
@@ -2443,9 +2474,11 @@ a:focus, a:hover {
 /************************************************************************************************
                                     PARVAAH PAGE STYLING
 ************************************************************************************************/
+/*
 .parvaah {
     height: 100%;
 }
+*/
 
 /*-------------------------------------INFO SECTION-----------------------------------------------*/
 .parvaah-info-container {
@@ -2458,13 +2491,21 @@ a:focus, a:hover {
 }
 .parvaah-info-container .logo-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 60px;
 }
 .parvaah-info-container .logo-container img {
     width: 30%;
+}
+
+.parvaah-info-container .logo-container .parvaah{
+    width: 100%;
+}
+
+.parvaah-info-container .logo-container .zero-waste{
+    width: 70%;
 }
 .content {
     font-size: 12px;
@@ -2501,26 +2542,28 @@ a:focus, a:hover {
     text-decoration: none;
 }
 
-.parvaah-event {
+.parvaah-event{
     padding: 0 10%;
     box-sizing: border-box;
     margin-bottom: 50px;
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: flex-start;
 }
 .parvaah-event .event-image {
     margin-right: 5%;
-    width: 25%; 
+    width: 100%; 
 }
 .parvaah-event .event-image.right {
     margin-right: 0%;
     margin-left: 5%;
+    text-align: center;
 }
 .parvaah-event .parvaah-event-info {
-    width: 75%;
+    margin: 0 20px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2602,7 +2645,7 @@ a:focus, a:hover {
 }
 .contact .content {
     font-size: 16px;
-    color: white;
+    color: #000;
     font-family: UniSansRegular;
     letter-spacing: 1px;
     line-height: 1.4em;
