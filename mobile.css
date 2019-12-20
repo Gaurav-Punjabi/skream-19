@@ -560,7 +560,7 @@ a:focus, a:hover {
     letter-spacing: 1px;
     font-size: 15px;
     font-family: 'UniSansRegular';
-    color: #fff;
+    color: #000;
     padding-left: 13px;
     margin: 1px;
 }
@@ -573,7 +573,7 @@ a:focus, a:hover {
 .prize-money.team .winning-place .column {
     flex: 1;
     font-size: 20px;
-    color: #fff;
+    color: #000;
     margin-top: 2px;
     margin-right: 2px;
     padding-left: 13px;
@@ -1324,7 +1324,7 @@ a:focus, a:hover {
     letter-spacing: 1px;
     font-size: 15px;
     font-family: 'UniSansRegular';
-    color: #fff;
+    color: #000;
     padding-left: 13px;
     margin: 1px;
 }
@@ -1337,7 +1337,7 @@ a:focus, a:hover {
 .prize-money.team .winning-place .column {
     flex: 1;
     font-size: 20px;
-    color: #fff;
+    color: #000;
     margin-top: 2px;
     margin-right: 2px;
     padding-left: 13px;
