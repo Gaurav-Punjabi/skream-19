@@ -1,8 +1,8 @@
 :root {
-    --bg-color: #fff;
-    --primary-color: #f6ad23;
-    --secondary-color: #f6ad23;
-    --accent-color: #cccccc;
+    --bg-color: #001124;
+    --primary-color: #db6020;
+    --secondary-color: #ff7b00;
+    --accent-color: #2C5A8F;
 }
 
 a {
@@ -11,7 +11,7 @@ a {
 }
 
 html,
-body {    
+body {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -19,11 +19,6 @@ body {
     overflow-x: hidden;
 }
 
-
-@font-face {
-    font-family: 'Lakeshore';
-    src: url('./assets/fonts/Lakeshore/Lakeshore-Regular.ttf');
-}
 
 @font-face {
     font-family: UniSansBold;
@@ -51,61 +46,9 @@ body {
 }
 
 
-
 /************************************************************************************************
                                     GENERAL STYLING SECTION
 ************************************************************************************************/
-
-
-#preloader {
-
-
-    /*Make FullScreen*/
-    width: 100%;
-    height: 100%;
-
-    /********** To Make it Full-screen (Another way)*******/
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    background: #434242;
-    display: table;
-    z-index: 9999;
-    background-image: url(assets/images/SKREAM-20-IMAGES/greybg.png);
-/*    background-size: cover;*/
-
-}
-
-#preloader h1 {
-    text-transform: uppercase;
-    color: #fff;
-    position: absolute;
-    top: 80%;
-    left: 49%;
-    transform: translateX(-50%);
-    font-family: 'Lakeshore';
-    font-size: 7rem;
-}
-
-#preloader img {
-    position: absolute;
-    margin: 0 auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /*    transform: translateX(-50%);*/
-    display: table-cell;
-    vertical-align: middle;
-    width: 300px;
-
-}
-
-.close-img{
-    display: none;
-}
 .hidden {
     display: none;
 }
@@ -116,26 +59,18 @@ body {
     left: 0;
 }
 
-a:focus,
-a:hover {
+a:focus, a:hover {
     color: transparent;
 }
 
-.section.sidebar-open{
+.section.sidebar-open {
     animation-name: push-right;
     animation-duration: 200ms;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
     animation-direction: normal;
-   
 }
-/*
-.sidebar-wrapper.open .hamburger{
-    background: url('assets/images/SKREAM-20-IMAGES/');    
-    z-index: 999;
-    background: #000;
-}
-*/
+
 .section.sidebar-close {
     animation-name: push-left;
     animation-duration: 200ms;
@@ -148,31 +83,26 @@ a:hover {
     position: fixed;
     width: 80px;
     height: 80px;
-    left: 10px;
-    top: 10px;
-/*    background: url('assets/images/SKREAM-20-IMAGES/hamburger.png') no-repeat center center;*/
+    left: 15px;
+    top: 15px;
+    background: url('assets/images/hamburger.png') no-repeat center center;
     background-size: cover;
     z-index: 999;
     cursor: pointer;
 }
-.hamburger img{
-    width: 100%;
-    
-}
 
 .logo.small {
-    width: 50%;
-    margin-left: 0;
+    width: 30%;
+    margin-left: 30px;
     margin-top: 35px;
     margin-bottom: 20px;
 }
 
 .divider.long {
     color: var(--secondary-color);
-    width: 100px;
+    width: 150px;
     height: 8px;
-
-    margin: 20px 10px;
+    margin-bottom: 20px;
 }
 
 
@@ -194,7 +124,7 @@ a:hover {
 
 .select-selected {
     background-color: var(--secondary-color);
-    /*    border-radius: 5px;*/
+    border-radius: 5px;
 }
 
 /*style the arrow inside the select element:*/
@@ -262,12 +192,10 @@ a:hover {
     bottom: 50px;
     right: 80px;
 }
-
 .compete-button-bottom:hover {
     color: var(--bg-color);
     text-decoration: none;
 }
-
 /*----------------------------------------SOCIAL-LINKS-----------------------------------------*/
 .social-links {
     z-index: 500;
@@ -319,7 +247,7 @@ a:hover {
 .sidebar-wrapper {
     width: 50%;
     height: 100%;
-    background-color: #434242;
+    background-color: var(--primary-color);
     position: fixed;
     overflow: auto;
     top: 0;
@@ -333,7 +261,7 @@ a:hover {
 
 .sidebar-wrapper.open {
     animation-name: open;
-    animation-duration: 400ms;
+    animation-duration: 200ms;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
     animation-direction: normal;
@@ -341,8 +269,8 @@ a:hover {
 
 .sidebar-wrapper.close {
     animation-name: close;
-    animation-duration: 400ms;
-    animation-fill-mode: backwards;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
     animation-timing-function: ease-out;
     animation-direction: normal;
 }
@@ -353,7 +281,7 @@ a:hover {
     margin: 0;
     padding: 0;
     font-size: 3.2em;
-    color:#666;
+    color: var(--secondary-color);
     font-family: 'UniSansBold';
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -361,17 +289,16 @@ a:hover {
     outline: none;
     cursor: pointer;
 }
-
 .sidebar-wrapper .sidebar-option.last {
     margin-bottom: 0;
 }
 
 .sidebar-wrapper .sidebar-option:hover {
-    color: #fff;
+    color: white;
 }
 
 .sidebar-wrapper .sidebar-option.selected {
-    color: #fff;
+    color: white;
 }
 
 /*-------------------------------------KEYFRAMES-----------------------------------------------*/
@@ -442,33 +369,20 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background: url('assets/images/SKREAM-20-IMAGES/whitebg.png')no-repeat center center;
-    background-size: cover;
 }
-.info-section{
-   background: url('assets/images/SKREAM-20-IMAGES/whitebg.png')no-repeat center center; 
-    background-size: cover;
-}
+
 .home-fixed-wrapper {
     display: flex;
     margin-left: 20%;
-    padding-top: 0%;
+    padding-top: 8%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
 
-.nitin {
-    position: absolute;
-    top: 350px;
-    left: 390px;
-    width: 30%;
-}
-
 .logo {
     width: 70%;
-    margin-bottom: 0px;
-/*    margin: 0 auto;*/
+    margin-bottom: 130px;
 }
 
 .divider {
@@ -480,7 +394,7 @@ a:hover {
 
 .home-heading {
     text-transform: uppercase;
-    font-family: 'LakeShore', sans-serif;
+    font-family: 'UniSansBold';
     line-height: 1em;
     font-size: 55px;
     color: var(--secondary-color);
@@ -491,55 +405,44 @@ a:hover {
 .skream-date {
     font-family: 'UniSansThin';
     letter-spacing: 5px;
-    font-weight: 600;
+    font-weight: 300;
     font-size: 36px;
-    color: #434242;
+    color: var(--secondary-color);
     margin: 0;
     margin-bottom: 30px;
 }
 
 .compete-button {
-    border: 1px solid #434242;
+    border: 1px solid white;
     text-transform: uppercase;
-    padding: 15px 20px;
+    padding: 5px 20px;
     font-family: 'UniSansLight';
-    color: #434242;
+    color: white;
     font-size: 22px;
     border-radius: 30px;
     text-decoration: none;
     outline: none;
-    font-weight: 600;
-    margin-top: 4rem;
 }
 
 .compete-button:hover {
-    background: rgba(0, 0, 0, 0.1);
-    color: #000;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
     text-decoration: none;
 }
 
-.fixed-section .home-heading{
-    font-size: 9.5rem;
-    margin: 3rem 0;
-}
 /*-------------------------------------INFO SECTION-----------------------------------------------*/
 .home-info {
     flex: 1;
-
+    
     display: flex;
 }
 
 #about-section-2 {
-    background: url('assets/images/SKREAM-20-IMAGES/WEBSITE%20MAIN.png') no-repeat center center;
-    background-size: cover;
-    
+    background: url('assets/images/2.png') no-repeat center center;
 }
-
 #about-kjsce {
-    background: url('assets/images/SKREAM-20-IMAGES/WEBSITE%20ABOUT.png') no-repeat center center;
-    background-size: cover;
+    background: url('assets/images/about%20kjsce.png') no-repeat center center;
 }
-
 .home-info .card {
     flex: 1;
     display: flex;
@@ -562,7 +465,7 @@ a:hover {
 }
 
 .home-info .card .card-content .heading span {
-    font-family: 'Lakeshore';
+    font-family: UniSansBold;
 }
 
 .home-info .card .card-content .content {
@@ -589,7 +492,7 @@ a:hover {
     height: 15px;
     margin-left: 20px;
     border-radius: 50%;
-    background: #434242;
+    background: #2C5A8F;
 }
 
 .home-info .pagination-container .indicator.active {
@@ -610,7 +513,7 @@ a:hover {
     height: 100%;
     justify-content: flex-start;
     align-items: flex-start;
-}     
+}
 
 .event-wrapper {
     min-height: min-content;
@@ -634,7 +537,7 @@ a:hover {
     display: inline-block;
 }
 
-.events .fixed-section .event-wrapper #select-event {
+.events .fixed-section .event-wrapper #select-event{
     width: 300px;
     z-index: 300;
 }
@@ -652,7 +555,7 @@ a:hover {
 }
 
 .event .content {
-    color: #000;
+    color: #fff;
     font-size: 16px;
     letter-spacing: 1px;
     font-family: 'UniSansRegular';
@@ -715,19 +618,19 @@ a:hover {
 .prize-money.team .winning-place .column {
     flex: 1;
     font-size: 20px;
-    color: #434242;
+    color: #fff;
     margin-top: 2px;
     margin-right: 2px;
     padding-left: 13px;
     font-family: 'UniSansBold';
     text-transform: uppercase;
-    background: #cccccc;
+    background: #2C5A8F;
 }
 
 .prize-money.team .winning-place .column.label {
     flex: 1;
-    background: #434242;
-    color: #fff;
+    background: #0F2947;
+    color: #597CA4;
     font-size: 16px;
     text-transform: uppercase;
     padding-top: 5px;
@@ -762,7 +665,7 @@ a:hover {
     align-items: flex-end;
     padding: 5px;
     text-transform: uppercase;
-    color: #434242;
+    color: #597CA4;
     letter-spacing: 1px;
 }
 
@@ -782,7 +685,7 @@ a:hover {
     color: #fff;
     font-family: 'UniSansBold';
     text-transform: uppercase;
-    background: #434242;
+    background: #2C5A8F;
 }
 
 /*-------------------------------------RIGHT SECTION-----------------------------------------------*/
@@ -812,155 +715,16 @@ a:hover {
 }
 
 .events-info .event-heading {
- 
-     writing-mode: vertical-rl;
-    text-orientation: upright;   
+    color: var(--secondary-color);
     font-size: 60px;
     text-transform: uppercase;
-    font-family: 'Lakeshore';
-    transform: translateX(-130%);
-/*    margin-left: -10%;*/
-/*    letter-spacing: 15px;*/
-/*    transform: rotate(90);*/
+    font-family: 'UniSansBold';
+    margin-left: -10%;
+    letter-spacing: 15px;
 }
 
-.events-info .volleyball h6{
-    color: #99cc66;
-}
-
-.events-info .volleyball .divider{
-    background: #99cc66;
-    transform: rotate(90deg);
-}
-
-
-
-.events-info .cricket h6{
-    color: #FF0000;
-}
-
-.events-info .cricket .divider{
-    background: #FF0000;
-    transform: rotate(90deg);
-}
-
-
-
-.events-info .box-cricket h6{
-    color: #00ccFF;
-}
-
-.events-info .box-cricket .divider{
-    background: #00ccFF;
-    transform: rotate(90deg);
-}
-
-
-
-.events-info .throwball h6{
-    color: #cccc33;
-}
-.events-info .throwball .divider{
-    background: #cccc33;
-    transform: rotate(90deg);
-}
-
-
-.events-info .badminton h6{
-    color: #13636E;
-}
-.events-info .badminton .divider{
-    background: #cccc33;
-    transform: rotate(90deg);
-}
-
-
-
-
-.events-info .lawn-tennis h6{
-    color: #33cc99;
-}
-.events-info .lawn-tennis .divider{
-    background: #33cc99;
-    transform: rotate(90deg);
-}
-
-
-
-.events-info .basketball .divider{
-    background: #FF06A0;
-    transform: rotate(90deg);
-}
-
-.events-info .basketball h6{
-    color: #FF06A0;
-}
-
-
-.events-info .chess .divider{
-    background: #000;
-    transform: rotate(90deg);
-}
-.events-info .chess h6{
-    color: #000;
-}
-
-
-
-.events-info .athletics .divider{
-    background: #d243b5;
-    transform: rotate(90deg);
-}
-.events-info .athletics h6{
-    color: #d243b5;
-}
-
-
-.events-info .rink-football .divider{
-    background: #ff0066;
-    transform: rotate(90deg);
-}
-.events-info .rink-football h6{
-    color: #ff0066;
-}
-
-
-.events-info .carrom .divider{
-    background: #a0452a;
-    transform: rotate(90deg);
-}
-.events-info .carrom h6{
-    color: #a0452a;
-}
-
-
-.events-info .squash .divider{
-    background: #6666FF;
-    transform: rotate(90deg);
-}
-.events-info .squash h6{
-    color: #6666FF;
-}
-
-.events-info .table-tennis .divider{
-    background: #0070AD;
-    transform: rotate(90deg);
-}
-.events-info .table-tennis h6{
-    color: #0070AD;
-}
-
-.events-info .football .divider{
-    background: #003399;
-    transform: rotate(90deg);
-}
-.events-info .football h6{
-    color: #003399;
-}
-
-.events-info .long{
-    margin-left: -14%;
-    margin-top: 8rem;
+.events-info .divider.long {
+    margin-left: -10%;
 }
 
 
@@ -977,70 +741,69 @@ a:hover {
 }
 
 .events-info .heading-container.sport {
-    background-image: url('./assets/images/SKREAM-20-IMAGES/WEBSITE%20MAIN.png');
+    background-image: url('./assets/images/2.png');
 }
 
 .events-info .heading-container.cricket {
-    background-image: url('./assets/images/SKREAM-20-IMAGES/cricket.png');
+    background-image: url('./assets/images/Cricket.png');
 }
 
 .events-info .heading-container.football {
-    background-image: url('./assets/images/SKREAM-20-IMAGES/football.png');
+    background-image: url('./assets/images/football.png');
 }
 
 .events-info .heading-container.badminton {
-    background-image: url('./assets/images//SKREAM-20-IMAGES/badminton.png');
+    background-image: url('./assets/images/badminton.png');
 }
 
 .events-info .heading-container.box-cricket {
-    background-image: url('./assets/images/SKREAM-20-IMAGES/box_cricket.png');
+    background-image: url('./assets/images/box-cricket.png');
 }
 
 .events-info .heading-container.rink-football {
-    background-image: url('./assets/images/SKREAM-20-IMAGES/rink_football.png');
+    background-image: url('./assets/images/rink-football.png');
 }
 
 .events-info .heading-container.squash {
-    background-image: url('./assets/images/SKREAM-20-IMAGES/squash.png');
+    background-image: url('./assets/images/squash.png');
 }
 
 .events-info .heading-container.lawn-tennis {
-    background-image: url('./assets/images/SKREAM-20-IMAGES/lawn_tennis.png');
+    background-image: url('./assets/images/tennis.png');
 }
 
 .events-info .heading-container.table-tennis {
-    background-image: url('./assets/images/SKREAM-20-IMAGES/table_tennis.png');
+    background-image: url('./assets/images/table-tennis.png');
 }
 
 .events-info .heading-container.carrom {
-    background-image: url('./assets/images/SKREAM-20-IMAGES/carrom.png');
+    background-image: url('./assets/images/carrom.png');
 }
 
 .events-info .heading-container.chess {
-    background-image: url('./assets/images/SKREAM-20-IMAGES/chess.png');
+    background-image: url('./assets/images/Chess.png');
 }
 
 .events-info .heading-container.athletics {
-    background-image: url('./assets/images/SKREAM-20-IMAGES/athletics.png');
+    background-image: url('./assets/images/athletics.png');
 }
 
 .events-info .heading-container.basketball {
-    background-image: url('./assets/images/SKREAM-20-IMAGES/basketball.png');
+    background-image: url('./assets/images/basketball.png');
 }
 
 .events-info .heading-container.volleyball {
-    background-image: url('./assets/images/SKREAM-20-IMAGES/VOLLEYBALL.png');
+    background-image: url('./assets/images/volleyball.png');
 }
 
 .events-info .heading-container.throwball {
-    background-image: url('./assets/images/SKREAM-20-IMAGES/throwball.png');
+    background-image: url('./assets/images/throwball.png');
 }
 
 /************************************************************************************************
                                     RULES STYLING SECTION
 ************************************************************************************************/
 .rules-section {
-    margin-top: 10rem;
     height: 100%;
     width: 100%;
 }
@@ -1051,7 +814,7 @@ a:hover {
 }
 
 .rules .fixed-section {
-    width: 100%;
+    width: 70%;
     height: 100%;
 }
 
@@ -1060,11 +823,12 @@ a:hover {
     height: 100%;
     box-sizing: border-box;
     padding-left: 100px;
-/*    padding-right: 120px;*/
+    padding-right: 120px;
 }
 
+
 .rules-wrapper .heading {
-    font-size: 30px;
+    font-size: 24px;
     letter-spacing: 1px;
     font-family: UniSansBold;
     text-transform: uppercase;
@@ -1072,7 +836,7 @@ a:hover {
 }
 
 .rules-wrapper .heading.small {
-    font-size: 30px;
+    font-size: 18px;
     font-family: UniSansSemiBold;
 }
 
@@ -1081,11 +845,11 @@ a:hover {
     letter-spacing: 1px;
     font-family: UniSansSemiBold;
     text-transform: uppercase;
-    color: #000;
+    color: #fff;
 }
 
 .rules-wrapper .content {
-    color: #000;
+    color: white;
     font-size: 16px;
     letter-spacing: 1px;
     font-family: UniSansRegular;
@@ -1099,14 +863,8 @@ a:hover {
     font-family: UniSansBold;
 }
 
-.rules-wrapper{
-    padding: 0;
-}
 .rules-wrapper .main-heading {
-/*    display: none;*/
-    font-family: Lakeshore;
-    color: var(--primary-color);
-    font-size: 55px;
+    display: none;
 }
 
 /*-------------------------------------RIGHT SECTION-----------------------------------------------*/
@@ -1125,13 +883,12 @@ a:hover {
 
 .rules-info .divider.long {
     margin-left: -20%;
-    background: #fff;
 }
 
 .rules-info .heading {
     font-size: 70px;
     margin-left: -25%;
-    color: #fff;
+    color: var(--secondary-color);
     text-transform: uppercase;
     font-family: 'UniSansBold';
     letter-spacing: 15px;
@@ -1142,17 +899,7 @@ a:hover {
 }
 
 
-.heading{
-    font-family: 'Lakeshore'!important;
-/*
-    writing-mode: vertical-rl;
-    text-orientation: upright; 
-*/
-    font-size:5rem;
-    letter-spacing: 12px;
-    
-    color:var(--primary-color);
-}
+
 /************************************************************************************************
                                      ACCOMODATION STYLING SECTION
 ************************************************************************************************/
@@ -1167,7 +914,7 @@ a:hover {
 }
 
 .accomodation .fixed-section {
-    width: 100%;
+    width: 70%;
     height: 100%;
 }
 
@@ -1181,7 +928,7 @@ a:hover {
 
 
 .accomodation-wrapper .content {
-    color: #000;
+    color: white;
     font-size: 16px;
     letter-spacing: 1px;
     font-family: UniSansRegular;
@@ -1193,10 +940,7 @@ a:hover {
 }
 
 .accomodation-wrapper .main-heading {
-/*    display: none;*/
-    font-family: Lakeshore;
-    color: var(--primary-color);
-    font-size: 55px;
+    display: none;
 }
 
 /*-------------------------------------RIGHT SECTION-----------------------------------------------*/
@@ -1247,7 +991,7 @@ a:hover {
 }
 
 .registration .fixed-section {
-    width: 100%;
+    width: 70%;
     height: 100%;
 }
 
@@ -1278,11 +1022,11 @@ a:hover {
     letter-spacing: 1px;
     font-family: UniSansSemiBold;
     text-transform: uppercase;
-    color: #000;
+    color: #fff;
 }
 
 .registration-wrapper .content {
-    color: #000;
+    color: white;
     font-size: 16px;
     letter-spacing: 1px;
     font-family: UniSansRegular;
@@ -1297,23 +1041,10 @@ a:hover {
 }
 
 .registration-wrapper .main-heading {
-/*    display: none;*/
-    font-family: Lakeshore;
-    color: var(--primary-color);
-    font-size: 55px;
+    display: none;
 }
 
-a{    color:#0D5EFF;
-} a:hover{
-    color: #000;
-    text-decoration: none;
-}
-a:active{
-    color: #000;
-}
- a:visited{
-    color: #000;
-}
+
 /*-------------------------------------RIGHT SECTION-----------------------------------------------*/
 .registration-info {
     position: fixed;
@@ -1362,29 +1093,22 @@ a:active{
 
 /*-------------------------------------FIXED SECTION-----------------------------------------------*/
 .parvah-info-container {
-
-    /*    display: flex;*/
+    display: flex;
     height: 100%;
-    /*
     flex-direction: column;
     justify-content: center;
+    align-items: center; 
+}
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-*/
-
+    margin-bottom: 30px; 
 }
-
 .logo-container img {
-
-/*        height: 100px;*/
+    margin: 0 60px;
 }
-
-.logo-container .parvaah{
-    height: 400px;
-}
-.logo-container .zero-waste{
-    height: 200px;
-}
-
 
 /*-------------------------------------INFO SECTION-----------------------------------------------*/
 .parvaah-info-container {
@@ -1399,7 +1123,6 @@ a:active{
 .parvah-info-container .logo.parvaah {
     width: 25%;
 }
-
 .parvaah-info-container .logo-container {
     display: flex;
     flex-direction: row;
@@ -1407,32 +1130,28 @@ a:active{
     align-items: center;
     margin-bottom: 60px;
 }
-
 .content {
     font-size: 18px;
     letter-spacing: 1px;
     font-family: UniSansRegular;
-    color: #000;
+    color: white;
 }
-
 .content.right {
     text-align: left;
 }
-
 .content.left {
     text-align: right;
 }
-
 .parvaah-info-container .content {
     text-align: center;
 }
 
 .volunteer-button {
-    border: 1px solid #000;
+    border: 1px solid white;
     text-transform: uppercase;
     padding: 5px 20px;
     font-family: 'UniSansLight';
-    color: #000;
+    color: white;
     font-size: 22px;
     border-radius: 30px;
     text-decoration: none;
@@ -1441,8 +1160,8 @@ a:active{
 }
 
 .volunteer-button:hover {
-    background: rgba(0, 0, 0, 0.1);
-    color: #000;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
     text-decoration: none;
 }
 
@@ -1456,17 +1175,14 @@ a:active{
     align-items: center;
     justify-content: center;
 }
-
 .parvaah-event .event-image {
     margin-right: 10%;
-    width: 25%;
+    width: 25%; 
 }
-
 .parvaah-event .event-image.right {
     margin-right: 0%;
     margin-left: 10%;
 }
-
 .parvaah-event .parvaah-event-info {
     width: 75%;
     display: flex;
@@ -1474,7 +1190,6 @@ a:active{
     justify-content: center;
     align-items: center;
 }
-
 .parvaah-event .parvaah-event-info .heading {
     font-size: 28px;
     text-align: left;
@@ -1488,7 +1203,6 @@ a:active{
 .parvaah-event .parvaah-event-info .heading.left {
     text-align: right;
 }
-
 .parvaah-event .parvaah-event-info .heading.right {
     text-align: left;
 }
@@ -1496,7 +1210,6 @@ a:active{
 .parvaah.section.sidebar-open {
     width: 50%;
 }
-
 .parvaah.section.sidebar-close {
     width: 100%;
 }
@@ -1521,7 +1234,6 @@ a:active{
     box-sizing: border-box;
     padding: 3%;
 }
-
 .student-council {
     width: 80%;
     margin-bottom: 100px;
@@ -1536,15 +1248,13 @@ a:active{
     margin: 0;
     margin-bottom: 20px;
 }
-
 .contact .content {
     font-size: 20px;
-    color: #000;
+    color: white;
     font-family: UniSansRegular;
     letter-spacing: 1px;
     line-height: 1.6em;
 }
-
 .contact .sub-heading {
     text-transform: uppercase;
     font-family: 'UniSansBold';
@@ -1554,15 +1264,12 @@ a:active{
     margin: 0;
     margin-bottom: 20px;
 }
-
 .contact .content strong {
     color: var(--secondary-color);
 }
-
 .contact .content span {
     font-family: UniSansSemiBold;
 }
-
 .contact .info-section .logo {
     width: 50%;
     margin-bottom: 80px;
@@ -1577,15 +1284,12 @@ a:active{
     top: 0;
     z-index: 100;
 }
-
-.section.sidebar-open .map-section {
+.section.sidebar-open  .map-section {
     right: -50%;
 }
-
 .section.sidebar-close .map-section {
     right: 0%;
 }
-
 #googleMap {
     width: 100%;
     height: 100%;
@@ -1599,7 +1303,6 @@ a:active{
 .usesvh {
     text-align: center;
 }
-
 .usesvh .logo.small {
     text-align: center;
     margin-top: 20px;
@@ -1609,10 +1312,4 @@ a:active{
 .sponsors.section.sidebar-open {
     width: 48%;
     margin-left: 0px;
-}
-
-
-.sponsors img{
-/*    width: 10rem;*/
-    margin-bottom: 6rem;
 }

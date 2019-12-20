@@ -1,3 +1,8 @@
+$(window).on('load', function () {
+    $("#preloader").delay(1000).slideUp('slow');
+});
+
+
 $(function () {
     if (screen.width > 1024) {
         var isScrolling = false;

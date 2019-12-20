@@ -77,14 +77,14 @@ document.addEventListener("click", closeAllSelect);
 var currentEvent = 'sport';
 var currentGender = 'boys';
 
-$('.boys-option').click(function () {
+$('.boys-option').click(function(){
     $("." + currentEvent + " #" + currentGender).addClass("hidden");
     $("." + currentEvent + " #" + this.innerHTML).removeClass("hidden");
     $("." + currentEvent + " .boys-option").addClass("selected");
     $("." + currentEvent + " .girls-option").removeClass("selected");
     currentGender = this.innerHTML;
 });
-$('.girls-option').click(function () {
+$('.girls-option').click(function(){
     $("." + currentEvent + " #" + currentGender).addClass("hidden");
     $("." + currentEvent + " #" + this.innerHTML).removeClass("hidden");
     $("." + currentEvent + " .boys-option").removeClass("selected");
