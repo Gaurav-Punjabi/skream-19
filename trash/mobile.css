@@ -301,6 +301,12 @@ a:focus, a:hover {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    background: url('assets/images/SKREAM-20-IMAGES/whitebg.png')no-repeat center center; 
+    background-size: cover;
+}
+.info-section{
+    background: url('assets/images/SKREAM-20-IMAGES/whitebg.png')no-repeat center center; 
+    background-size: cover;
 }
 
 .home-fixed-wrapper {
@@ -796,6 +802,8 @@ ul{
     background: #434242;
     display: table;
     z-index: 9999;
+    background: url('assets/images/SKREAM-20-IMAGES/greybg.png')no-repeat center center; 
+    background-size: cover; 
 
 }
 #preloader h1 {
@@ -806,7 +814,7 @@ ul{
     left: 30%;
     transform: translateX(-20%);
     font-family: 'Lakeshore';
-    font-size: 7rem;
+    font-size: 6.4rem;
 }
 
 #preloader img {
@@ -1053,7 +1061,7 @@ a:focus, a:hover {
 .fixed-section {
     flex: 1;
     display: flex;
-    padding: 40% 0;
+    padding: 50    % 0;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -1097,7 +1105,7 @@ a:focus, a:hover {
     letter-spacing: 5px;
     font-weight: 300;
     font-size: 24px;
-    color: var(--secondary-color);
+    color: #000;
     margin: 0;
     margin-bottom: 10%;
 }
