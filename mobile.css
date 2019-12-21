@@ -1148,7 +1148,7 @@ a:focus, a:hover {
 }
 
 .home-info .card .card-content .heading {
-    font-family: UniSansRegular;
+    font-family: Lakeshore;
     font-size: 4rem;
     color: var(--secondary-color);
     text-transform: uppercase;
@@ -1157,7 +1157,7 @@ a:focus, a:hover {
 }
 
 .home-info .card .card-content .heading span {
-    font-family: UniSansBold;
+    font-family: Lakeshore;
 }
 
 .home-info .card .card-content .content {
@@ -2402,7 +2402,7 @@ a:focus, a:hover {
     letter-spacing: 1px;
     font-family: UniSansSemiBold;
     text-transform: uppercase;
-    color: #fff;
+    color: #000;
 }
 
 .registration-wrapper .content {
