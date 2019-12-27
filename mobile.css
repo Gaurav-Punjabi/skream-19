@@ -14,6 +14,11 @@ body {
 }
 
 @font-face {
+    font-family: 'Lakeshore';
+    src: url('./assets/fonts/Lakeshore/Lakeshore-Regular.ttf');
+}
+
+@font-face {
     font-family: UniSansBold;
     src: url('./assets/fonts/uni-sans/bold.ttf');
 }
@@ -51,12 +56,16 @@ body {
     height: 70px;
     left: 0px;
     top: 0px;
-    background: url('assets/images/hamburger.png') no-repeat center center;
-    background-size: cover;
+/*    background: url('assets/images/hamburger.png') no-repeat center center;*/
+/*    background-size: cover;*/
     z-index: 999;
     cursor: pointer;
 }
 
+.hamburger img{
+    width: 100%;
+    z-index: 999;
+} 
 .compete-button-bottom {
     display: none;
 }
@@ -292,6 +301,12 @@ a:focus, a:hover {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    background: url('assets/images/SKREAM-20-IMAGES/whitebg.png')no-repeat center center; 
+    background-size: cover;
+}
+.info-section{
+    background: url('assets/images/SKREAM-20-IMAGES/whitebg.png')no-repeat center center; 
+    background-size: cover;
 }
 
 .home-fixed-wrapper {
@@ -316,7 +331,7 @@ a:focus, a:hover {
 
 .home-heading {
     text-transform: uppercase;
-    font-family: UniSansBold;
+    font-family: Lakeshore;
     line-height: 1em;
     font-size: 40px;
     align-self: flex-start;
@@ -411,15 +426,15 @@ a:focus, a:hover {
 }
 
 #about-section {
-    background: url('assets/images/2.png') no-repeat center center;
+/*    background: url('assets/images/SKREAM-20-IMAGES/WEBSITE%20ABOUT.png') no-repeat center center;*/
 }
 
 #about-section-2 {
-    background: url('assets/images/Box%20Cricket.png') no-repeat center center;
+/*    background: url('assets/images/SKREAM-20-IMAGES/WEBSITE%20MAIN.png') no-repeat center center;*/
 }
 
 #about-kjsce {
-    background: url('assets/images/athletics.png') no-repeat center center;
+/*    background: url('assets/images/SKREAM-20-IMAGES/WEBSITE%20ABOUT.png') no-repeat center center;*/
 }
 
 
@@ -545,7 +560,7 @@ a:focus, a:hover {
     letter-spacing: 1px;
     font-size: 15px;
     font-family: 'UniSansRegular';
-    color: #fff;
+    color: #000;
     padding-left: 13px;
     margin: 1px;
 }
@@ -558,7 +573,7 @@ a:focus, a:hover {
 .prize-money.team .winning-place .column {
     flex: 1;
     font-size: 20px;
-    color: #fff;
+    color: #000;
     margin-top: 2px;
     margin-right: 2px;
     padding-left: 13px;
@@ -705,67 +720,896 @@ a:focus, a:hover {
     background-position: center center;
 
 }
-.events-info .heading-container.sport {
-    background-image: url('./assets/images/2.png');
+:root {
+    --bg-color: #fff;
+    --primary-color: #f6ad23;
+    --secondary-color: #f6ad23;
+    --accent-color: #cccccc;
+}
+
+html,    
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: var(--bg-color);
+}
+
+@font-face {
+    font-family: UniSansBold;
+    src: url('./assets/fonts/uni-sans/bold.ttf');
+}
+
+@font-face {
+    font-family: UniSansRegular;
+    src: url('./assets/fonts/uni-sans/regular.ttf');
+}
+
+@font-face {
+    font-family: UniSansSemiBold;
+    src: url('./assets/fonts/uni-sans/semi-bold.ttf');
+}
+
+@font-face {
+    font-family: UniSansThin;
+    src: url('./assets/fonts/uni-sans/thin.ttf');
+}
+
+@font-face {
+    font-family: UniSansLight;
+    src: url('./assets/fonts/uni-sans/light.ttf');
+}
+li{
+    list-style: none;
+}
+ul{
+    list-style: none;
+}
+/************************************************************************************************
+                                    GENERAL STYLING SECTION
+************************************************************************************************/
+.hidden {
+    display: none;
+}
+
+.hamburger {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    left: 10px;
+    top: 10px;
+/*    background: url('assets/images/hamburger.png') no-repeat center center;*/
+    background-size: cover;
+    z-index: 999;
+    cursor: pointer;
+}
+
+
+#preloader {
+
+
+    /*Make FullScreen*/
+    width: 100%;
+    height: 100%;
+
+    /********** To Make it Full-screen (Another way)*******/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: #434242;
+    display: table;
+    z-index: 9999;
+    background: url('assets/images/SKREAM-20-IMAGES/greybg.png')no-repeat center center; 
+    background-size: cover; 
+
+}
+#preloader h1 {
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translateX(-20%);
+    font-family: 'Lakeshore';
+    font-size: 6.4rem;
+}
+
+#preloader img {
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*    transform: translateX(-50%);*/
+    display: table-cell;
+    vertical-align: middle;
+    margin-bottom: 25px;
+    width: 190px;
+
+}
+
+.compete-button-bottom {
+    display: none;
+}
+
+.logo.small {
+    width: 30%;
+    margin-left: 30px;
+    /*    margin-top: 35px;*/
+    margin-bottom: 20px;
+}
+
+.divider.long {
+    color: var(--secondary-color);
+    width: 100px;
+    height: 5px;
+    margin-bottom: 20px;
+}
+
+
+
+.custom-select {
+    position: relative;
+    font-family: UniSansBold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element:*/
+}
+
+.select-selected {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: var(--bg-color) transparent transparent transparent;
+}
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 40px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+    color: color(--bg-color);
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    background-color: var(--secondary-color);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.compete-button-bottom {
+    border: 1px solid var(--bg-color);
+    text-transform: uppercase;
+    padding: 5px 20px;
+    font-family: UniSansLight;
+    color: var(--bg-color);
+    font-size: 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    outline: none;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+}
+
+/*----------------------------------------SOCIAL-LINKS-----------------------------------------*/
+.social-links {
+    display: none;
+}
+
+.social-links-mobile {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-link {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.social-links-mobile .social-link {
+    margin-left: 0;
+}
+
+/*-------------------------------------KEYFRAMES-----------------------------------------------*/
+@keyframes push-right {
+    from {
+        position: relative;
+        left: 0%;
+    }
+
+    to {
+        position: relative;
+        left: 52%;
+    }
+}
+
+@keyframes push-left {
+    from {
+        position: relative;
+        left: 50%;
+    }
+
+    to {
+        position: relative;
+        left: 0%;
+    }
+}
+
+/************************************************************************************************
+                                    SIDEBAR STYLING SECTION
+************************************************************************************************/
+.sidebar-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #434242;
+    display: flex;
+    z-index: 999;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.sidebar-wrapper.open {
+    display: flex;
+}
+
+.sidebar-wrapper.close {
+    display: none;
+}
+
+.section.sidebar-open {
+    display: none;
+}
+
+.section.sidebar-close {
+    display: flex;
+}
+
+
+a:focus, a:hover {
+    color: transparent;
+}
+
+.sidebar-wrapper .sidebar-option {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 2.2em;
+    color: #666666;
+    font-family: 'UniSansBold';
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.sidebar-wrapper .sidebar-option:hover {
+    color: #fff;
+}
+
+.sidebar-wrapper .sidebar-option.selected {
+    color: #666666;
+}
+
+/************************************************************************************************
+                                      COUNTERS PAGE STYLING
+************************************************************************************************/
+.counters {
+    display: none;
+}
+
+/************************************************************************************************
+                                    HOME PAGE STYLING
+************************************************************************************************/
+.home {
+    flex: 1;
+    align-items: stretch;
+}
+
+/*-------------------------------------FIXED SECTION-----------------------------------------------*/
+.fixed-section {
+    flex: 1;
+    display: flex;
+    padding: 50    % 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.home-fixed-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 15%;
+}
+
+.logo {
+    width: 80%;
+    margin-bottom: 15%;
+}
+
+.divider {
+    width: 50px;
+    height: 5px;
+    background: var(--secondary-color);
+    margin-bottom: 1%;
+}
+
+.home-heading {
+    text-transform: uppercase;
+    font-family: 'Lakeshore';
+    line-height: 1em;
+    font-size: 60px;
+    align-self: flex-start;
+    margin-left: 50%;
+    display: inline-block;
+    color: var(--secondary-color);
+    margin: 0;
+    margin-bottom: 3%;
+}
+
+.skream-date {
+    font-family: UniSansThin;
+    letter-spacing: 5px;
+    font-weight: 300;
+    font-size: 24px;
+    color: #000;
+    margin: 0;
+    margin-bottom: 10%;
+}
+
+.compete-button {
+    border: 1px solid #000;
+    text-transform: uppercase;
+    padding: 5px 25px;
+    font-family: UniSansLight;
+    color: #000;
+    font-size: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    outline: none;
+}
+
+.compete-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #000;
+    text-decoration: none;
+}
+
+/*-------------------------------------INFO SECTION-----------------------------------------------*/
+.home-info {
+    align-items: stretch;
+    flex: 1;
+}
+
+.home-info .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 30% 0;
+}
+
+.home-info .card .card-content {
+    margin: 9%;
+}
+
+.home-info .card .card-content .heading {
+    font-family: Lakeshore;
+    font-size: 4rem;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10%;
+}
+
+.home-info .card .card-content .heading span {
+    font-family: Lakeshore;
+}
+
+.home-info .card .card-content .content {
+    color: #fff;
+    font-size: 16px;
+    font-family: UniSansRegular;
+    letter-spacing: 1px;
+}
+
+.home-info .pagination-container {
+    display: none;
+}
+
+.home-info .pagination-container .indicator {
+    width: 15px;
+    height: 15px;
+    margin-left: 20px;
+    border-radius: 50%;
+    background: #2C5A8F;
+}
+
+.home-info .pagination-container .indicator.active {
+    background: var(--secondary-color);
+}
+
+#about-section {
+    background: url('assets/images/SKREAM-20-IMAGES/WEBSITE%20ABOUT.png') no-repeat center center;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+#about-section-2 {
+    background: url('assets/images/SKREAM-20-IMAGES/WEBSITE%20MAIN.png') no-repeat center center;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+#about-kjsce {
+    background: url('assets/images/SKREAM-20-IMAGES//WEBSITE%20ABOUT.png') no-repeat center center;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+
+@media (max-width: 320px) {
+    .home-fixed-wrapper {
+        margin-left: 10%;
+    }
+    .home-info .card .card-content .heading {
+        font-size: 3.5rem;
+    }
+}
+/************************************************************************************************
+                                    EVENTS PAGE STYLING
+************************************************************************************************/
+.events {
+    height: 100%;
+    overflow: auto;
+}
+
+.events .fixed-section {
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start;
+    padding-top: 10%;
+    align-items: flex-start;
+    /*    overflow: auto;*/
+}
+
+.events .fixed-section .logo.small {
+    display: none;
+}
+
+.event-wrapper {
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: min-content;
+}
+
+.events .fixed-section .event-wrapper #select-event {
+    width: 250px;
+    z-index: 300;
+}
+
+.event .gender {
+    font-size: 1.8em;
+    font-family: UniSansBold;
+    text-transform: uppercase;
+    margin-right: 90px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    color: var(--accent-color);
+    display: inline-block;
+}
+
+.event .gender.selected {
+    color: var(--secondary-color);
+}
+
+.event .content-heading {
+    color: var(--secondary-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: UniSansSemiBold;
+    margin: 0;
+}
+
+.event .content {
+    color: #000;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-overflow: clip;
+    font-family: UniSansRegular;
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+
+.event .content .headings li {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.event .content li {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.event .content span {
+    font-family: UniSansBold;
+}
+
+
+.prize-money {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.prize-money.team {
+    height: 80px;
+}
+
+.prize-money.col-2 {
+    height: 60px;
+}
+
+.prize-money.no-margin {
+    margin-bottom: 0;
+}
+
+.prize-money.team .header {
+    display: flex;
+    flex-direction: row;
+}
+
+.prize-money.team .header .column {
+    flex: 1;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-family: 'UniSansRegular';
+    color: #000;
+    padding-left: 13px;
+    margin: 1px;
+}
+
+.prize-money.team .winning-place {
+    display: flex;
+    flex-direction: row;
+}
+
+.prize-money.team .winning-place .column {
+    flex: 1;
+    font-size: 20px;
+    color: #000;
+    margin-top: 2px;
+    margin-right: 2px;
+    padding-left: 13px;
+    font-family: 'UniSansBold';
+    text-transform: uppercase;
+    background: #cccccc;
+}
+
+.prize-money.team .winning-place .column.label {
+    flex: 1;
+    background: #434242;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-top: 5px;
+    text-align: center;
+    border-radius: 0;
+}
+
+
+.entry-fee {
+    width: 250px;
+    height: 60px;
+    display: flex;
+    margin-bottom: 25px;
+    flex-direction: column;
+}
+
+.entry-fee.no-margin {
+    margin-bottom: 0;
+}
+
+.entry-fee .header {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.entry-fee .header .column {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.entry-fee .fee {
+    display: flex;
+    flex-direction: row;
+}
+
+.entry-fee .fee .column {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2px;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'UniSansBold';
+    text-transform: uppercase;
+    background: #434242;
+}
+
+@media (max-width: 320px) {
+    .event .content .headings li {
+        font-size: 15px;
+    }
+    .events .fixed-section .event-wrapper #select-event {
+        width: 200px;
+    }
+    .custom-select {
+        font-size: 1.6rem;
+    }
+    .event .content {
+        font-size: 12px;
+    }
+    .event .gender {
+        font-size: 1.6em;
+        margin-right: 70px;
+    }
+    .event .content .headings li  {
+        font-size: 12px;
+    }
+    .event .content li {
+        font-size: 12px;
+    }
+    .prize-money {
+        width: 320px;
+    }
+    .prize-money.team .header .column {
+        font-size: 14px;
+    }
+    .entry-fee .fee .column {
+        font-size: 18px;
+    }
+    .select-selected:after {
+        right: 10px;
+    }
+}
+
+/*-------------------------------------RIGHT SECTION-----------------------------------------------*/
+.events-info.desktop {
+    display: none;
+     
+}
+
+.events-info.mobile {
+    height: 30%;
+/*    width: 100%;*/
+    margin-top: 70px;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-start;
+/*    background-image: url('./assets/images/SKREAM-20-IMAGES/WEBSITE%20MAIN.png');*/
+}
+.imgc{
+    width: 100%;
+    
+}
+.imgc img{
+    width: 100%;
+}
+.events-info .event-heading {
+    color: var(--secondary-color);
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Lakeshore';
+    letter-spacing: 0.9rem;
+}
+
+.events-info .divider {
+    margin-bottom: 10px;
+}
+
+.events-info .heading-container {
+    flex: 1;
+    display: flex;
+    height: 100%;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-start;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.events-info .volleyball h6{
+    color: #99cc66;
+}
+
+.events-info .cricket h6{
+    color: #FF0000;
+}
+
+.events-info .box-cricket h6{
+    color: #00ccFF;
+}
+
+.events-info .throwball h6{
+    color: #cccc33;
+}
+
+.events-info .badminton h6{
+    color: #13636E;
+}
+
+.events-info .lawn-tennis h6{
+    color: #33cc99;
+}
+
+.events-info .basketball h6{
+    color: #FF06A0;
+}
+.events-info .chess h6{
+    color: #000;
+}
+
+.events-info .athletics h6{
+    color: #d243b5;
+}
+
+.events-info .rink-football h6{
+    color: #ff0066;
+}
+
+.events-info .carrom h6{
+    color: #a0452a;
+}
+
+
+.events-info .squash h6{
+    color: #6666FF;
+}
+
+
+.events-info .table-tennis h6{
+    color: #0070AD;
+}
+
+.events-info .football h6{
+    color: #003399;
+}
+
+.events-info .divider.long {
+    margin-left: -15%;
 }
 
 .events-info .heading-container.cricket {
-    background-image: url('./assets/images/cricket.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/cricket.png');
 }
 
 .events-info .heading-container.football {
-    background-image: url('./assets/images/football.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/football.png');
 }
 
 .events-info .heading-container.badminton {
-    background-image: url('./assets/images/badminton.png');
+    background-image: url('./assets/images//SKREAM-20-IMAGES/badminton.png');
 }
 
 .events-info .heading-container.box-cricket {
-    background-image: url('./assets/images/box-cricket.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/box_cricket.png');
 }
 
 .events-info .heading-container.rink-football {
-    background-image: url('./assets/images/rink-football.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/rink_football.png');
 }
 
 .events-info .heading-container.squash {
-    background-image: url('./assets/images/squash.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/squash.png');
 }
 
 .events-info .heading-container.lawn-tennis {
-    background-image: url('./assets/images/tennis.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/lawn_tennis.png');
 }
 
 .events-info .heading-container.table-tennis {
-    background-image: url('./assets/images/table-tennis.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/table_tennis.png');
 }
 
 .events-info .heading-container.carrom {
-    background-image: url('./assets/images/carrom.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/carrom.png');
 }
 
-
-
 .events-info .heading-container.chess {
-    background-image: url('./assets/images/Chess.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/chess.png');
 }
 
 .events-info .heading-container.athletics {
-    background-image: url('./assets/images/athletics.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/athletics.png');
 }
 
 .events-info .heading-container.basketball {
-    background-image: url('./assets/images/basketball.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/basketball.png');
 }
 
 .events-info .heading-container.volleyball {
-    background-image: url('./assets/images/volleyball.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/VOLLEYBALL.png');
 }
 
 .events-info .heading-container.throwball {
-    background-image: url('./assets/images/throwball.png');
+    background-image: url('./assets/images/SKREAM-20-IMAGES/throwball.png');
 }
+
 
 /************************************************************************************************
                                     RULES STYLING SECTION
@@ -814,11 +1658,11 @@ a:focus, a:hover {
     letter-spacing: 1px;
     font-family: UniSansSemiBold;
     text-transform: uppercase;
-    color: #fff;
+    color: #000;
 }
 
 .rules-wrapper .content {
-    color: white;
+    color: #000;
     font-size: 15px;
     letter-spacing: 1px;
     font-family: UniSansRegular;
@@ -838,7 +1682,7 @@ a:focus, a:hover {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 2px;
-    font-family: UniSansBold;
+    font-family: Lakeshore;
 }
 @media (max-width: 320px) {
     .rules-wrapper .main-heading  {
@@ -914,7 +1758,7 @@ a:focus, a:hover {
 
 
 .accomodation-wrapper .content {
-    color: white;
+    color: #000;
     font-size: 15px;
     letter-spacing: 1px;
     font-family: UniSansRegular;
@@ -1020,7 +1864,7 @@ a:focus, a:hover {
 }
 
 .registration-wrapper .content {
-    color: white;
+    color: #000;
     font-size: 14px;
     letter-spacing: 1px;
     font-family: UniSansRegular;
@@ -1096,11 +1940,17 @@ a:focus, a:hover {
 /************************************************************************************************
                                     PARVAAH PAGE STYLING
 ************************************************************************************************/
+/*
 .parvaah {
     height: 100%;
 }
+*/
 
 /*-------------------------------------INFO SECTION-----------------------------------------------*/
+.parvaah-event{
+    display: flex;
+    flex-direction: column;
+}
 .parvaah-info-container {
     height: 100%;
     display: flex;
@@ -1123,7 +1973,7 @@ a:focus, a:hover {
     font-size: 12px;
     letter-spacing: 1px;
     font-family: UniSansRegular;
-    color: white;
+    color: #000;
 }
 .content.right {
     text-align: left;
@@ -1140,7 +1990,7 @@ a:focus, a:hover {
     text-transform: uppercase;
     padding: 5px 20px;
     font-family: 'UniSansLight';
-    color: white;
+    color: #000;
     font-size: 18px;
     border-radius: 30px;
     text-decoration: none;
@@ -1239,6 +2089,10 @@ a:focus, a:hover {
     box-sizing: border-box;
     padding: 3%;
 }
+
+.info-section img{
+    width: 70%;
+}
 .student-council {
     width: 80%;
     margin-bottom: 100px;
@@ -1255,7 +2109,551 @@ a:focus, a:hover {
 }
 .contact .content {
     font-size: 16px;
-    color: white;
+    color: #000;
+    font-family: UniSansRegular;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+}
+.contact .sub-heading {
+    text-transform: uppercase;
+    font-family: 'UniSansBold';
+    line-height: 1.2em;
+    font-size: 1.2em;
+    color: var(--secondary-color);
+    margin: 0;
+    margin-bottom: 20px;
+}
+.contact .content strong {
+    color: var(--secondary-color);
+}
+.contact .content span {
+    font-family: UniSansSemiBold;
+}
+.contact .info-section .logo {
+    width: 40%;
+    margin: 40px 0;
+}
+
+/*-------------------------------------MAP SECTION SECTION-----------------------------------------------*/
+.map-section {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+#googleMap {
+    width: 90%;
+    height: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+
+
+/************************************************************************************************
+                                    RULES STYLING SECTION
+************************************************************************************************/
+.rules-section {
+    height: 100%;
+    width: 100%;
+}
+
+.rules .rules-wrapper .logo.small {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 20px;
+}
+
+.rules .fixed-section {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.rules .fixed-section .rules-wrapper {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.rules-wrapper .heading {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: UniSansBold;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
+.rules-wrapper .heading.small {
+    font-size: 16px;
+    font-family: UniSansSemiBold;
+}
+
+.rules-wrapper .note {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: UniSansSemiBold;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.rules-wrapper .content {
+    color: #000;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: UniSansRegular;
+}
+
+.rules-wrapper .note span {
+    color: var(--secondary-color);
+}
+
+.rules-wrapper .content strong {
+    font-family: UniSansBold;
+}
+
+.rules-wrapper .main-heading {
+    font-size: 55px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: Lakeshore;
+}
+@media (max-width: 320px) {
+    .rules-wrapper .main-heading  {
+        font-size: 25px;
+    }
+    .rules-wrapper .content {
+        font-size: 12px;
+    }
+    .rules-wrapper .note {
+        font-size: 11px;
+    }
+    .rules-wrapper .heading.small {
+        font-size: 14px;
+    }
+    .rules-wrapper .heading {
+        font-size: 18px;
+    }
+}
+
+
+
+/*-------------------------------------RIGHT SECTION-----------------------------------------------*/
+.rules-info {
+    display: none;
+}
+
+.rules-info .divider.long {
+    margin-left: -20%;
+}
+
+.rules-info .heading {
+    font-size: 70px;
+    margin-left: -25%;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-family: UniSansBold;
+    letter-spacing: 15px;
+}
+
+.section.sidebar-open .rules-info {
+    left: 120%;
+}
+
+
+
+/************************************************************************************************
+                                     ACCOMODATION STYLING SECTION
+************************************************************************************************/
+.accomodation.section {
+    height: 100%;
+    width: 100%;
+}
+
+.accomodation .accomodation-wrapper .logo.small {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 20px;
+}
+
+.accomodation .fixed-section {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.accomodation .fixed-section .accomodation-wrapper {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.accomodation-wrapper .content {
+    color: #000;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: UniSansRegular;
+}
+
+
+.accomodation-wrapper .content strong {
+    font-family: UniSansBold;
+}
+
+.accomodation-wrapper .main-heading {
+    font-size: 35px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: Lakeshore;
+}
+
+@media (max-width: 320px) {
+    .accomodation-wrapper .main-heading  {
+        font-size: 25px;
+    }
+    .accomodation-wrapper .content {
+        font-size: 12px;
+    }
+}
+
+
+/*-------------------------------------RIGHT SECTION-----------------------------------------------*/
+.accomodation-info {
+    display: none;
+}
+
+.accomodation-info .divider.long {
+    margin-left: -40%;
+}
+
+.accomodation-info .heading {
+    font-size: 40px;
+    margin-left: -40%;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-family: UniSansBold;
+    letter-spacing: 15px;
+}
+
+.section.sidebar-open .accomodation-info {
+    left: 150%;
+}
+
+
+
+
+/************************************************************************************************
+                                     REGISTRATION STYLING SECTION
+************************************************************************************************/
+.registration.section {
+    height: 100%;
+    width: 100%;
+}
+
+.registration .registration-wrapper .logo.small {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 20px;
+}
+
+.registration .fixed-section {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.registration .fixed-section .registration-wrapper {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.registration-wrapper .heading {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: UniSansBold;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
+.registration-wrapper .heading.small {
+    font-size: 16px;
+    font-family: UniSansSemiBold;
+}
+
+.registration-wrapper .note {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-family: UniSansSemiBold;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.registration-wrapper .content {
+    color: #000;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: UniSansRegular;
+}
+
+.registration-wrapper span {
+    color: var(--secondary-color);
+}
+
+.registration-wrapper strong {
+    font-family: UniSansBold;
+}
+
+.registration-wrapper .main-heading {
+    font-size: 35px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: Lakeshore;
+}
+
+
+@media (max-width: 320px) {
+    .registration-wrapper .main-heading  {
+        font-size: 25px;
+    }
+    .registration-wrapper .content {
+        font-size: 12px;
+    }
+    .registration-wrapper .note {
+        font-size: 11px;
+    }
+    .registration-wrapper .heading.small {
+        font-size: 14px;
+    }
+    .registration-wrapper .heading {
+        font-size: 18px;
+    }
+}
+
+
+
+/*-------------------------------------RIGHT SECTION-----------------------------------------------*/
+.registration-info {
+    display: none;
+}
+
+.registration-info .divider.long {
+    margin-left: -30%;
+}
+
+.registration-info .heading {
+    font-size: 40px;
+    margin-left: -30%;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-family: UniSansBold;
+    letter-spacing: 15px;
+}
+
+.section.sidebar-open .registration-info {
+    left: 150%;
+}
+
+
+
+
+
+
+
+
+/************************************************************************************************
+                                    PARVAAH PAGE STYLING
+************************************************************************************************/
+/*
+.parvaah {
+    height: 100%;
+}
+*/
+
+/*-------------------------------------INFO SECTION-----------------------------------------------*/
+.parvaah-info-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+}
+.parvaah-info-container .logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.parvaah-info-container .logo-container img {
+    width: 30%;
+}
+
+.parvaah-info-container .logo-container .parvaah{
+    width: 100%;
+}
+
+.parvaah-info-container .logo-container .zero-waste{
+    width: 70%;
+}
+.content {
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: UniSansRegular;
+    color: #000;
+}
+.content.right {
+    text-align: left;
+}
+.content.left {
+    text-align: right;
+}
+.parvaah-info-container .content {
+    text-align: center;
+}
+
+.volunteer-button {
+    border: 1px solid #000;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    font-family: 'UniSansLight';
+    color: #000;
+    font-size: 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    outline: none;
+    margin-top: 50px;
+}
+
+.volunteer-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #000;
+    text-decoration: none;
+}
+
+.parvaah-event{
+    padding: 0 10%;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-start;
+}
+.parvaah-event .event-image {
+    margin-right: 5%;
+    width: 100%; 
+}
+.parvaah-event .event-image.right {
+    margin-right: 0%;
+    margin-left: 5%;
+    text-align: center;
+}
+.parvaah-event .parvaah-event-info {
+    margin: 0 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.parvaah-event .parvaah-event-info .heading {
+    font-size: 22px;
+    text-align: left;
+    color: var(--secondary-color);
+    font-family: UniSansBold;
+    align-self: stretch;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.parvaah-event .parvaah-event-info .heading.left {
+    text-align: right;
+}
+.parvaah-event .parvaah-event-info .heading.right {
+    text-align: left;
+}
+
+.parvaah.section.sidebar-open {
+    width: 50%;
+}
+.parvaah.section.sidebar-close {
+    width: 100%;
+}
+
+
+/************************************************************************************************
+                                        SPONSORS PAGE STYLING
+************************************************************************************************/
+.usesvh {
+    text-align: center;
+}
+.usesvh .logo.small {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/************************************************************************************************
+                                        CONTACT PAGE STYLING
+************************************************************************************************/
+.contact.section {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+/*-------------------------------------FIXED SECTION-----------------------------------------------*/
+.info-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 3%;
+}
+.student-council {
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+.contact .heading {
+    text-transform: uppercase;
+    font-family: 'UniSansBold';
+    line-height: 1.2em;
+    font-size: 3em;
+    color: var(--secondary-color);
+    margin: 0;
+    margin-bottom: 20px;
+}
+.contact .content {
+    font-size: 16px;
+    color: #000;
     font-family: UniSansRegular;
     letter-spacing: 1px;
     line-height: 1.4em;
