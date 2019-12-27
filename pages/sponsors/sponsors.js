@@ -4,16 +4,16 @@ $(function () {
 
 
     $('#2019').show();
-    //    $('#2020-pill').click(function () {
-    //        hideAll();
-    //        console.log("Clicked 2020");
-    //        $('#2020').show();
-    //        $('#2020-pill').addClass("active");
-    //        $('#2019-pill').removeClass("active");
-    //        $('#2018-pill').removeClass("active");
-    //        $('#2017-pill').removeClass("active");
-    //        $('#2016-pill').removeClass("active");
-    //    });
+        $('#2020-pill').click(function () {
+            hideAll();
+            console.log("Clicked 2020");
+            $('#2020').show();
+            $('#2020-pill').addClass("active");
+            $('#2019-pill').removeClass("active");
+            $('#2018-pill').removeClass("active");
+            $('#2017-pill').removeClass("active");
+            $('#2016-pill').removeClass("active");
+        });
 
 
     $('#2019-pill').click(function () {
